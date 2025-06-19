@@ -1,9 +1,10 @@
 const seoData = {
   home: {
-    title: "MedPath - Your Pathway to Medical Education",
+    title: "Medpath overseas - Abroad MBBS Consultant",
     description:
-      "Explore top medical universities and services for aspiring doctors.",
-    keywords: "medical education, universities, services, aspiring doctors",
+      "MedPath Overseas is your reliable MBBS abroad consultancy offering admissions in top-ranked, NMC-approved medical universities. Start your journey to become a doctor with expert guidance and zero hidden charges.",
+    keywords:
+      "Best MBBS consultancy in India, Study MBBS abroad, NMC approved MBBS colleges abroad, MedPath Overseas MBBS consultancy",
     image: "/images/seo/home.jpg",
   },
   about: {
