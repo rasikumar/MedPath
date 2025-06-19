@@ -1,5 +1,6 @@
 "use client";
 import { consultImage, mailIcon } from "@/assets/assets";
+import MotionSection from "@/components/common/MotionSection";
 import Button from "@/components/ui/Button";
 import { Home_Data } from "@/const/Data";
 import Image from "next/image";
@@ -26,19 +27,21 @@ const FreeConsult = () => {
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
       <div className="max-w-5xl m-auto flex md:flex-row flex-col items-center justify-between">
-        <div className="flex md:flex-row flex-col max-md:mt-8 items-center gap-4 z-10">
-          <div className="w-fit">
-            <Image src={mailIcon} alt="mailIcon" />
+        <MotionSection>
+          <div className="flex md:flex-row flex-col max-md:mt-8 items-center gap-4 z-10">
+            <div className="w-fit">
+              <Image src={mailIcon} alt="mailIcon" />
+            </div>
+            <div className="flex flex-col max-md:text-center gap-2">
+              <h2 className="text-2xl 2xl:text-4xl font-bold text-background ">
+                {consult.title}
+              </h2>
+              <p className="text-background max-w-2xl text-sm mx-auto">
+                {consult.description}
+              </p>
+            </div>
           </div>
-          <div className="flex flex-col max-md:text-center gap-2">
-            <h2 className="text-2xl 2xl:text-4xl font-bold text-background ">
-              {consult.title}
-            </h2>
-            <p className="text-background max-w-2xl text-sm mx-auto">
-              {consult.description}
-            </p>
-          </div>
-        </div>
+        </MotionSection>
 
         <Button
           href={consult.button.link}

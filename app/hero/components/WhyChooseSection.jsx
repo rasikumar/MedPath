@@ -6,6 +6,7 @@ import Image from "next/image";
 import { whyus } from "@/assets/assets";
 import Button from "@/components/ui/Button";
 import { WhyChooseCard } from "../ui/WhyChooseCard";
+import MotionSection from "@/components/common/MotionSection";
 const WhyChooseSection = () => {
   const choose_Content = Home_Data.why_us;
   const { ref, isIntersecting } = UseIntersection({
@@ -33,17 +34,32 @@ const WhyChooseSection = () => {
           </Button>
         </div>
         <div className="md:w-[50%] px-4 flex flex-col gap-4">
-          <span className="text-sm text-secondary font-semibold">
-            {choose_Content.span}
-          </span>
-          <h2 className="md:text-4xl text-3xl font-bold">
-            Unlock Your{" "}
-            <span className="text-primary">Medical Dreams Abroad:</span> Study
-            Doctor, Your Trusted Companion.
-          </h2>
-          <p className="text-sm leading-relaxed">
-            {choose_Content.description}
-          </p>
+          <MotionSection
+            from={{ opacity: 0, x: 100 }}
+            to={{ opacity: 1, x: 0, duration: 0.6 }}
+          >
+            <span className="text-sm text-secondary font-semibold">
+              {choose_Content.span}
+            </span>
+          </MotionSection>
+          <MotionSection
+            from={{ opacity: 0, x: 100 }}
+            to={{ opacity: 1, x: 0, duration: 0.8 }}
+          >
+            <h2 className="md:text-4xl text-3xl font-bold">
+              Unlock Your{" "}
+              <span className="text-primary">Medical Dreams Abroad:</span> Study
+              Doctor, Your Trusted Companion.
+            </h2>
+          </MotionSection>
+          <MotionSection
+            from={{ opacity: 0, x: 100 }}
+            to={{ opacity: 1, x: 0, duration: 1 }}
+          >
+            <p className="text-sm leading-relaxed">
+              {choose_Content.description}
+            </p>
+          </MotionSection>
         </div>
       </div>
       <div className="max-w-5xl m-auto grid xl:grid-cols-4 md:grid-cols-2 max-md:px-4 gap-8">

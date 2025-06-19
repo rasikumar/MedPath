@@ -26,7 +26,7 @@ const StudentTestimonials = () => {
       <div className="absolute -left-16 -z-20">
         <Image src={blobImage} alt="blobImage" />
       </div>
-      <div className="absolute left-0 top-0 z-50">
+      <div className="absolute left-0 top-0 z-50 rotate-animated-element">
         <Image src={star_image} alt="star_image" />
       </div>
       <div>
