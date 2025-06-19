@@ -22,18 +22,18 @@ const FaqSection = () => {
           <h2 className="text-2xl font-manrope text-center md:text-left font-bold text-text w-full">
             {faqContent.description}
           </h2>
-          <div className="flex flex-col gap-4 mt-4">
+          <div className="flex flex-col gap-4 mt-4 w-full">
             <a
               href={socialmediaLinks.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="border w-96 p-4 rounded-full inline-flex items-center justify-between hover:bg-primary transition-all duration-300 ease-in-out"
+              className="border md:w-96 w-full p-4 rounded-full inline-flex items-center justify-between hover:bg-primary transition-all duration-300 ease-in-out"
             >
               <FaHeadphones /> +91 73057 02699
             </a>
             <a
               href={socialmediaLinks.email}
-              className="border w-96 p-4 rounded-full inline-flex items-center justify-between hover:bg-primary transition-all duration-300 ease-in-out"
+              className="border md:w-96 w-full p-4 rounded-full inline-flex items-center justify-between hover:bg-primary transition-all duration-300 ease-in-out"
             >
               <MdOutlineEmail /> omedpath@gmail.com
             </a>
