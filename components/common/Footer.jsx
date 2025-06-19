@@ -23,17 +23,17 @@ const ContactInfo = [
   {
     icon: <FaPhoneAlt className="text-white text-xl" />,
     title: "Call us any time:",
-    value: "+91 96004 00499",
+    value: "+91 73057 02699",
   },
   {
     icon: <FaEnvelope className="text-white text-xl" />,
     title: "Email us 24/7 hours:",
-    value: "studydoctora4@gmail.com",
+    value: "omedpath@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt className="text-white text-xl" />,
     title: "Our Office Location:",
-    value: "Madurai, Chennai, Tamil Nadu",
+    value: "Madurai, Tamil Nadu",
   },
 ];
 
