@@ -117,19 +117,40 @@ const PopupForm = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (validateInquiryForm(formData, setErrors)) {
-      console.log("Form submitted:", formData);
-      handleClose();
-      setFormData({
-        name: "",
-        email: "",
-        mobile: "",
-        dob: "",
-        country: "",
-        message: "",
-      });
+      const payload = {
+        ...formData,
+      };
+
+      try {
+        const res = await fetch(
+          "http://localhost:5432/api/inquiry/submit-enquiry",
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          }
+        );
+
+        if (res.ok) {
+          handleClose();
+          setFormData({
+            name: "",
+            email: "",
+            mobile: "",
+            dob: "",
+            country: "",
+            message: "",
+          });
+        } else {
+          console.error("❌ Submission failed", await res.json());
+        }
+      } catch (err) {
+        console.error("❌ Network error:", err);
+      }
     }
   };
 

@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {  images: {
+const nextConfig = {
+  output: "export", // ✅ Required for static export in new Next.js
+  images: {
+    unoptimized: true,
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'ui-avatars.com',
-        pathname: '**',
+        protocol: "https",
+        hostname: "ui-avatars.com",
+        pathname: "**",
       },
     ],
   },

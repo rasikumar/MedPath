@@ -69,7 +69,11 @@ export default function UniversitySubmitForm({ university, onClose }) {
         ...formData,
         university_name,
       };
-      console.log("Form submitted:", payload);
+      await fetch("http://localhost:5432/api/university/submit-university", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
       onClose();
     }
   };
