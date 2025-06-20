@@ -4,6 +4,7 @@ import { Home_Data } from "@/const/Data";
 import UniversityCard from "../ui/UniversityCard";
 import UniversitSumbitForm from "@/components/forms/UniversitSumbitForm";
 import Image from "next/image";
+import MotionSection from "@/components/common/MotionSection";
 
 
 const OurUniversity = () => {
@@ -28,9 +29,11 @@ const OurUniversity = () => {
   return (
     <section className="px-4 xs:px-6 sm:px-8 py-8 sm:py-12 md:py-16">
       <div className="max-w-7xl mx-auto">
+        <MotionSection>
         <h2 className="text-center text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-semibold mb-8 sm:mb-12">
           {title}
         </h2>
+        </MotionSection>
         <div className="relative">
           <nav
             className="relative z-0 flex border border-background rounded-xl overflow-x-auto overflow-y-hidden whitespace-nowrap scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100"

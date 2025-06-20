@@ -64,20 +64,20 @@ import SiberianLogo from "./university_log/siberian.png";
 import SmolenexLogo from "./university_log/smolenex.jpg";
 import SouthKazakLogo from "./university_log/SOUTH-KAZAKH.png";
 
-
 // about section
 import about_1 from "./aboutus/about_1.webp";
 import about_2 from "./aboutus/about_2.webp";
 import about_3 from "./aboutus/about_3.webp";
 import about_4 from "./aboutus/about_4.webp";
+import BookImage from "./aboutus/about_1_shape1.webp";
 
-
-
+//aboutus Page
+const aboutHeadervideo = "./aboutUsPage/aboutusHero.mp4";
 
 //footer images
 import Footerbg from "./Footer/footer-bg1.webp";
 import Footershape1 from "./Footer/footershape1.webp";
-import  Footershape2 from "./Footer/footershape2.webp";
+import Footershape2 from "./Footer/footershape2.webp";
 
 
 export {
@@ -151,8 +151,10 @@ export {
   about_2,
   about_3,
   about_4,
+  BookImage,
 
-
+  //about page
+  aboutHeadervideo,
 
     //footer
   Footerbg,

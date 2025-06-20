@@ -15,6 +15,7 @@ import { Home_Data } from "@/const/Data";
 import { ABOUT_ROUTE } from "@/utils/routes";
 import CountUp from "react-countup";
 import { UseIntersection } from "@/components/common/useIntersection";
+import MotionSection from "@/components/common/MotionSection";
 
 const AboutSection = () => {
   const aboutContents = Home_Data.about_section;
@@ -48,32 +49,54 @@ const AboutSection = () => {
           />
 
           <div className="absolute right-0 rounded-xl overflow-hidden">
-            <Image src={about_3} alt="about_3" className="rounded-xl" />
-            <div className="absolute top-0 left-0 w-full h-full bg-black/40 flex flex-col items-center justify-center rounded-xl gap-4">
-              <span className="text-5xl text-primary">
-                {isIntersecting && <CountUp end={4} duration={5} />}
-                k+
-              </span>
-              <p className="text-white text-center text-sm font-semibold px-4 uppercase">
-                Students enrolled in study doctor
-              </p>
-            </div>
+            <MotionSection>
+              <Image src={about_3} alt="about_3" className="rounded-xl" />
+              <div className="absolute top-0 left-0 w-full h-full bg-black/40 flex flex-col items-center justify-center rounded-xl gap-4">
+                <span className="text-5xl text-primary">
+                  {isIntersecting && <CountUp end={4} duration={5} />}
+                  k+
+                </span>
+                <p className="text-white text-center text-sm font-semibold px-4 uppercase">
+                  Students enrolled in study doctor
+                </p>
+              </div>
+            </MotionSection>
           </div>
         </div>
 
         {/* content */}
         <div className="md:w-[50%] w-full flex flex-col gap-4 max-md:mt-[450px]">
           <div>
-            <span className="text-primary">{aboutContents.span}</span>
-            <h2 className="md:text-h2 text-3xl font-semibold">
-              {aboutContents.title.slice(0, 11)}
-              <span className="text-secondary">
-                {aboutContents.title.slice(11, 18)}
-              </span>
-            </h2>
+            <MotionSection
+              from={{ opacity: 0, y: 100 }}
+              to={{ opacity: 1, y: 0, duration: 0.5 }}
+            >
+              <span className="text-primary">{aboutContents.span}</span>
+            </MotionSection>
+            <MotionSection
+              from={{ opacity: 0, y: 100 }}
+              to={{ opacity: 1, y: 0, duration: 0.7 }}
+            >
+              <h2 className="md:text-h2 text-3xl font-semibold">
+                {aboutContents.title.slice(0, 11)}
+                <span className="text-secondary">
+                  {aboutContents.title.slice(11, 18)}
+                </span>
+              </h2>
+            </MotionSection>
           </div>
-          <p className="indent-10">{aboutContents.description_one}</p>
-          <p>{aboutContents.description_two}</p>
+          <MotionSection
+            from={{ opacity: 0, y: 100 }}
+            to={{ opacity: 1, y: 0, duration: 0.9 }}
+          >
+            <p className="indent-10">{aboutContents.description_one}</p>
+          </MotionSection>
+          <MotionSection
+            from={{ opacity: 0, y: 100 }}
+            to={{ opacity: 1, y: 0, duration: 1.1 }}
+          >
+            <p>{aboutContents.description_two}</p>
+          </MotionSection>
           <div className="flex md:flex-row flex-col md:items-center gap-6">
             <Image
               src={about_4}

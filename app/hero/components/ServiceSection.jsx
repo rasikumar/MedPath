@@ -1,72 +1,10 @@
-"use client";
-import { useEffect, useRef } from "react";
 import { Home_Data } from "@/const/Data";
 import { FaRegFaceSmileBeam } from "react-icons/fa6";
-import gsap from "gsap";
+import MotionSection from "@/components/common/MotionSection";
 
 const ServiceSection = () => {
   const serviceData = Home_Data.our_services;
   const splitIndex = Math.ceil(serviceData.services.length / 2);
-  const serviceRefs = useRef([]);
-
-  useEffect(() => {
-    const currentRefs = serviceRefs.current;
-
-    currentRefs.forEach((ref) => {
-      if (!ref) return;
-      const icon = ref.querySelector("svg");
-
-      gsap.set(icon, {
-        transformOrigin: "center",
-        scale: 1,
-        color: "#00A7A3",
-      });
-
-      const handleMouseEnter = () => {
-        gsap.to(icon, {
-          scale: 1.2,
-          color: "#004B87",
-          duration: 0.3,
-          ease: "power2.out",
-        });
-
-        gsap.to(ref.querySelector("h3"), {
-          x: 5,
-          duration: 0.3,
-          ease: "power2.out",
-        });
-      };
-
-      const handleMouseLeave = () => {
-        gsap.to(icon, {
-          scale: 1,
-          color: "#00A7A3",
-          duration: 0.3,
-          ease: "power2.out",
-        });
-
-        gsap.to(ref.querySelector("h3"), {
-          x: 0,
-          duration: 0.3,
-          ease: "power2.out",
-        });
-      };
-
-      ref.addEventListener("mouseenter", handleMouseEnter);
-      ref.addEventListener("mouseleave", handleMouseLeave);
-
-      return () => {
-        ref.removeEventListener("mouseenter", handleMouseEnter);
-        ref.removeEventListener("mouseleave", handleMouseLeave);
-      };
-    });
-
-    return () => {
-      currentRefs.forEach((ref) => {
-        if (!ref) return;
-      });
-    };
-  }, []); // Empty dependency array means this runs once on mount
 
   return (
     <section className="max">
@@ -74,37 +12,42 @@ const ServiceSection = () => {
         <h2 className="text-4xl text-secondary font-bold uppercase">
           {serviceData.title}
         </h2>
-        <div className="flex md:flex-row flex-col justify-between md:gap-60 gap-8 bg-background p-8 rounded-xl">
-          <div className="flex flex-col gap-8">
-            {serviceData.services.slice(0, splitIndex).map((service, index) => (
-              <div
-                className="flex flex-col gap-4 cursor-pointer group"
-                key={service.title}
-                ref={(el) => (serviceRefs.current[index] = el)}
-              >
-                <h3 className="inline-flex text-sm items-center gap-4 transition-all duration-300 group-hover:text-secondary">
-                  <FaRegFaceSmileBeam className="text-primary" />{" "}
-                  {service.title}
-                </h3>
-              </div>
-            ))}
-          </div>
+        <MotionSection
+          from={{ opacity: 0, y: 100 }}
+          to={{ opacity: 1, y: 0, duration: 0.9 }}
+        >
+          <div className="flex md:flex-row flex-col justify-between md:gap-60 gap-8 bg-background p-8 rounded-xl">
+            <div className="flex flex-col gap-8">
+              {serviceData.services
+                .slice(0, splitIndex)
+                .map((service, index) => (
+                  <div
+                    className="flex flex-col gap-4 cursor-pointer group"
+                    key={service.title}
+                  >
+                    <h3 className="inline-flex text-sm items-center gap-4 transition-all duration-300 group-hover:text-secondary">
+                      <FaRegFaceSmileBeam className="text-primary" />{" "}
+                      {service.title}
+                    </h3>
+                  </div>
+                ))}
+            </div>
 
-          <div className="flex flex-col gap-8">
-            {serviceData.services.slice(splitIndex).map((service, index) => (
-              <div
-                className="flex flex-col gap-4 cursor-pointer group"
-                key={service.title}
-                ref={(el) => (serviceRefs.current[index + splitIndex] = el)}
-              >
-                <h3 className="inline-flex text-sm items-center gap-4 transition-all duration-300 group-hover:text-secondary">
-                  <FaRegFaceSmileBeam className="text-primary" />{" "}
-                  {service.title}
-                </h3>
-              </div>
-            ))}
+            <div className="flex flex-col gap-8">
+              {serviceData.services.slice(splitIndex).map((service, index) => (
+                <div
+                  className="flex flex-col gap-4 cursor-pointer group"
+                  key={service.title}
+                >
+                  <h3 className="inline-flex text-sm items-center gap-4 transition-all duration-300 group-hover:text-secondary">
+                    <FaRegFaceSmileBeam className="text-primary" />{" "}
+                    {service.title}
+                  </h3>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        </MotionSection>
       </div>
     </section>
   );
