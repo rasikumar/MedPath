@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
-import { useRef, useLayoutEffect } from "react";
+"use client";
+import { useRef, useLayoutEffect, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -7,15 +7,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 const MotionSection = ({
   children,
-  from = { opacity: 0, x: -100 }, // Default initial state
-  to = { opacity: 1, x: 0, duration: 1 }, // Default animation
-  className = "", // Default empty string for className
-  trigger = true, // New prop to control animation trigger
+  from = { opacity: 0, x: -100 },
+  to = { opacity: 1, x: 0, duration: 1 },
+  className = "",
+  trigger = true,
 }) => {
   const sectionRef = useRef(null);
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   useLayoutEffect(() => {
-    if (trigger) {
+    if (hasMounted && trigger) {
       gsap.fromTo(sectionRef.current, from, {
         ...to,
         scrollTrigger: {
@@ -24,7 +29,9 @@ const MotionSection = ({
         },
       });
     }
-  }, [from, to, trigger]); // Add trigger as a dependency
+  }, [hasMounted, from, to, trigger]);
+
+  if (!hasMounted) return null;
 
   return (
     <div ref={sectionRef} className={className}>

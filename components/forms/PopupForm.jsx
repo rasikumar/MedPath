@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import gsap from "gsap";
 import { hasPopupShownRecently, markPopupAsShown } from "@/utils/utils";
 import PhoneInput from "react-phone-number-input";
@@ -25,22 +25,23 @@ const PopupForm = () => {
   const [errors, setErrors] = useState({});
   const popupRef = useRef(null);
   const countries = Home_Data.countryItems;
+  const [hasMounted, setHasMounted] = useState(false);
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   useEffect(() => {
-    if (showForm) {
-      // Disable scroll on body
-      document.body.style.overflow = "hidden";
-      // Optional: Add padding to prevent layout shift
-      const scrollbarWidth =
-        window.innerWidth - document.documentElement.clientWidth;
-      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    if (!showForm || typeof window === "undefined") return;
 
-      return () => {
-        // Re-enable scroll when component unmounts
-        document.body.style.overflow = "";
-        document.body.style.paddingRight = "";
-      };
-    }
+    const scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.overflow = "hidden";
+    document.body.style.paddingRight = `${scrollbarWidth}px`;
+
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+    };
   }, [showForm]);
 
   useEffect(() => {
@@ -154,7 +155,11 @@ const PopupForm = () => {
     }
   };
 
-  if (!showForm) return null;
+  const parsedDob = useMemo(() => {
+    return formData.dob ? new Date(formData.dob) : null;
+  }, [formData.dob]);
+
+  if (!hasMounted || !showForm) return null;
 
   return (
     <div
@@ -248,7 +253,7 @@ const PopupForm = () => {
                 Date of Birth *
               </label>
               <DatePicker
-                selected={formData.dob ? new Date(formData.dob) : null}
+                selected={parsedDob}
                 onChange={(date) =>
                   handleChange({ target: { name: "dob", value: date } })
                 }

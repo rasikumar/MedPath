@@ -26,16 +26,16 @@ export default function RootLayout({ children }) {
       </head>
       <body
         className={`flex flex-col min-h-screen scroll-smooth overflow-y-auto`}
-        style={{ scrollBehavior: "smooth" }}
+        suppressHydrationWarning
       >
         {/* <LenisProvider> */}
-          <FloatIcon />
-          <FixedIcons />
-          <PopupForm />
-          <TopBar />
-          <Navbar />
-          <div className="flex-1 flex flex-col">{children}</div>
-          <Footer />
+        <FloatIcon />
+        <FixedIcons />
+        <PopupForm />
+        <TopBar />
+        <Navbar />
+        <div className="flex-1 flex flex-col">{children}</div>
+        <Footer />
         {/* </LenisProvider> */}
       </body>
     </html>

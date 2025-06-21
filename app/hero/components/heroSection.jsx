@@ -22,65 +22,70 @@ const HeroSection = () => {
   const blobRef = useRef(null);
 
   useEffect(() => {
-    const textTl = gsap.timeline();
-    const bgTl = gsap.timeline();
-    const blobTl = gsap.timeline();
-    textTl.fromTo(
-      sectionRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 0.5 }
-    );
-    textTl.from(
-      [spanRef.current, titleRef.current, descRef.current, btnRef.current],
-      {
-        x: -50,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.5,
-        ease: "power1.out",
-      },
-      "-=0.3"
-    );
-
-    bgTl
-      .fromTo(
-        bgImageRef.current,
-        { scale: 1.2, opacity: 0.3 },
-        { scale: 1.1, opacity: 1, duration: 1.2, ease: "power2.out" }
-      )
-      .to(
-        bgImageRef.current,
+    const ctx = gsap.context(() => {
+      const textTl = gsap.timeline();
+      textTl.fromTo(
+        sectionRef.current,
+        { opacity: 0 },
+        { opacity: 1, duration: 0.5 }
+      );
+      textTl.from(
+        [spanRef.current, titleRef.current, descRef.current, btnRef.current],
         {
-          scale: 1,
-          duration: 10,
+          x: -50,
+          opacity: 0,
+          duration: 1,
+          stagger: 0.5,
           ease: "power1.out",
         },
-        "+=0.2"
+        "-=0.3"
       );
 
-    gsap.fromTo(
-      rightImageRef.current,
-      { x: 100, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1, delay: 0.4 }
-    );
+      const bgTl = gsap.timeline();
+      bgTl
+        .fromTo(
+          bgImageRef.current,
+          { scale: 1.2, opacity: 0.3 },
+          { scale: 1.1, opacity: 1, duration: 1.2, ease: "power2.out" }
+        )
+        .to(
+          bgImageRef.current,
+          {
+            scale: 1,
+            duration: 10,
+            ease: "power1.out",
+          },
+          "+=0.2"
+        );
 
-    blobTl.fromTo(
-      blobRef.current,
-      { scale: 1.2, opacity: 0 },
-      { scale: 1.2, opacity: 1, duration: 1, ease: "power2.out" }
-    );
-    blobTl.to(blobRef.current, {
-      scale: 1.2,
-      duration: 10,
-      ease: "power1.out",
+      gsap.fromTo(
+        rightImageRef.current,
+        { x: 100, opacity: 0 },
+        { x: 0, opacity: 1, duration: 1, delay: 0.4 }
+      );
+
+      const blobTl = gsap.timeline();
+      blobTl.fromTo(
+        blobRef.current,
+        { scale: 1.2, opacity: 0 },
+        { scale: 1.2, opacity: 1, duration: 1, ease: "power2.out" }
+      );
+      blobTl.to(blobRef.current, {
+        scale: 1.2,
+        duration: 10,
+        ease: "power1.out",
+      });
     });
 
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % heroData.length);
     }, 10000);
 
-    return () => clearInterval(interval);
-  }, [activeIndex]);
+    return () => {
+      clearInterval(interval);
+      ctx.revert(); // Cleans up all animations
+    };
+  }, [activeIndex, heroData.length]);
 
   const item = heroData[activeIndex];
 
@@ -111,7 +116,10 @@ const HeroSection = () => {
             >
               {item.span.toUpperCase()}
             </span>
-            <h1 className="xl:text-5xl md:text-4xl text-3xl font-bold text-background" ref={titleRef}>
+            <h1
+              className="xl:text-5xl md:text-4xl text-3xl font-bold text-background"
+              ref={titleRef}
+            >
               {activeIndex === 0 ? (
                 <>
                   WELCOME TO{" "}
@@ -153,7 +161,7 @@ const HeroSection = () => {
             ref={blobRef}
             alt="group image"
             className="absolute bottom-0 right-0 -z-10  2xl:w-[70rem] xl:w-[60rem] w-[50rem]"
-          /> 
+          />
         </div>
         <div className="absolute right-[35%] bottom-10 z-20 flex gap-4 md:gap-2">
           <button

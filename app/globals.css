@@ -77,38 +77,44 @@
   animation: smoothTopBottom 3s linear infinite;
   will-change: transform;
 }
+
 .rotate-animated-element {
-    display: inline-block;
-    animation: rotateAnimation 10s linear infinite;
-    will-change: transform;
+  display: inline-block;
+  animation: rotateAnimation 10s linear infinite;
+  will-change: transform;
 }
 
 .slide-animated-element {
-    display: inline-block;
-    animation: slideAnimation 3s linear infinite;
-    will-change: transform;
+  display: inline-block;
+  animation: slideAnimation 3s linear infinite;
+  will-change: transform;
 }
 
 @keyframes slideAnimation {
-    0%,100%{
-        transform: translateX(0px);
-    }
-    50%{
-        transform: translateX(10px);
-    }
+
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
 }
 
 @keyframes rotateAnimation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* animations.css */
 @keyframes smoothTopBottom {
+
   0%,
   100% {
     transform: translateY(-10%);
@@ -118,5 +124,30 @@
   50% {
     transform: translateY(10%);
     animation-timing-function: ease-in;
+  }
+}
+
+.fade-anim {
+  transition: all;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in 1s ease-in-out;
+  will-change: transform, opacity;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out;
+    
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 0.5s ease-in-out;
   }
 }

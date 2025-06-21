@@ -1,4 +1,7 @@
 import {
+  aboutheader,
+  abouthero,
+  abouthero2,
   AL,
   ALLogo,
   Andijan,
@@ -19,6 +22,7 @@ import {
   kyrgyzstanFlag,
   MiniBanner_1,
   MiniBanner_2,
+  missionImage,
   OrangeBergLogo,
   oshLogo,
   PhanChauLogo,
@@ -96,7 +100,7 @@ export const Home_Data = {
           {
             id: 1,
             title: "SAMARKAND STATE MEDICAL INSTITUTE",
-            description:"SAMARKAND, Uzbekistan",
+            description: "SAMARKAND, Uzbekistan",
             image: {
               src: SamarkandLogo,
               alt: "SAMARKAND STATE MEDICAL INSTITUTE",
@@ -306,7 +310,7 @@ export const Home_Data = {
           },
         ],
       },
-    ], 
+    ],
   },
   about_section: {
     span: "About Us",
@@ -343,7 +347,7 @@ export const Home_Data = {
         name: "B. Bhuvanes War!",
         date: "2024-09-23",
         review:
-          "Study Doctor keeps students and parents informed about the application process and progress",
+          "I had an excellent experience with Medpath Overseas. They guided me step-by-step through the MBBS admission process, especially for studying abroad. The team is very professional, transparent, and supportive. Highly recommended for students who are serious about a medical career!",
         rating: 5,
         userimageString:
           "https://ui-avatars.com/api/?name=BhuvanesWar&size=200&rounded=true",
@@ -352,7 +356,7 @@ export const Home_Data = {
         name: "KAMARDEN Safi",
         date: "2024-09-22",
         review:
-          "Genuine consultant for abroad medical education, trustable and official representative for abroad medical education for top universities.",
+          "I’m happy with Medpath Overseas for their transparency and honest advice. They clearly explained about the universities, NMC approval, and living costs.The process was smooth and tension-free. There’s a little scope for improving follow-up, but highly recommended.",
         rating: 5,
         userimageString:
           "https://ui-avatars.com/api/?name=KAMARDEN Safi&size=200&rounded=true",
@@ -361,7 +365,7 @@ export const Home_Data = {
         name: "G. Vijaya Rajsendhiran",
         date: "2024-09-22",
         review:
-          "Good service. Has all the information regarding universities fees, course, offered etc",
+          "As a parent, I was initially worried about sending my child abroad. But Medpath Overseas guided us with clarity and confidence.  The documentation and university coordination were smooth. Only a slight delay in the visa process, but they handled everything professionally. We are satisfied and recommend them.",
         rating: 3,
         userimageString:
           "https://ui-avatars.com/api/?name=G. Vijaya Rajsendhiran&size=200&rounded=true",
@@ -370,7 +374,7 @@ export const Home_Data = {
         name: "B. Bhuvanes War!",
         date: "2024-09-23",
         review:
-          "Study Doctor keeps students and parents informed about the application process and progress",
+          "great services. 👍👍 their team is extremely supportive, professional, and well-informed. from shortlisting universities to handling documentation, visa procedures, and even pre-departure orientatin , transparency and honest advice. Highly recommended for anyone looking to study MBBS abroad .",
         rating: 2,
         userimageString:
           "https://ui-avatars.com/api/?name=BhuvanesWar&size=200&rounded=true",
@@ -691,6 +695,51 @@ export const Home_Data = {
     { id: 4, label: "MBBS IN Vietnam", href: "/countries/vietnam" },
     { id: 5, label: "MBBS IN Uzbekistan", href: "/countries/uzbekistan" },
   ],
+};
+
+export const About_Page_data = {
+  aboutContents: {
+    span: "About Us",
+    title: "Euro Study Abroad Education Consultants",
+    description_one:
+      "Euro Study Abroad was founded with a mission to empower students with the knowledge and resources they need to achieve their academic and career goals. Our team of experienced consultants offers personalized advice and tailor-made solutions to ensure each student finds the right path to success.",
+    description_two:
+      "With years of experience and a deep understanding of the global education system, we have built a reputation for excellence and reliability. Whether you are looking for undergraduate programs, postgraduate studies, or specialized courses, Euro Study Abroad is here to guide you every step of the way.",
+    image: {
+      src: abouthero,
+      alt: "Euro Study Abroad Education Consultants",
+    },
+    image2: {
+      src: abouthero2,
+      alt: "Euro Study Abroad Education Consultants",
+    },
+  },
+  aboutTabData: {
+    mission: {
+      content:
+        "1.Empower students to dream beyond borders..2.Create a world-class platform for transparent, ethical, and student-first guidance..3.Build a community of globally trained medical professionals who contribute meaningfully to healthcare worldwide..4.Set new standards in overseas education consultancy through integrity, innovation, and care..",
+      image: {
+        src: missionImage,
+        alt: "Euro Study Abroad Education Consultants",
+      },
+    },
+    vision: {
+      content:
+        "1.Helping students access affordable and accredited medical universities worldwide..2.Delivering clear, honest advice with no hidden information or false promises..3.Offering end-to-end support — from application to accommodation..4.Promoting academic excellence and cultural adaptability in future healthcare leaders..",
+      image: {
+        src: missionImage,
+        alt: "Euro Study Abroad Education Consultants",
+      },
+    },
+    goal: {
+      content:
+        "1.Bridge the gap between talented students and top international medical universities..2.Provide honest guidance tailored to each student’s aspirations and academic profile..3.Support every step of the journey — from university selection and admission to visa processing and post-arrival assistance..4.Foster confident, globally competent doctors ready to serve communities around the world..",
+      image: {
+        src: missionImage,
+        alt: "Euro Study Abroad Education Consultants",
+      },
+    },
+  },
 };
 
 export const daySchedules = {

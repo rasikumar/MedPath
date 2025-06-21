@@ -22,7 +22,7 @@ import mbbsAbroadStudents from "./mbbsAbroadStudents.webp";
 import quote from "./quote.svg";
 
 // Country Image
-import italyFlag from "./country_logo/italyFlag.png";
+import italyFlag from "./country_logo/italyFlag.webp";
 import kazakstanFlag from "./country_logo/kazakstanFlag.png";
 import kyrgyzstanFlag from "./country_logo/kyrgyzstanFlag.png";
 import russiaFlag from "./country_logo/russiaFlag.png";
@@ -72,13 +72,17 @@ import about_4 from "./aboutus/about_4.webp";
 import BookImage from "./aboutus/about_1_shape1.webp";
 
 //aboutus Page
-const aboutHeadervideo = "./aboutUsPage/aboutusHero.mp4";
+import aboutheader from "./aboutUsPage/aboutheader.png";
+import abouthero from "./aboutUsPage/abouthero.png";
+import aboutpath from "./aboutUsPage/aboutpath.png";
+import abouthero2 from "./aboutUsPage/abouthero2.jpeg";
+import missionImage from "./aboutUsPage/missionImage.png";
+import aboutbg from "./aboutUsPage/aboutbg.png";
 
 //footer images
 import Footerbg from "./Footer/footer-bg1.webp";
 import Footershape1 from "./Footer/footershape1.webp";
 import Footershape2 from "./Footer/footershape2.webp";
-
 
 export {
   Banner_1,
@@ -154,9 +158,14 @@ export {
   BookImage,
 
   //about page
-  aboutHeadervideo,
+  aboutheader,
+  abouthero,
+  abouthero2,
+  aboutpath,
+  missionImage,
+  aboutbg,
 
-    //footer
+  //footer
   Footerbg,
   Footershape1,
   Footershape2,

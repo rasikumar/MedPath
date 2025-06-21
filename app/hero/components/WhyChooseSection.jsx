@@ -35,16 +35,16 @@ const WhyChooseSection = () => {
         </div>
         <div className="md:w-[50%] px-4 flex flex-col gap-4">
           <MotionSection
-            from={{ opacity: 0, x: 100 }}
-            to={{ opacity: 1, x: 0, duration: 0.6 }}
+            from={{ opacity: 0, y: 100 }}
+            to={{ opacity: 1, y: 0, duration: 0.6 }}
           >
             <span className="text-sm text-secondary font-semibold">
               {choose_Content.span}
             </span>
           </MotionSection>
           <MotionSection
-            from={{ opacity: 0, x: 100 }}
-            to={{ opacity: 1, x: 0, duration: 0.8 }}
+            from={{ opacity: 0, y: 100 }}
+            to={{ opacity: 1, y: 0, duration: 0.8 }}
           >
             <h2 className="md:text-4xl text-3xl font-bold">
               Unlock Your{" "}
@@ -53,8 +53,8 @@ const WhyChooseSection = () => {
             </h2>
           </MotionSection>
           <MotionSection
-            from={{ opacity: 0, x: 100 }}
-            to={{ opacity: 1, x: 0, duration: 1 }}
+            from={{ opacity: 0, y: 100 }}
+            to={{ opacity: 1, y: 0, duration: 1 }}
           >
             <p className="text-sm leading-relaxed">
               {choose_Content.description}
