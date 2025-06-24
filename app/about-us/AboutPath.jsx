@@ -1,5 +1,5 @@
 "use client";
-import { aboutbg, aboutpath } from "@/assets/assets";
+import { aboutbg, aboutpath, scale } from "@/assets/assets";
 import MotionSection from "@/components/common/MotionSection";
 import { About_Page_data } from "@/const/Data";
 import Image from "next/image";
@@ -66,7 +66,14 @@ export const AboutPath = () => {
         />
       </div>
       <div className="max-w-5xl mx-auto px-4 py-12 sm:px-6 md:px-8 flex flex-col gap-8">
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 relative">
+        <div className="flex justify-center mb-8 relative">
+          <Image
+            src={scale}
+            alt="scale-image"
+            className="absolute -z-10 w-full -mt-24"
+          />
+        </div>
+        <div className="flex justify-center gap-2 sm:gap-4 mb-8 relative">
           <MdOutlineArrowLeft className="text-2xl hidden sm:block" />
           <ul className="flex gap-2 sm:gap-4 justify-evenly w-full">
             {tabs.map((tab) => (

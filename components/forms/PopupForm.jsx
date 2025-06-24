@@ -11,6 +11,8 @@ import Image from "next/image";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { IoClose } from "react-icons/io5";
+import axios from "axios";
+import { ENQUIRY_API } from "@/api/const";
 
 const PopupForm = () => {
   const [showForm, setShowForm] = useState(false);
@@ -127,16 +129,15 @@ const PopupForm = () => {
       };
 
       try {
-        const res = await fetch(
-          "http://localhost:5432/api/inquiry/submit-enquiry",
+        const res = await axios.post(
+          `${process.env.NEXT_PUBLIC_API_URL}${ENQUIRY_API}`,
+          payload,
           {
-            method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(payload),
           }
         );
 
-        if (res.ok) {
+        if (res.status === 200) {
           handleClose();
           setFormData({
             name: "",
@@ -147,7 +148,7 @@ const PopupForm = () => {
             message: "",
           });
         } else {
-          console.error("❌ Submission failed", await res.json());
+          console.error("❌ Submission failed", res.data);
         }
       } catch (err) {
         console.error("❌ Network error:", err);

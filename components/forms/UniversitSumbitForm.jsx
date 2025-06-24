@@ -5,7 +5,8 @@ import { validateUniversitySubmitForm } from "@/utils/validations";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { Modal } from "../ui/Modal";
-
+import axios from "axios";
+import { UNIVERSITY_FORM_API } from "@/api/const";
 export default function UniversitySubmitForm({ university, onClose }) {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -69,11 +70,11 @@ export default function UniversitySubmitForm({ university, onClose }) {
         ...formData,
         university_name,
       };
-      await fetch("http://localhost:5432/api/university/submit-university", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+      await axios.post(
+        `${process.env.NEXT_PUBLIC_API_URL}${UNIVERSITY_FORM_API}`,
+        payload,
+        { headers: { "Content-Type": "application/json" } }
+      );
       onClose();
     }
   };

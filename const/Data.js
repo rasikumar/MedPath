@@ -25,6 +25,8 @@ import {
   missionImage,
   OrangeBergLogo,
   oshLogo,
+  Our_Goal,
+  Our_vission,
   PhanChauLogo,
   russiaFlag,
   SamarkandLogo,
@@ -727,7 +729,7 @@ export const About_Page_data = {
       content:
         "1.Helping students access affordable and accredited medical universities worldwide..2.Delivering clear, honest advice with no hidden information or false promises..3.Offering end-to-end support — from application to accommodation..4.Promoting academic excellence and cultural adaptability in future healthcare leaders..",
       image: {
-        src: missionImage,
+        src: Our_vission,
         alt: "Euro Study Abroad Education Consultants",
       },
     },
@@ -735,7 +737,7 @@ export const About_Page_data = {
       content:
         "1.Bridge the gap between talented students and top international medical universities..2.Provide honest guidance tailored to each student’s aspirations and academic profile..3.Support every step of the journey — from university selection and admission to visa processing and post-arrival assistance..4.Foster confident, globally competent doctors ready to serve communities around the world..",
       image: {
-        src: missionImage,
+        src: Our_Goal,
         alt: "Euro Study Abroad Education Consultants",
       },
     },

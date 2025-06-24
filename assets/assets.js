@@ -77,6 +77,9 @@ import abouthero from "./aboutUsPage/abouthero.png";
 import aboutpath from "./aboutUsPage/aboutpath.png";
 import abouthero2 from "./aboutUsPage/abouthero2.jpeg";
 import missionImage from "./aboutUsPage/missionImage.png";
+import Our_Goal from "./aboutUsPage/Our Goal.webp";
+import Our_vission from "./aboutUsPage/Our vission.webp";
+import scale from "./aboutUsPage/scale.jpg";
 import aboutbg from "./aboutUsPage/aboutbg.png";
 
 //footer images
@@ -164,6 +167,9 @@ export {
   aboutpath,
   missionImage,
   aboutbg,
+  Our_Goal,
+  Our_vission,
+  scale,
 
   //footer
   Footerbg,
