@@ -8,10 +8,7 @@ import Accomplishment from "./Accomplishment";
 export const metadata = getMeta(seoData.about);
 const About = () => {
   return (
-    <div
-      className="min-h-screen flex flex-col"
-      
-    >
+    <div className="min-h-screen flex flex-col overflow-hidden">
       <HeroAbout />
       <Intro />
       <AboutPath />

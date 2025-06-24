@@ -67,50 +67,55 @@ export default function ContactForm({ onClose }) {
     }
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <label
-        htmlFor="Name"
-        className="block text-sm font-medium text-secondary mb-1"
-      >
-        Name *
-      </label>
-      <input
-        id="name"
-        name="name"
-        type="text"
-        placeholder="John"
-        value={formData.name}
-        onChange={handleChange}
-        className={`w-full border ${
-          errors.name ? "border-danger" : "border-border"
-        } rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent`}
-      />
-      {errors.name && <p className="mt-1 text-sm text-danger">{errors.name}</p>}
-
-      <div>
-        <label
-          htmlFor="mobile"
-          className="block text-sm font-medium text-secondary mb-1"
-        >
-          Mobile Number *
-        </label>
-        <PhoneInput
-          international
-          defaultCountry="IN"
-          value={formData.mobile}
-          onChange={(value) => {
-            handleChange({ target: { name: "mobile", value } });
-          }}
-          className={`w-full border ${
-            errors.mobile ? "border-danger" : "border-border"
-          } rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent`}
-        />
-        {errors.mobile && (
-          <p className="mt-1 text-sm text-danger">{errors.mobile}</p>
-        )}
+    <form onSubmit={handleSubmit} className="flex flex-col gap-4 items-start">
+      <div className="flex w-full flex-col gap-4">
+        <div className="w-full">
+          <label
+            htmlFor="Name"
+            className="block text-sm font-medium text-secondary mb-1"
+          >
+            Name *
+          </label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="John"
+            value={formData.name}
+            onChange={handleChange}
+            className={`w-full border ${
+              errors.name ? "border-danger" : "border-border"
+            } rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent`}
+          />
+          {errors.name && (
+            <p className="mt-1 text-sm text-danger">{errors.name}</p>
+          )}
+        </div>
+        <div className="w-full">
+          <label
+            htmlFor="mobile"
+            className="block text-sm font-medium text-secondary mb-1"
+          >
+            Mobile Number *
+          </label>
+          <PhoneInput
+            international
+            defaultCountry="IN"
+            value={formData.mobile}
+            onChange={(value) => {
+              handleChange({ target: { name: "mobile", value } });
+            }}
+            className={`w-full border ${
+              errors.mobile ? "border-danger" : "border-border"
+            } rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent`}
+          />
+          {errors.mobile && (
+            <p className="mt-1 text-sm text-danger">{errors.mobile}</p>
+          )}
+        </div>
       </div>
 
-      <div>
+      <div className="w-full">
         <label
           htmlFor="email"
           className="block text-sm font-medium text-secondary mb-1"
@@ -133,7 +138,7 @@ export default function ContactForm({ onClose }) {
         )}
       </div>
 
-      <div>
+      <div className="w-full">
         <label
           htmlFor="description"
           className="block text-sm font-medium text-secondary mb-1"
@@ -147,9 +152,10 @@ export default function ContactForm({ onClose }) {
           placeholder="New York"
           value={formData.description}
           onChange={handleChange}
+          rows={5}
           className={`w-full border ${
             errors.description ? "border-danger" : "border-border"
-          } rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent`}
+          } rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent resize-none`}
         />
         {errors.description && (
           <p className="mt-1 text-sm text-danger">{errors.description}</p>
@@ -158,7 +164,7 @@ export default function ContactForm({ onClose }) {
 
       <Button
         type="submit"
-        className="relative z-10 transition-colors duration-300 group-hover:text-background flex items-center gap-2 text-sm font-bold justify-center"
+        className="relative border rounded-none z-10 transition-colors duration-300 group-hover:text-background flex items-center gap-2 text-sm font-bold justify-center"
       >
         Submit Application
       </Button>

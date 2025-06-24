@@ -36,6 +36,15 @@ import {
   TashkentLogo,
   uzbekistanFlag,
 } from "@/assets/assets";
+import {
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+} from "@/assets/gallery";
 import { ABOUT_ROUTE, CONTACT_ROUTE } from "@/utils/routes";
 
 export const Home_Data = {
@@ -277,10 +286,10 @@ export const Home_Data = {
       },
       {
         id: 5,
-        title: "Italy",
+        title: "Vietnam",
         image: {
           src: italyFlag,
-          alt: "Italy",
+          alt: "Vietnam",
         },
         universities: [
           {
@@ -691,11 +700,11 @@ export const Home_Data = {
     ],
   },
   countryItems: [
-    { id: 1, label: "MBBS in Russia", href: "/countries/russia" },
+    { id: 5, label: "MBBS IN Uzbekistan", href: "/countries/uzbekistan" },
     { id: 2, label: "MBBS in Kyrgyzstan", href: "/countries/kyrgyzstan" },
     { id: 3, label: "MBBS in Kazakhstan", href: "/countries/kazakhstan" },
+    { id: 1, label: "MBBS in Russia", href: "/countries/russia" },
     { id: 4, label: "MBBS IN Vietnam", href: "/countries/vietnam" },
-    { id: 5, label: "MBBS IN Uzbekistan", href: "/countries/uzbekistan" },
   ],
 };
 
@@ -718,6 +727,7 @@ export const About_Page_data = {
   },
   aboutTabData: {
     mission: {
+      title: "Our Mission",
       content:
         "1.Empower students to dream beyond borders..2.Create a world-class platform for transparent, ethical, and student-first guidance..3.Build a community of globally trained medical professionals who contribute meaningfully to healthcare worldwide..4.Set new standards in overseas education consultancy through integrity, innovation, and care..",
       image: {
@@ -726,6 +736,7 @@ export const About_Page_data = {
       },
     },
     vision: {
+      title: "Our Vision",
       content:
         "1.Helping students access affordable and accredited medical universities worldwide..2.Delivering clear, honest advice with no hidden information or false promises..3.Offering end-to-end support — from application to accommodation..4.Promoting academic excellence and cultural adaptability in future healthcare leaders..",
       image: {
@@ -734,6 +745,7 @@ export const About_Page_data = {
       },
     },
     goal: {
+      title: "Our Goal",
       content:
         "1.Bridge the gap between talented students and top international medical universities..2.Provide honest guidance tailored to each student’s aspirations and academic profile..3.Support every step of the journey — from university selection and admission to visa processing and post-arrival assistance..4.Foster confident, globally competent doctors ready to serve communities around the world..",
       image: {
@@ -743,6 +755,37 @@ export const About_Page_data = {
     },
   },
 };
+
+export const galleryImages = [
+  {
+    src: image1.src,
+    alt: "Gallery Image 1",
+  },
+  {
+    src: image2.src,
+    alt: "Gallery Image 2",
+  },
+  {
+    src: image3.src,
+    alt: "Gallery Image 3",
+  },
+  {
+    src: image4.src,
+    alt: "Gallery Image 4",
+  },
+  {
+    src: image5.src,
+    alt: "Gallery Image 5",
+  },
+  {
+    src: image6.src,
+    alt: "Gallery Image 6",
+  },
+  {
+    src: image7.src,
+    alt: "Gallery Image 7",
+  },
+];
 
 export const daySchedules = {
   Sunday: "10:00AM - 5.00PM",
@@ -760,6 +803,7 @@ export const socialmediaLinks = {
   linkedin:
     "https://www.linkedin.com/company/medpath-overseas/posts/?feedView=all",
   youtube: "#",
-  whatsapp: "https://wa.me/917305702699",
+  whatsapp: "tel:+917305702699",
   email: "mailto:omedpath@gmail.com",
+  appno: "tel:+917305702699",
 };

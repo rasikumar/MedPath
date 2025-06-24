@@ -1,10 +1,8 @@
 "use client";
 import { aboutbg, aboutpath, scale } from "@/assets/assets";
-import MotionSection from "@/components/common/MotionSection";
 import { About_Page_data } from "@/const/Data";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
-import { MdOutlineArrowLeft } from "react-icons/md";
 
 export const AboutPath = () => {
   const tabData = About_Page_data.aboutTabData;
@@ -25,14 +23,12 @@ export const AboutPath = () => {
     return () => clearInterval(timerRef.current);
   }, []);
 
-  // Animate on tab change
   useEffect(() => {
     setAnimating(true);
     const timeout = setTimeout(() => setAnimating(false), 300);
     return () => clearTimeout(timeout);
   }, [activeTab]);
 
-  // On manual tab change, reset timer and animate
   const handleTabClick = (tab) => {
     if (tab !== activeTab) {
       setActiveTab(tab);
@@ -61,30 +57,18 @@ export const AboutPath = () => {
         <Image
           src={aboutpath}
           alt="aboutspath"
-          className="w-full max-w-3xl h-auto object-contain"
+          className="w-full h-auto object-contain"
           priority
         />
       </div>
-      <div className="max-w-5xl mx-auto px-4 py-12 sm:px-6 md:px-8 flex flex-col gap-8">
-        <div className="flex justify-center mb-8 relative">
-          <Image
-            src={scale}
-            alt="scale-image"
-            className="absolute -z-10 w-full -mt-24"
-          />
+      <div className="max-w-5xl mx-auto py-12 mt-14 sm:px-6 md:px-8 flex flex-col gap-8 relative">
+        <div className="flex mb-8 absolute md:-top-[40%] -top-[9%]">
+          <Image src={scale} alt="scale-image"  className="-z-10 top-0" />
         </div>
-        <div className="flex justify-center gap-2 sm:gap-4 mb-8 relative">
-          <MdOutlineArrowLeft className="text-2xl hidden sm:block" />
+        <div className="flex justify-center gap-2 sm:gap-4 mb-8 relative ">
           <ul className="flex gap-2 sm:gap-4 justify-evenly w-full">
             {tabs.map((tab) => (
               <li key={tab} className="flex items-center flex-col gap-2">
-                <span
-                  className={`font-semibold text-sm sm:text-base ${
-                    activeTab === tab ? "text-primary" : "text-border"
-                  }`}
-                >
-                  {tab}
-                </span>
                 <button
                   className={`p-2 rounded-full border transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary ${
                     activeTab === tab
@@ -95,12 +79,18 @@ export const AboutPath = () => {
                   type="button"
                   aria-label={`Show ${tab} content`}
                 />
+                <span
+                  className={`font-semibold text-sm sm:text-base capitalize ${
+                    activeTab === tab ? "text-primary" : "text-secondary"
+                  }`}
+                >
+                  {tab}
+                </span>
               </li>
             ))}
           </ul>
-          <MdOutlineArrowLeft className="rotate-180 text-2xl hidden sm:block" />
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap- px-4 ">
           <div className="w-full md:w-1/2 h-64 sm:h-80 md:h-96 flex-shrink-0 overflow-hidden">
             <div
               className={`w-full h-full transition-all duration-300 ${
@@ -122,6 +112,9 @@ export const AboutPath = () => {
                 animating ? "fade-anim" : ""
               }`}
             >
+              <h2 className="text-3xl font-600 text-primary">
+                {tabData[activeTab].title}
+              </h2>
               {tabData[activeTab].content.split("..").map((part, idx, arr) => (
                 <span key={idx} className="">
                   {part.trim()}

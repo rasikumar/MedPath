@@ -8,11 +8,8 @@ const FloatIcon = () => {
   const iconRef = useRef(null);
 
   useEffect(() => {
-    // Initially hide the element
     gsap.set(iconRef.current, { opacity: 0, visibility: "hidden" });
-
     const timer = setTimeout(() => {
-      // Make visible and animate in
       gsap.to(iconRef.current, {
         opacity: 1,
         visibility: "visible",
@@ -27,7 +24,7 @@ const FloatIcon = () => {
 
   return (
     <a
-      href={socialmediaLinks.whatsapp}
+      href={socialmediaLinks.appno}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed md:bottom-6 bottom-20 md:right-6 right-4 z-50 p-3 rounded-full shadow-lg hover:opacity-80 transition-opacity duration-300"

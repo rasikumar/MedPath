@@ -16,6 +16,7 @@ import { FaRegClock, FaTimes } from "react-icons/fa";
 import TopBar from "./TopBar";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
+import { useRouter, usePathname } from "next/navigation";
 function getTodaySchedule() {
   const days = [
     "Sunday",
@@ -37,6 +38,8 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const iconRef = useRef(null);
   const countryItems = Home_Data.countryItems;
+  const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     if (isMobileMenuOpen) {
@@ -83,6 +86,18 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const handleFaqClick = () => {
+    closeAll();
+    if (pathname === HOME_ROUTE || pathname === "/") {
+      const faqSection = document.getElementById("faq");
+      if (faqSection) {
+        faqSection.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      router.push("/#faq");
+    }
+  };
+
   return (
     <div className="w-full bg-primary top-0 sticky z-[999]">
       <nav
@@ -110,7 +125,6 @@ const Navbar = () => {
             />
           </div>
         </div>
-
         {/* Mobile Sidebar Overlay */}
         {isMobileMenuOpen && (
           <div
@@ -118,7 +132,6 @@ const Navbar = () => {
             onClick={closeAll}
           />
         )}
-
         {/* Mobile Sidebar */}
         <div
           className={`fixed top-0 left-0 h-full w-[75%] bg-white z-50 transform transition-transform duration-300 ease-in-out shadow-xl ${
@@ -179,18 +192,18 @@ const Navbar = () => {
               >
                 GALLERY
               </Link>
-              <Link
-                href={CONTACT_ROUTE}
-                className="hover:text-primary py-2 border-b"
-                onClick={closeAll}
+              <a
+                id="faq-link"
+                className="hover:text-primary py-2 md:py-0 cursor-pointer"
+                onClick={handleFaqClick}
               >
-                CONTACT
-              </Link>
+                FAQ
+              </a>
             </div>
 
             <div className="mt-8">
-              <Button href="/apply" className="w-full justify-center">
-                APPLY NOW
+              <Button href={CONTACT_ROUTE} className="w-full justify-center">
+                CONTACT NOW
               </Button>
             </div>
             <div className="flex flex-col gap-2 mt-4">
@@ -214,8 +227,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-
-        {/* Desktop Navigation */}
         <div className="hidden md:flex md:flex-row md:items-center md:space-x-6 font-medium">
           <div className="flex flex-col md:flex-row gap-4 md:gap-14 text-text font-500">
             <Link
@@ -252,19 +263,18 @@ const Navbar = () => {
             >
               GALLERY
             </Link>
-            <Link
-              href={CONTACT_ROUTE}
-              className="hover:text-primary py-2 md:py-0"
-              onClick={closeAll}
+            <a
+              id="faq-link"
+              className="hover:text-primary py-2 md:py-0 cursor-pointer"
+              onClick={handleFaqClick}
             >
-              CONTACT
-            </Link>
+              FAQ
+            </a>
           </div>
         </div>
-
         {/* CTA Button - desktop */}
         <div className="hidden md:flex items-center">
-          <Button href="/apply">APPLY NOW</Button>
+          <Button href={CONTACT_ROUTE}>CONTACT NOW</Button>
         </div>
       </nav>
     </div>

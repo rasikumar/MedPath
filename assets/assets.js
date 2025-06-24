@@ -72,20 +72,31 @@ import about_4 from "./aboutus/about_4.webp";
 import BookImage from "./aboutus/about_1_shape1.webp";
 
 //aboutus Page
-import aboutheader from "./aboutUsPage/aboutheader.png";
+import aboutheader from "./aboutUsPage/aboutheader.webp";
 import abouthero from "./aboutUsPage/abouthero.png";
 import aboutpath from "./aboutUsPage/aboutpath.png";
 import abouthero2 from "./aboutUsPage/abouthero2.jpeg";
 import missionImage from "./aboutUsPage/missionImage.png";
 import Our_Goal from "./aboutUsPage/Our Goal.webp";
 import Our_vission from "./aboutUsPage/Our vission.webp";
-import scale from "./aboutUsPage/scale.jpg";
+import scale from "./aboutUsPage/scale.png";
 import aboutbg from "./aboutUsPage/aboutbg.png";
 
 //footer images
 import Footerbg from "./Footer/footer-bg1.webp";
 import Footershape1 from "./Footer/footershape1.webp";
 import Footershape2 from "./Footer/footershape2.webp";
+
+// gallery images
+import {
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+} from "./gallery/index.js";
 
 export {
   Banner_1,
@@ -175,4 +186,13 @@ export {
   Footerbg,
   Footershape1,
   Footershape2,
+
+  //gallery
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
 };

@@ -13,13 +13,16 @@ const FaqSection = () => {
   };
 
   return (
-    <section className="py-16 px-4 sm:px-6 md:px-8 lg:px-20 max m-auto w-full">
+    <section
+      id="faq"
+      className="py-16 px-4 sm:px-6 md:px-8 lg:px-20 max m-auto w-full"
+    >
       <div className="flex flex-col md:flex-row md:justify-between md:items-start w-full gap-8 md:gap-0">
         <div className="mb-8 md:mb-0 md:w-1/2 flex flex-col items-center md:items-start">
           <h6 className="text-base text-primary font-medium text-center md:text-left mb-2 w-full md:w-96">
             {faqContent.title}
           </h6>
-          <h2 className="text-2xl font-manrope text-center md:text-left font-bold text-text w-full">
+          <h2 className="mt-2 md:text-4xl text-3xl font-bold text-text">
             {faqContent.description}
           </h2>
           <div className="flex flex-col gap-4 mt-4 w-full">
