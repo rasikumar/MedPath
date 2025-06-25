@@ -46,9 +46,9 @@ const ContactDetails = () => {
           <div className="flex items-center gap-6">
             <IoLocationOutline />
             <address className="not-italic text-lg mb-4 leading-relaxed">
-              Groundfloor, <br /> 471, W First Cross St, <br />
-              Mellur, KK Nagar, <br />
-              Madurai, Tamil Nadu 625020
+              Rainbow apartment, Meenakshi Nagar Rd, <br /> Iyer Bungalow to Moondrumavadi Main Rd, <br />
+              Kannanenthal<br />
+              Madurai, Tamil Nadu 625014
             </address>
           </div>
           <a
