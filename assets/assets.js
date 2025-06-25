@@ -98,6 +98,9 @@ import {
   image7,
 } from "./gallery/index.js";
 
+// country
+import { countryBg } from "./countryImage/index.js";
+
 export {
   Banner_1,
   MiniBanner_1,
@@ -157,7 +160,7 @@ export {
   SmolenexLogo,
   SouthKazakLogo,
 
-  // Country Image
+  // Country flag Image
   italyFlag,
   kazakstanFlag,
   kyrgyzstanFlag,
@@ -195,4 +198,7 @@ export {
   image5,
   image6,
   image7,
+
+  // countryImage,
+  countryBg,
 };

@@ -45,7 +45,15 @@ import {
   image6,
   image7,
 } from "@/assets/gallery";
-import { ABOUT_ROUTE, CONTACT_ROUTE } from "@/utils/routes";
+import {
+  ABOUT_ROUTE,
+  CONTACT_ROUTE,
+  KAZAKHSTAN_ROUTE,
+  KYRGYZSTAN_ROUTE,
+  RUSSIA_ROUTE,
+  UZBEKISTAN_ROUTE,
+  VIETNAM_ROUTE,
+} from "@/utils/routes";
 
 export const Home_Data = {
   hero_section: [
@@ -700,11 +708,11 @@ export const Home_Data = {
     ],
   },
   countryItems: [
-    { id: 5, label: "MBBS IN Uzbekistan", href: "/countries/uzbekistan" },
-    { id: 2, label: "MBBS in Kyrgyzstan", href: "/countries/kyrgyzstan" },
-    { id: 3, label: "MBBS in Kazakhstan", href: "/countries/kazakhstan" },
-    { id: 1, label: "MBBS in Russia", href: "/countries/russia" },
-    { id: 4, label: "MBBS IN Vietnam", href: "/countries/vietnam" },
+    { id: 5, label: "MBBS IN Uzbekistan", href: UZBEKISTAN_ROUTE },
+    { id: 2, label: "MBBS in Kyrgyzstan", href: KYRGYZSTAN_ROUTE },
+    { id: 3, label: "MBBS in Kazakhstan", href: KAZAKHSTAN_ROUTE },
+    { id: 1, label: "MBBS in Russia", href: RUSSIA_ROUTE },
+    { id: 4, label: "MBBS IN Vietnam", href: VIETNAM_ROUTE },
   ],
 };
 
@@ -786,6 +794,73 @@ export const galleryImages = [
     alt: "Gallery Image 7",
   },
 ];
+
+export const countries = {
+  "study-mbbs-in-russia": {
+    name: "Study MBBS in Russia",
+    logo: "/assets/logos/harvard.png",
+    intro: {
+      title: "MBBS In Russia - Introduction",
+      points: [
+        "For most students, choosing to study MBBS in Russia is the ultimate destination for higher studies in this field. Considering globally recognized MBBS programs in Russia, very affordable tuition fees, and highly regarded education standards, studying MBBS in Russia is the latest trend among not only Indian but also other international students. The year 2025 and the time thereafter guarantee better prospects as a greater number of students would find their medical career ambitions being satiated with studies in Russia.",
+        "The medical schools in Russia hold high-tech facilities, highly trained staff, and most importantly, a curriculum suitable enough to be adjusted to international level standards. That's why there are many good NMC-approved medical colleges in Russia that make all the process of taking a licensing exam in India or any other country's territory after an educational institution's graduation extremely easy.",
+        "The admission process for MBBS in Russia is fairly easy and hassle-free, and for eligibility, students need not appear in any entrance test. The fee structure of pursuing MBBS in Russia is highly affordable; thus, the country could be easily affordable for various sections of the economy. On the other side, some programs were provided in the English language as well, due to which many non-Russian speakers can target medical colleges in Russia to get their higher medical education in a foreign environment. For 2025, the focus remains on providing a hassle-free admission process for MBBS in Russia and helping students cope with the multicultural environment. The advantages of studying MBBS in Russia include practical exposure, globally respected degrees, and excellent career prospects worldwide.",
+      ],
+    },
+  },
+  "study-mbbs-in-uzbekistan": {
+    name: "Study MBBS in Uzbekistan",
+    logo: "/assets/logos/stanford.png",
+    intro: {
+      title: "MBBS In uzbekistan - Introduction",
+      points: [
+        "The 2025-26 batch for studying MBBS in Uzbekistan is proving to be very good for students from other nations, especially students from India, since the number of medical aspirants has grown year by year looking for quality study abroad. Among all factors, it has emerged in the top choice of lists of students as a destination country to study medicine in Uzbekistan.",
+        "TIts has a number of Universities for MBBS in Uzbekistan offering MBBS programs in the English medium, which makes it rather easy for international students to cope with the curriculum without any language barriers. MBBS programs in Uzbekistan usually take six years that include theoretical learning, clinical practice, and internships. Medical colleges in Uzbekistan are accredited by the WHO and National Medical Commission, hence degrees are accepted all over the world.",
+        "It is relatively not so expensive to study MBBS in Uzbekistan when considering other countries that teach medical studies abroad. The fee structure is at an affordable rate, considering that most universities have attached facilities for stay purposes at modest rates. The fees required in the Medical College in Uzbekistan are considerably within reach, making Uzbekistan a real deal for seekers of quality at an economic education.",
+        "Studying MBBS in Uzbekistan provides the advantage of diversity and cultural exposure, with traditions of Central Asia combined with modern living. The living cost is lower compared to many Western countries and therefore more affordable for international students. Moreover, after completing MBBS in Uzbekistan, the prospects for a bright job in Uzbekistan and all over the world include postgraduate study and going back to their home country to practice. Conclusively, students from Uzbekistan finally get MBBS admission with affordability and international recognition at an appreciable cost while building their futures in this sphere as a medical professional for the year 2025-26.",
+      ],
+    },
+  },
+  "study-mbbs-in-kazakhstan": {
+    name: "Study MBBS in Kazakhstan",
+    logo: "/assets/logos/stanford.png",
+    intro: {
+      title: "MBBS In Kazakhstan - Introduction",
+      points: [
+        "The 2025-26 batch for studying MBBS in Uzbekistan is proving to be very good for students from other nations, especially students from India, since the number of medical aspirants has grown year by year looking for quality study abroad. Among all factors, it has emerged in the top choice of lists of students as a destination country to study medicine in Uzbekistan.",
+        "TIts has a number of Universities for MBBS in Uzbekistan offering MBBS programs in the English medium, which makes it rather easy for international students to cope with the curriculum without any language barriers. MBBS programs in Uzbekistan usually take six years that include theoretical learning, clinical practice, and internships. Medical colleges in Uzbekistan are accredited by the WHO and National Medical Commission, hence degrees are accepted all over the world.",
+        "It is relatively not so expensive to study MBBS in Uzbekistan when considering other countries that teach medical studies abroad. The fee structure is at an affordable rate, considering that most universities have attached facilities for stay purposes at modest rates. The fees required in the Medical College in Uzbekistan are considerably within reach, making Uzbekistan a real deal for seekers of quality at an economic education.",
+        "Studying MBBS in Uzbekistan provides the advantage of diversity and cultural exposure, with traditions of Central Asia combined with modern living. The living cost is lower compared to many Western countries and therefore more affordable for international students. Moreover, after completing MBBS in Uzbekistan, the prospects for a bright job in Uzbekistan and all over the world include postgraduate study and going back to their home country to practice. Conclusively, students from Uzbekistan finally get MBBS admission with affordability and international recognition at an appreciable cost while building their futures in this sphere as a medical professional for the year 2025-26.",
+      ],
+    },
+  },
+  "study-mbbs-in-kyrgyzstan": {
+    name: "Study MBBS in Kyrgyzstan",
+    logo: "/assets/logos/stanford.png",
+    intro: {
+      title: "MBBS In Kyrgyzstan - Introduction",
+      points: [
+        "The 2025-26 batch for studying MBBS in Uzbekistan is proving to be very good for students from other nations, especially students from India, since the number of medical aspirants has grown year by year looking for quality study abroad. Among all factors, it has emerged in the top choice of lists of students as a destination country to study medicine in Uzbekistan.",
+        "TIts has a number of Universities for MBBS in Uzbekistan offering MBBS programs in the English medium, which makes it rather easy for international students to cope with the curriculum without any language barriers. MBBS programs in Uzbekistan usually take six years that include theoretical learning, clinical practice, and internships. Medical colleges in Uzbekistan are accredited by the WHO and National Medical Commission, hence degrees are accepted all over the world.",
+        "It is relatively not so expensive to study MBBS in Uzbekistan when considering other countries that teach medical studies abroad. The fee structure is at an affordable rate, considering that most universities have attached facilities for stay purposes at modest rates. The fees required in the Medical College in Uzbekistan are considerably within reach, making Uzbekistan a real deal for seekers of quality at an economic education.",
+        "Studying MBBS in Uzbekistan provides the advantage of diversity and cultural exposure, with traditions of Central Asia combined with modern living. The living cost is lower compared to many Western countries and therefore more affordable for international students. Moreover, after completing MBBS in Uzbekistan, the prospects for a bright job in Uzbekistan and all over the world include postgraduate study and going back to their home country to practice. Conclusively, students from Uzbekistan finally get MBBS admission with affordability and international recognition at an appreciable cost while building their futures in this sphere as a medical professional for the year 2025-26.",
+      ],
+    },
+  },
+  "study-mbbs-in-vietnam": {
+    name: "Study MBBS in Vietnam",
+    logo: "/assets/logos/stanford.png",
+    intro: {
+      title: "MBBS In Vietnam - Introduction",
+      points: [
+        "The 2025-26 batch for studying MBBS in Uzbekistan is proving to be very good for students from other nations, especially students from India, since the number of medical aspirants has grown year by year looking for quality study abroad. Among all factors, it has emerged in the top choice of lists of students as a destination country to study medicine in Uzbekistan.",
+        "TIts has a number of Universities for MBBS in Uzbekistan offering MBBS programs in the English medium, which makes it rather easy for international students to cope with the curriculum without any language barriers. MBBS programs in Uzbekistan usually take six years that include theoretical learning, clinical practice, and internships. Medical colleges in Uzbekistan are accredited by the WHO and National Medical Commission, hence degrees are accepted all over the world.",
+        "It is relatively not so expensive to study MBBS in Uzbekistan when considering other countries that teach medical studies abroad. The fee structure is at an affordable rate, considering that most universities have attached facilities for stay purposes at modest rates. The fees required in the Medical College in Uzbekistan are considerably within reach, making Uzbekistan a real deal for seekers of quality at an economic education.",
+        "Studying MBBS in Uzbekistan provides the advantage of diversity and cultural exposure, with traditions of Central Asia combined with modern living. The living cost is lower compared to many Western countries and therefore more affordable for international students. Moreover, after completing MBBS in Uzbekistan, the prospects for a bright job in Uzbekistan and all over the world include postgraduate study and going back to their home country to practice. Conclusively, students from Uzbekistan finally get MBBS admission with affordability and international recognition at an appreciable cost while building their futures in this sphere as a medical professional for the year 2025-26.",
+      ],
+    },
+  },
+};
 
 export const daySchedules = {
   Sunday: "10:00AM - 5.00PM",
