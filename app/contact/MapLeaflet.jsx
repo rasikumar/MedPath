@@ -15,9 +15,9 @@ const icon = L.icon({
 });
 
 const address = {
-  lat: 28.6139, // Example: New Delhi latitude
-  lng: 77.209, // Example: New Delhi longitude
-  label: "Active Address: New Delhi, India",
+  lat: 9.966168, // Example: New Delhi latitude
+  lng: 78.137718, // Example: New Delhi longitude
+  label: "Madurai, Tamil Nadu.", // Example label
 };
 
 const MapLeaflet = () => {
@@ -30,7 +30,7 @@ const MapLeaflet = () => {
   }, []);
 
   return (
-      <section style={{ height: "600px", width: "100%" }}>
+    <section style={{ height: "600px", width: "100%" }}>
       <MapContainer
         center={[address.lat, address.lng]}
         style={{ height: "100%", width: "100%" }}

@@ -18,16 +18,19 @@ const ContactInfo = [
     icon: <FaPhoneAlt className="text-white text-xl" />,
     title: "Call us any time:",
     value: "+91 73057 02699",
+    link: "tel:+91 73057 02699",
   },
   {
     icon: <FaEnvelope className="text-white text-xl" />,
     title: "Email us 24/7 hours:",
     value: "omedpath@gmail.com",
+    link: "mailto:omedpath@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt className="text-white text-xl" />,
     title: "Our Office Location:",
     value: "Madurai, Tamil Nadu",
+    link: "https://www.google.com/maps/place/Madurai,+Tamil+Nadu/@9.9178343,78.0816238,13z/data=!3m1!4b1!4m6!3m5!1s0x3b00c582b1189633:0xdc955b7264f63933!8m2!3d9.9252007!4d78.1197754!16zL20vMDE5ZmJw?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
   },
 ];
 
@@ -62,7 +65,12 @@ const Footer = () => {
                 </div>
                 <div className="md:text-left ">
                   <p className="text-sm text-gray-300 mb-1">{item.title}</p>
-                  <p className="font-semibold text-white">{item.value}</p>
+                  <Link
+                    href={item.link || ""}
+                    className="font-semibold text-white"
+                  >
+                    {item.value}
+                  </Link>
                 </div>
               </div>
             ))}
