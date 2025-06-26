@@ -263,7 +263,7 @@ const Footer = () => {
       />
 
       <div className="relative z-10 text-center text-gray-400 text-sm py-4 border-t border-blue-900/30">
-        Copyright {new Date().getFullYear()} MedPath, All Rights Reserved.
+        Copyright {new Date().getFullYear()} MedPath overseas, All Rights Reserved.
       </div>
     </footer>
   );

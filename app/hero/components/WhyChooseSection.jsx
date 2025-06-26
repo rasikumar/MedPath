@@ -48,8 +48,8 @@ const WhyChooseSection = () => {
           >
             <h2 className="md:text-4xl text-3xl font-bold">
               Unlock Your{" "}
-              <span className="text-primary">Medical Dreams Abroad:</span> Study
-              Doctor, Your Trusted Companion.
+              <span className="text-primary">Medical Dreams Abroad:</span> Med
+              Path, Your Trusted Companion.
             </h2>
           </MotionSection>
           <MotionSection
