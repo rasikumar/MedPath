@@ -1,7 +1,5 @@
 import {
-  aboutheader,
   abouthero,
-  abouthero2,
   AL,
   ALLogo,
   Andijan,
@@ -15,10 +13,12 @@ import {
   InternationalLogo,
   italyFlag,
   jalalabadlogo,
+  kazakhstan,
   KazakLogo,
   kazakstanFlag,
   kazan,
   KuruskLogo,
+  Kyrgyzstan,
   kyrgyzstanFlag,
   MiniBanner_1,
   MiniBanner_2,
@@ -28,6 +28,7 @@ import {
   Our_Goal,
   Our_vission,
   PhanChauLogo,
+  Russia,
   russiaFlag,
   SamarkandLogo,
   SiberianLogo,
@@ -35,6 +36,8 @@ import {
   SouthKazakLogo,
   TashkentLogo,
   uzbekistanFlag,
+  uzebekistan,
+  vietnam,
 } from "@/assets/assets";
 import {
   image1,
@@ -422,10 +425,10 @@ export const Home_Data = {
     title: "Consult With Our Expert",
     description:
       "Personalized guidance for your medical journey. Choose Study Doctor now",
-    youtube_id: "NBDLr7I8eZM",
+    youtube_id: "yInv4pUy_Hs",
     button: {
       label: "GET STARTED",
-      link: "/consult",
+      link: CONTACT_ROUTE,
     },
   },
   our_services: {
@@ -471,7 +474,7 @@ export const Home_Data = {
       "Discover your path to a medical career with Study Doctor. Benefit from expert guidance, a global network of top-tier universities, and comprehensive services tailored to your needs. Let us simplify your journey to studying MBBS abroad, ensuring a seamless transition and a rewarding educational experience.",
     button: {
       label: "Learn More",
-      link: { ABOUT_ROUTE },
+      link: ABOUT_ROUTE,
     },
     approved_by: [
       {
@@ -530,8 +533,8 @@ export const Home_Data = {
     description:
       "We're here to help you unlock your medical dreams abroad. Let's start by learning more about studying MBBS abroad, exploring popular countries, and understanding the benefits of our services.",
     button: {
-      label: "Learn More",
-      link: { ABOUT_ROUTE },
+      label: "CONTACT US NOW",
+      link: ABOUT_ROUTE,
     },
   },
 
@@ -719,18 +722,18 @@ export const Home_Data = {
 export const About_Page_data = {
   aboutContents: {
     span: "About Us",
-    title: "Euro Study Abroad Education Consultants",
+    title: "Med Path Abroad Education Consultants",
     description_one:
-      "Euro Study Abroad was founded with a mission to empower students with the knowledge and resources they need to achieve their academic and career goals. Our team of experienced consultants offers personalized advice and tailor-made solutions to ensure each student finds the right path to success.",
+      "Med Path Abroad was founded with a mission to empower students with the knowledge and resources they need to achieve their academic and career goals. Our team of experienced consultants offers personalized advice and tailor-made solutions to ensure each student finds the right path to success.",
     description_two:
-      "With years of experience and a deep understanding of the global education system, we have built a reputation for excellence and reliability. Whether you are looking for undergraduate programs, postgraduate studies, or specialized courses, Euro Study Abroad is here to guide you every step of the way.",
+      "With years of experience and a deep understanding of the global education system, we have built a reputation for excellence and reliability. Whether you are looking for undergraduate programs, postgraduate studies, or specialized courses, Med Path Abroad is here to guide you every step of the way.",
     image: {
       src: abouthero,
-      alt: "Euro Study Abroad Education Consultants",
+      alt: "Med Path Abroad Education Consultants",
     },
     image2: {
-      src: abouthero2,
-      alt: "Euro Study Abroad Education Consultants",
+      src: image6,
+      alt: "Med Path Abroad Education Consultants",
     },
   },
   aboutTabData: {
@@ -740,7 +743,7 @@ export const About_Page_data = {
         "1.Empower students to dream beyond borders..2.Create a world-class platform for transparent, ethical, and student-first guidance..3.Build a community of globally trained medical professionals who contribute meaningfully to healthcare worldwide..4.Set new standards in overseas education consultancy through integrity, innovation, and care..",
       image: {
         src: missionImage,
-        alt: "Euro Study Abroad Education Consultants",
+        alt: "Med Path Abroad Education Consultants",
       },
     },
     vision: {
@@ -749,7 +752,7 @@ export const About_Page_data = {
         "1.Helping students access affordable and accredited medical universities worldwide..2.Delivering clear, honest advice with no hidden information or false promises..3.Offering end-to-end support — from application to accommodation..4.Promoting academic excellence and cultural adaptability in future healthcare leaders..",
       image: {
         src: Our_vission,
-        alt: "Euro Study Abroad Education Consultants",
+        alt: "Med Path Abroad Education Consultants",
       },
     },
     goal: {
@@ -758,7 +761,7 @@ export const About_Page_data = {
         "1.Bridge the gap between talented students and top international medical universities..2.Provide honest guidance tailored to each student’s aspirations and academic profile..3.Support every step of the journey — from university selection and admission to visa processing and post-arrival assistance..4.Foster confident, globally competent doctors ready to serve communities around the world..",
       image: {
         src: Our_Goal,
-        alt: "Euro Study Abroad Education Consultants",
+        alt: "Med Path Abroad Education Consultants",
       },
     },
   },
@@ -806,32 +809,103 @@ export const countries = {
         "The medical schools in Russia hold high-tech facilities, highly trained staff, and most importantly, a curriculum suitable enough to be adjusted to international level standards. That's why there are many good NMC-approved medical colleges in Russia that make all the process of taking a licensing exam in India or any other country's territory after an educational institution's graduation extremely easy.",
         "The admission process for MBBS in Russia is fairly easy and hassle-free, and for eligibility, students need not appear in any entrance test. The fee structure of pursuing MBBS in Russia is highly affordable; thus, the country could be easily affordable for various sections of the economy. On the other side, some programs were provided in the English language as well, due to which many non-Russian speakers can target medical colleges in Russia to get their higher medical education in a foreign environment. For 2025, the focus remains on providing a hassle-free admission process for MBBS in Russia and helping students cope with the multicultural environment. The advantages of studying MBBS in Russia include practical exposure, globally respected degrees, and excellent career prospects worldwide.",
       ],
+      image: {
+        src: Russia,
+        alt: "Study MBBS in Russia",
+      },
+      about: {
+        title: "About Russia",
+        points: [
+          "Russia is the biggest country in the world, combining the most interesting features of history, culture, and modern development. It occupies the two parts of continents: Europe and Asia, with breathtaking landscapes, vibrant cities, and a very rich cultural heritage.",
+          "For international students, Russia can offer a very reasonable combination of affordability in living and staying while being hospitable. Living in Russia as a medical student is quite an opportunity lively city with excellent educational facilities. Excellent infrastructure, efficient public transportation, and a variety of cuisines make it stand out. Some cities, like Moscow and Saint Petersburg, present modern facilities with a historical touch in their buildings, while others serve as an amalgamation point for students from various backgrounds. From the fascinating beauty of Red Square to the mesmerizing Lake Baikal, the country is indeed a hub that will make your experience rewarding beyond academics.",
+        ],
+      },
+    },
+    why_study: {
+      title: "Why Study MBBS In Russia 2025 - 26?",
+      points: [
+        "For a long time, Russia has been one of the top priorities for medical aspirants from all over the world, and it is continue in 2025. It is the perfect combination of quality education, reasonably affordable costs, and worldwide recognition that makes an ideal destination to study MBBS in Russia.",
+        "Among the highlights of the MBBS program in Russia is their affordability. Tuition and the cost of MBBS in Russia, as well as the living expenses, are much cheaper in comparison with many countries of Western economy and without any sacrifice of quality. Moreover, most universities provide programs in English, which thus means no need to learn the local language.",
+      ],
+    },
+    accomadation: {
+      title: "Indian Food and Facility For Indian Students",
+      content:
+        "While living in Russia as a medical student, food and accommodation are the major factors that students keep in mind. The universities in Russia have very affordable accommodation options; most of them offer hostels for international students. These hostels are facilitated with all the necessary facilities that ensure a comfortable living environment for the students. There are numerous Indian restaurants in Russia for Indian students, serving home-style meals at an affordable price. Many students also prefer cooking their own food; university hostels have kitchen facilities in many instances. The easy availability of affordable food options makes the stay in Russia quite convenient for Indian students. Generally speaking, living in Russia is not too expensive, and with a host of accommodation and food alternatives available to suit the lifestyles of international students, there is ample reason to feel at home while pursuing an MBBS in Russia.",
     },
   },
   "study-mbbs-in-uzbekistan": {
     name: "Study MBBS in Uzbekistan",
     logo: "/assets/logos/stanford.png",
     intro: {
-      title: "MBBS In uzbekistan - Introduction",
+      title: "MBBS In uzbekistan - Introdution",
       points: [
         "The 2025-26 batch for studying MBBS in Uzbekistan is proving to be very good for students from other nations, especially students from India, since the number of medical aspirants has grown year by year looking for quality study abroad. Among all factors, it has emerged in the top choice of lists of students as a destination country to study medicine in Uzbekistan.",
-        "TIts has a number of Universities for MBBS in Uzbekistan offering MBBS programs in the English medium, which makes it rather easy for international students to cope with the curriculum without any language barriers. MBBS programs in Uzbekistan usually take six years that include theoretical learning, clinical practice, and internships. Medical colleges in Uzbekistan are accredited by the WHO and National Medical Commission, hence degrees are accepted all over the world.",
+        "Its has a number of Universities for MBBS in Uzbekistan offering MBBS programs in the English medium, which makes it rather easy for international students to cope with the curriculum without any language barriers. MBBS programs in Uzbekistan usually take six years that include theoretical learning, clinical practice, and internships. Medical colleges in Uzbekistan are accredited by the WHO and National Medical Commission, hence degrees are accepted all over the world.",
         "It is relatively not so expensive to study MBBS in Uzbekistan when considering other countries that teach medical studies abroad. The fee structure is at an affordable rate, considering that most universities have attached facilities for stay purposes at modest rates. The fees required in the Medical College in Uzbekistan are considerably within reach, making Uzbekistan a real deal for seekers of quality at an economic education.",
         "Studying MBBS in Uzbekistan provides the advantage of diversity and cultural exposure, with traditions of Central Asia combined with modern living. The living cost is lower compared to many Western countries and therefore more affordable for international students. Moreover, after completing MBBS in Uzbekistan, the prospects for a bright job in Uzbekistan and all over the world include postgraduate study and going back to their home country to practice. Conclusively, students from Uzbekistan finally get MBBS admission with affordability and international recognition at an appreciable cost while building their futures in this sphere as a medical professional for the year 2025-26.",
       ],
+      image: {
+        src: uzebekistan,
+        alt: "Study MBBS in uzbekistan",
+      },
+      about: {
+        title: "About Uzbekistan",
+        points: [
+          "Uzbekistan is a Central Asian country steeped in history, culture, and natural beauty. Its neighbors are Kazakhstan, Kyrgyzstan, Tajikistan, Afghanistan, and Turkmenistan. With the inclusion of such ancient cities as Samarkand, Bukhara, and Khiva, Uzbekistan is an important center along the Silk Road-the one that has connected the East and the West for many centuries. Modern Tashkent, the capital, is a modern city with many buildings from that time, in addition to developed modern infrastructure. Uzbekistan is also famous for its rich cultural heritage: traditional music, dance, and cuisine. The country boasts deserts, mountains, and very fertile plains, together showing nature in its particular beauty. Uzbekistan has made great progress in modernizing its economy and infrastructure, which makes it a very attractive destination for international students. The country is very friendly towards foreign nationals, and the cost of living is relatively cheap, making it an ideal place to live and study.",
+        ],
+      },
+    },
+    why_study: {
+      title: "Why Study MBBS in Uzbekistan 2025 - 26?",
+      points: [
+        "Studying MBBS in Uzbekistan 2025-26 will be a great opportunity for foreign students who want to pursue quality medical education at an affordable price. Medical universities in Uzbekistan are well-known for their high-quality faculty, modern infrastructure, and practical training, which create an excellent environment for the students.",
+        "Another major reason why study MBBS in Uzbekistan is considered an excellent option because of the affordable cost. As compared to other countries, MBBS programs in Uzbekistan are pretty affordable regarding tuition fees and living expenses. Thus, this attracts a great number of students all over the world, especially students from India and other South Asian nations. The MBBS programs in Uzbekistan are accredited by the most recognized international medical bodies, including the WHO and NMC, meaning students graduating here will have a chance to work anywhere in the world. In addition, most of the medical schools in Uzbekistan offer their programs in English, further enhancing the ease of access for international students by removing the barriers that may come with studying in a foreign language and enabling them to focus on their studies.",
+        "Besides, cultural diversity, a friendly atmosphere, and modern infrastructure make the studying process really enriching for future doctors in Uzbekistan. Focusing on practical training, students get advantages in further employment after graduation. In the end, studying MBBS in Uzbekistan during 2025-26 is going to be one of the best and most famous destinations among students as it offers affordability with high-quality education and provides world-class recognition.",
+      ],
+    },
+    accomadation: {
+      title: "Indian Food and Facility For Indian Students",
+      content:
+        "While living in Uzbekistan as a medical student, food and accommodation are the major factors that students keep in mind. The universities in Uzbekistan have very affordable accommodation options; most of them offer hostels for international students. These hostels are facilitated with all the necessary facilities that ensure a comfortable living environment for the students. There are numerous Indian restaurants in Uzbekistan for Indian students, serving home-style meals at an affordable price. Many students also prefer cooking their own food; university hostels have kitchen facilities in many instances. The easy availability of affordable food options makes the stay in Uzbekistan quite convenient for Indian students. Generally speaking, living in Uzbekistan is not too expensive, and with a host of accommodation and food alternatives available to suit the lifestyles of international students, there is ample reason to feel at home while pursuing an MBBS in Uzbekistan.",
     },
   },
   "study-mbbs-in-kazakhstan": {
     name: "Study MBBS in Kazakhstan",
     logo: "/assets/logos/stanford.png",
     intro: {
-      title: "MBBS In Kazakhstan - Introduction",
+      title: "MBBS IN Kazakhstan - introduction",
       points: [
-        "The 2025-26 batch for studying MBBS in Uzbekistan is proving to be very good for students from other nations, especially students from India, since the number of medical aspirants has grown year by year looking for quality study abroad. Among all factors, it has emerged in the top choice of lists of students as a destination country to study medicine in Uzbekistan.",
-        "TIts has a number of Universities for MBBS in Uzbekistan offering MBBS programs in the English medium, which makes it rather easy for international students to cope with the curriculum without any language barriers. MBBS programs in Uzbekistan usually take six years that include theoretical learning, clinical practice, and internships. Medical colleges in Uzbekistan are accredited by the WHO and National Medical Commission, hence degrees are accepted all over the world.",
-        "It is relatively not so expensive to study MBBS in Uzbekistan when considering other countries that teach medical studies abroad. The fee structure is at an affordable rate, considering that most universities have attached facilities for stay purposes at modest rates. The fees required in the Medical College in Uzbekistan are considerably within reach, making Uzbekistan a real deal for seekers of quality at an economic education.",
-        "Studying MBBS in Uzbekistan provides the advantage of diversity and cultural exposure, with traditions of Central Asia combined with modern living. The living cost is lower compared to many Western countries and therefore more affordable for international students. Moreover, after completing MBBS in Uzbekistan, the prospects for a bright job in Uzbekistan and all over the world include postgraduate study and going back to their home country to practice. Conclusively, students from Uzbekistan finally get MBBS admission with affordability and international recognition at an appreciable cost while building their futures in this sphere as a medical professional for the year 2025-26.",
+        "Study MBBS in Kazakhstan is rapidly becoming a leading destination for students to study MBBS in abroad. The perfect blend of affordability, world-class education, and globally recognized degrees attract students to study the MBBS in Kazakhstan 2025-26 program from all parts of the world.",
+        "Medical universities in Kazakhstan, like Al-Farabi Kazakh National University and Astana Medical University, are among the best academically and with modern infrastructure. They offer the MBBS program in English, thus accommodating a large number of international students. The program structure focuses on practical exposure, and students engage in hands-on training in fully equipped laboratories and hospitals affiliated with the institution.",
+        "One of the major advantages of study MBBS in Kazakhstan is affordability. The Kazakhstan Medical Colleges Fees are much lower than in countries like the USA or UK, thereby much more cost-effective for medical aspirants. Additionally, the living expenditure in Kazakhstan is very affordable, including accommodation, food, and transport.",
+        "There are advantages for study MBBS in Kazakhstan for Indian students. Most medical universities in kazakhstan are approved with the National Medical Commission of India, hence assuring eligibility to practice in India upon successful completion of the licensure examination. Multicultural atmosphere, experienced faculties, and international medical exposure eventually help students pursue their successful career in medicine.",
+        "The admission procedure for MBBS in Kazakhstan is quite simple, and most universities do not take any test for admission. Aspiring students should send their applications early in order to be assured of an admission for the academic year 2025-26. Students choosing MBBS in Kazakhstan will very well assure themselves quality education, affordable fees, and a bright future ahead in medicine.",
       ],
+      image: {
+        src: kazakhstan,
+        alt: "Study MBBS in Kazakhstan",
+      },
+      about: {
+        title: "About Kazakhstan",
+        points: [
+          "Kazakhstan is a vast country and forms the chief part of Central Asia, rich in history and full of diversity in culture with incredibly beautiful landscapes, bordering Russia and China in the east; it is a vital higher education hub for international students. Cities in Kazakhstan offer a combination of modern architecture with rich cultural heritage and include Almaty and Nur-Sultan cities. These urban centers can boast excellent students' facilities at world-class level, infrastructure, health care, and transportation systems.",
+          "All kazakhstan medical university are recognized globally because of their academic excellence. The students who opt for MBBS study in Kazakhstan will be provided with a secure and friendly environment that enables them to feel at home and have a safe stay. The locals are very warm and welcoming, hence international students can easily adapt to their lifestyles. Starting from the white-headed crane-like Tian Shan Mountains to endless steppes, Kazakhstan offers varieties for students to explore and take their mind off things during studies. It is a very affordable country, with student-friendly policies, making Kazakhstan an ideal destination for a vibrant academic life and cultural experience.",
+        ],
+      },
+    },
+    why_study: {
+      title: "Why Study MBBS In Kazakhstan 2025 - 26?",
+      points: [
+        "With world-class medical education and relatively cheap fees, Study MBBS in Kazakhstan is becoming one of the most favorite destination. It provides excellent education combined with modern infrastructure and multi-ethnic diversity, which no other country offers to international students, especially students from India.",
+        "The MBBS programs in Kazakhstan are designed and projected in such a way that it is able to fulfill the global requirements for quality medical training for the students both in theoretical and practical aspects. Some universities, including Al-Farabi Kazakh National University and Astana Medical University, have international recognition, hence students graduating from such universities will be able to practice any part of the world as their medical degrees will be accepted by medical councils around the world. Study MBBS in Kazakhstan can be considered one of the major reasons for affordability in 2025. Kazakhstan mbbs fees are very low as compared to Western countries, which makes Kazakhstan the attraction for students in search of quality education at an affordable price. Besides, the living expenses in Kazakhstan are also affordable, and students can find reasonable accommodation and enjoy daily expenses without financial strain.",
+        "Moreover, the admission process in most universities of Kazakhstan to pursue an MBBS is quite simple and easy. Many medical universities in kazakhstan do not conduct entrance tests, making it easier for the students as many times students are not able to prepare long entrance tests due to one reason or another. Thus, Kazakhstan offers international students a very enriching experience academically and culturally due to the security and multicultural atmosphere. Combining all these factors, Kazakhstan, in 2025, would be a premier destination for medical students who want high-quality yet affordable education.",
+      ],
+    },
+    accomadation: {
+      title: "Indian Food and Facility For Indian Students",
+      content:
+        "While living in Kazakhstan as a medical student, food and accommodation are the major factors that students keep in mind. The universities in Kazakhstan have very affordable accommodation options; most of them offer hostels for international students. These hostels are facilitated with all the necessary facilities that ensure a comfortable living environment for the students. There are numerous Indian restaurants in Kazakhstan for Indian students, serving home-style meals at an affordable price. Many students also prefer cooking their own food; university hostels have kitchen facilities in many instances. The easy availability of affordable food options makes the stay in Kazakhstan quite convenient for Indian students. Generally speaking, living in Kazakhstan is not too expensive, and with a host of accommodation and food alternatives available to suit the lifestyles of international students, there is ample reason to feel at home while pursuing an MBBS in Kazakhstan.",
     },
   },
   "study-mbbs-in-kyrgyzstan": {
@@ -840,11 +914,31 @@ export const countries = {
     intro: {
       title: "MBBS In Kyrgyzstan - Introduction",
       points: [
-        "The 2025-26 batch for studying MBBS in Uzbekistan is proving to be very good for students from other nations, especially students from India, since the number of medical aspirants has grown year by year looking for quality study abroad. Among all factors, it has emerged in the top choice of lists of students as a destination country to study medicine in Uzbekistan.",
-        "TIts has a number of Universities for MBBS in Uzbekistan offering MBBS programs in the English medium, which makes it rather easy for international students to cope with the curriculum without any language barriers. MBBS programs in Uzbekistan usually take six years that include theoretical learning, clinical practice, and internships. Medical colleges in Uzbekistan are accredited by the WHO and National Medical Commission, hence degrees are accepted all over the world.",
-        "It is relatively not so expensive to study MBBS in Uzbekistan when considering other countries that teach medical studies abroad. The fee structure is at an affordable rate, considering that most universities have attached facilities for stay purposes at modest rates. The fees required in the Medical College in Uzbekistan are considerably within reach, making Uzbekistan a real deal for seekers of quality at an economic education.",
-        "Studying MBBS in Uzbekistan provides the advantage of diversity and cultural exposure, with traditions of Central Asia combined with modern living. The living cost is lower compared to many Western countries and therefore more affordable for international students. Moreover, after completing MBBS in Uzbekistan, the prospects for a bright job in Uzbekistan and all over the world include postgraduate study and going back to their home country to practice. Conclusively, students from Uzbekistan finally get MBBS admission with affordability and international recognition at an appreciable cost while building their futures in this sphere as a medical professional for the year 2025-26.",
+        "Studying MBBS in Kyrgyzstan in 2025-26 is an excellent choice for foreign students, especially Indians. Every year, thousands of aspirants choose Kyrgyzstan due to its affordable tuition fees, high-quality education, and globally recognized medical degrees. The MBBS program in Kyrgyzstan has been designed to be at par with international standards so that students can receive excellent medical training at very reasonable costs. One of the major attractions to study medicine in Kyrgyzstan is the low tuition fees. Compared with private medical colleges in India and many other countries, the MBBS in Kyrgyzstan fees remains very affordable. The cost of MBBS in Kyrgyzstan for international students ranges between ₹19 to ₹30 lakhs for the entire course, which also covers tuition fees, accommodation, and other expenses. This is quite affordable and comes within the reach of the students aiming to pursue medical degrees abroad.",
+        "Besides, the curriculum structure in Kyrgyzstan medical colleges is well-oriented and maintained at international standards, which give a smooth pathway for graduates to attempt competitive exams like NMC FMGE and USMLE. Teaching is conducted in English; studying is made comfortable for students from India and other nations. MBBS admission in Kyrgyzstan is quite easy to obtain. International students are required to submit academic transcripts, a valid passport, and the NEET exam passed for Indian students. The universities make an online application process easy, after which the students usually receive their admission letters within a few weeks. With a six-year program commencing with clinical training from the third year, much emphasis is given to practical exposure in the medical schools in Kyrgyzstan. The degree is recognized by global authorities like WHO, NMC, and others, hence giving a chance for graduates to practice medicine in several countries, including India.",
       ],
+      image: {
+        src: Kyrgyzstan,
+        alt: "Study MBBS in Kyrgyzstan",
+      },
+      about: {
+        title: "About Kyrgyzstan",
+        points: [
+          "Kyrgyzstan, officially known as the Kyrgyz Republic, is an incredibly beautiful country in Central Asia, having the most beautiful mountain ranges. This inland country borders Kazakhstan to the north, Uzbekistan to the west, Tajikistan to the southwest, and China to the southeast. The capital and the largest city of Kyrgyzstan is Bishkek, which covers an area of 49 square miles and has a population of over 1.25 million people. Simultaneously, Kyrgyzstan is a very rich country from the historical and cultural points of view because the long-standing traditions are nourishing it. Being a part of the Soviet Union, this country received its independence in 1991-a new mission, a new chapter in Kyrgyz history. Nowadays, Kyrgyzstan is famous for its wonderful landscapes of nature; for this reason, this country attracts many travelers and students from all over the world to its area. It provides a very good academic atmosphere for students who want to study MBBS in Kyrgyzstan. Medical colleges in Kyrgyzstan are approved by major organizations like WHO, WDOMS, and FAIMER to maintain global acceptance of the graduates after getting their degrees. Thereafter, they provide a balanced curriculum for students between theoretical knowledge and practical experiences. Medical colleges in Kyrgyzstan are fully equipped with advanced infrastructure, qualified faculties, and modern technical facilities, hence are one of the ideal choices for students pursuing their MBBS in Kyrgyzstan. The MBBS program in Kyrgyzstan runs for six years, which includes one year of compulsory internship. The rich cultural heritage of the country merged with a strong medical education system makes study medicine in Kyrgyzstan a great opportunity for international students.",
+        ],
+      },
+    },
+    why_study: {
+      title: "Why Study MBBS in Kyrgyzstan 2025 - 26?",
+      points: [
+        "Study MBBS in Kyrgyzstan offers higher studies over other nations, specifically for scholars who wish to study MBBS at a very nominal cost. It possesses several top-class medical colleges which are approved by global bodies like the WHO and National Medical Commission. Thus, the degree provided after studying from such institutes is valid in many nations, starting from India.",
+        "The MBBS programs in Kyrgyzstan come with an internationally recognized curriculum, with courses being provided in the English language, hence, easy for students from non-native speaking countries to pursue medical studies. It offers state-of-the-art infrastructure, along with well-equipped research centers and highly qualified faculty members. Moreover, the students benefit from theoretical knowledge and practical exposure, which is rather important in medical fields. Apart from these, the cost of MBBS in Kyrgyzstan provides many more facilities and cheaply compared with many countries like India, the USA, or Europe. Students who avail of such an excellent study environment, therefore, have not had to pay heavy tuition fees or a hefty amount in donations for admissions. Additionally, this brings friendliness in the residents and modern conditions in living in Kyrgyzstan as a medical student further enhances overall studies and develops an excellent stay. It results from here that such a privileged option is usually considered during international student exchange programs.",
+      ],
+    },
+    accomadation: {
+      title: "Indian Food and Facility For Indian Students",
+      content:
+        "While living in Kyrgyzstan as a medical student, food and accommodation are the major factors that students keep in mind. The universities in Kyrgyzstan have very affordable accommodation options; most of them offer hostels for international students. These hostels are facilitated with all the necessary facilities that ensure a comfortable living environment for the students. There are numerous Indian restaurants in Kyrgyzstan for Indian students, serving home-style meals at an affordable price. Many students also prefer cooking their own food; university hostels have kitchen facilities in many instances. The easy availability of affordable food options makes the stay in Kyrgyzstan quite convenient for Indian students. Generally speaking, living in Kyrgyzstan is not too expensive, and with a host of accommodation and food alternatives available to suit the lifestyles of international students, there is ample reason to feel at home while pursuing an MBBS in Kyrgyzstan.",
     },
   },
   "study-mbbs-in-vietnam": {
@@ -853,11 +947,36 @@ export const countries = {
     intro: {
       title: "MBBS In Vietnam - Introduction",
       points: [
-        "The 2025-26 batch for studying MBBS in Uzbekistan is proving to be very good for students from other nations, especially students from India, since the number of medical aspirants has grown year by year looking for quality study abroad. Among all factors, it has emerged in the top choice of lists of students as a destination country to study medicine in Uzbekistan.",
-        "TIts has a number of Universities for MBBS in Uzbekistan offering MBBS programs in the English medium, which makes it rather easy for international students to cope with the curriculum without any language barriers. MBBS programs in Uzbekistan usually take six years that include theoretical learning, clinical practice, and internships. Medical colleges in Uzbekistan are accredited by the WHO and National Medical Commission, hence degrees are accepted all over the world.",
-        "It is relatively not so expensive to study MBBS in Uzbekistan when considering other countries that teach medical studies abroad. The fee structure is at an affordable rate, considering that most universities have attached facilities for stay purposes at modest rates. The fees required in the Medical College in Uzbekistan are considerably within reach, making Uzbekistan a real deal for seekers of quality at an economic education.",
-        "Studying MBBS in Uzbekistan provides the advantage of diversity and cultural exposure, with traditions of Central Asia combined with modern living. The living cost is lower compared to many Western countries and therefore more affordable for international students. Moreover, after completing MBBS in Uzbekistan, the prospects for a bright job in Uzbekistan and all over the world include postgraduate study and going back to their home country to practice. Conclusively, students from Uzbekistan finally get MBBS admission with affordability and international recognition at an appreciable cost while building their futures in this sphere as a medical professional for the year 2025-26.",
+        "Vietnam, officially known as the Socialist Republic of Vietnam (SRV), is the fifteenth most populated country in the world. It is situated in Southeast Asia, has a population of 99 million, and occupies an area of 331,212 square kilometers. Its boundaries are shared by China to the north, Laos and Cambodia to the west, and Thailand, the Philippines, Indonesia, and Malaysia on the sea. Vietnam’s capital city is Hanoi, and its largest city is Ho Chi Minh City, formerly known as Saigon.",
+        "Vietnam has a long history that dates back to the Paleolithic era, when the first nations were founded in the Red River Delta in the first millennium BC. From 111 BC until the First Vietnamese dynasty’s rise in 939, China ruled over Northern and Central Vietnam during the Han dynasty.",
+        "The Chinese Confucianism and Buddhism influenced the succeeding dynasties, which conquered Champa as they advanced southward. Following the August Revolution in 1945, the communist revolutionary Ho Chi Minh led the nationalist coalition Viet Minh in declaring Vietnam’s independence. The Nguyễn monarchy had submitted to France in 1883.",
+        "Vietnam fought a protracted battle against France beginning with the First Indochina battle in the 20th century which Vietnam won in 1954, causing the nation to be split in half. The Soviet Union, China, and the United States backed the anti-communist South, while the communist North launched the Vietnam War. The Communist Party of Vietnam led North Vietnam to victory in 1975 and the reunification of the nation as a unitary socialist state.The Communist Party of Vietnam initiated political and economic reforms akin to those of China in 1986, despite facing numerous obstacles including an inefficient planned economy, a trade embargo by the West, and wars with China and Cambodia. These reforms helped the country transition to a market-oriented economy and facilitated its reintegration into the global economy and politics.",
+        "Vietnam’s economy is one of the fastest-growing in the twenty-first century, while being classified as a lower-middle-income developing nation. By 2050, it is expected to have a GDP comparable to wealthy countries.",
+        "Vietnam is among the nations with the worst records for civil liberties, press freedom, and the freedom of religion and ethnic minorities. It also has a high level of corruption and censorship. In spite of this, Vietnam has held two UN Security Council seats and is a member of numerous international and intergovernmental organizations, such as the ASEAN, APEC, CPTPP, Non-Aligned Movement, OIF, and WTO.",
       ],
+      image: {
+        src: vietnam,
+        alt: "Study MBBS in Vietnam",
+      },
+      about: {
+        title: "About Vietnam",
+        points: [
+          "Southeast Asia is the region that is home to Vietnam, sometimes referred to as the Socialist Republic of Vietnam. With around 97 million inhabitants, it ranks as the world’s 57th most populous nation. This nation shares borders with China, Malaysia, Indonesia, the Philippines, Cambodia, Laos, Thailand, and Cambodia. Vietnam’s capital city is Hanoi. Ho Chi Minh City is Vietnam’s largest city. The environment in Vietnam will generally fluctuate dramatically for each region due to differences in scope and the obvious variety of geological features. Rainstorm twists typically blow from the upper east along the Chinese coast and across the Gulf of Tonkin during the cooler, or dry, season, which typically lasts from November to April. This causes significant wetness.",
+          "The mystical beauty of its natural surroundings and the friendliness of its people have made Vietnam, a stunning country in South East Asia, famous worldwide. Vietnam is a paradise for individuals who love adventures and outdoor sports, with a coastline spanning more than 3,000 kilometres, numerous pristine jungles, and a tropical climate. It is also a nation with a rich cultural heritage, straddling the cultures of several East and South Asian nations, including Vietnam, China, Japan, Champa, Khmer, and India.",
+        ],
+      },
+    },
+    why_study: {
+      title: "Why Study MBBS In Vietnam 2025 - 26?",
+      points: [
+        "Vietnam is becoming a popular destination for students who want to study MBBS abroad, especially for Indian students. The country offers a unique blend of high-quality education, affordable tuition fees, and a rich cultural experience. The MBBS programs in Vietnam are recognized by the World Health Organization (WHO) and the National Medical Commission (NMC), making it easier for graduates to practice medicine in India and other countries.",
+        "The MBBS in Vietnam is taught in English, which makes it accessible for international students who are not natively English-speaking. Vietnam also has a large number of medical colleges and universities, making it an excellent choice for international students looking to study medicine abroad. The country has a rich history and culture, which adds to the overall experience of studying in Vietnam. The cost of living in Vietnam is relatively low compared to other countries, making it an affordable option for students. The country also has a vibrant student life, with many opportunities for extracurricular activities and cultural experiences.",
+      ],
+    },
+    accomadation: {
+      title: "Indian Food and Facility For Indian Students",
+      content:
+        "While living in Vietnam as a medical student, food and accommodation are the major factors that students keep in mind. The universities in Vietnam have very affordable accommodation options; most of them offer hostels for international students. These hostels are facilitated with all the necessary facilities that ensure a comfortable living environment for the students. There are numerous Indian restaurants in Vietnam for Indian students, serving home-style meals at an affordable price. Many students also prefer cooking their own food; university hostels have kitchen facilities in many instances. The easy availability of affordable food options makes the stay in Vietnam quite convenient for Indian students. Generally speaking, living in Vietnam is not too expensive, and with a host of accommodation and food alternatives available to suit the lifestyles of international students, there is ample reason to feel at home while pursuing an MBBS in Vietnam.",
     },
   },
 };
@@ -874,11 +993,12 @@ export const daySchedules = {
 
 export const socialmediaLinks = {
   instagram: "https://www.instagram.com/medpathoverseas?igsh=MWRpaWZzaTdlcDN6",
-  facebook: "https://www.facebook.com/medpathconsultancy",
+  facebook: "https://www.facebook.com/people/Medpath-Overseas/61576057070037/",
   linkedin:
     "https://www.linkedin.com/company/medpath-overseas/posts/?feedView=all",
-  youtube: "#",
+  youtube: "https://www.youtube.com/@MedpathOverseasadmin",
   whatsapp: "tel:+917305702699",
   email: "mailto:omedpath@gmail.com",
-  appno: "tel:+917305702699",
+  appno:
+    "https://api.whatsapp.com/send?phone=917305702699&text=Hello%20MedPath%20Overseas",
 };

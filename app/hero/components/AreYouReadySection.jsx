@@ -48,8 +48,11 @@ const AreYouReadySection = () => {
           <p className="max-w-2xl text-center text-background text-sm mb-6">
             {areYouReadyContent.description}
           </p>
-          <Button className="border rounded-lg text-background ">
-            CONTACT US NOW
+          <Button
+            href={areYouReadyContent.button.link}
+            className="rounded-lg text-background "
+          >
+            {areYouReadyContent.button.label}
           </Button>
         </div>
       </div>

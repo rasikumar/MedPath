@@ -6,6 +6,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import Button from "@/components/ui/Button";
 import { Maskgroup } from "@/assets/assets";
+import { CONTACT_ROUTE } from "@/utils/routes";
 
 const HeroSection = () => {
   const heroData = Home_Data.hero_section;
@@ -140,7 +141,10 @@ const HeroSection = () => {
               {item.description}
             </p>
             <div ref={btnRef}>
-              <Button className="text-background max-md:w-full max-md:text-center">
+              <Button
+                href={CONTACT_ROUTE}
+                className="text-background max-md:w-full max-md:text-center"
+              >
                 {item.button.label}
               </Button>
             </div>

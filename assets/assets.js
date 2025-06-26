@@ -19,6 +19,7 @@ import whyus from "./why us.png";
 import star_image from "./star-image.png";
 import areyouready from "./areyouready.webp";
 import mbbsAbroadStudents from "./mbbsAbroadStudents.webp";
+import breadcumb_shape_1_3 from "./breadcumb_shape_1_3.webp";
 import quote from "./quote.svg";
 
 // Country Image
@@ -75,7 +76,6 @@ import BookImage from "./aboutus/about_1_shape1.webp";
 import aboutheader from "./aboutUsPage/aboutheader.webp";
 import abouthero from "./aboutUsPage/abouthero.png";
 import aboutpath from "./aboutUsPage/aboutpath.png";
-import abouthero2 from "./aboutUsPage/abouthero2.jpeg";
 import missionImage from "./aboutUsPage/missionImage.png";
 import Our_Goal from "./aboutUsPage/Our Goal.webp";
 import Our_vission from "./aboutUsPage/Our vission.webp";
@@ -99,7 +99,14 @@ import {
 } from "./gallery/index.js";
 
 // country
-import { countryBg } from "./countryImage/index.js";
+import {
+  countryBg,
+  kazakhstan,
+  Kyrgyzstan,
+  Russia,
+  uzebekistan,
+  vietnam,
+} from "./countryImage/index.js";
 
 export {
   Banner_1,
@@ -124,6 +131,7 @@ export {
   studenttestimonials,
   blobImage,
   star_image,
+  breadcumb_shape_1_3,
 
   // Universite Image
   AL,
@@ -177,7 +185,6 @@ export {
   //about page
   aboutheader,
   abouthero,
-  abouthero2,
   aboutpath,
   missionImage,
   aboutbg,
@@ -201,4 +208,9 @@ export {
 
   // countryImage,
   countryBg,
+  kazakhstan,
+  Kyrgyzstan,
+  Russia,
+  uzebekistan,
+  vietnam,
 };

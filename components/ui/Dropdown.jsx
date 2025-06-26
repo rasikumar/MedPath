@@ -10,6 +10,8 @@ export const Dropdown = ({
   onClick,
   dropdownKey,
   className = "",
+  onClose, // Add this prop
+  mobile, // Add this prop
 }) => {
   const [open, setOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -39,6 +41,7 @@ export const Dropdown = ({
   const closeDropdown = () => {
     if (isMobile) {
       onClick(false);
+      onClose?.(); // Call the parent's close function if it exists
     } else {
       setOpen(false);
     }
@@ -86,7 +89,11 @@ export const Dropdown = ({
             key={idx}
             href={item.href}
             className="dropdown-item flex items-center justify-between px-3 py-2 text-sm text-gray-700 rounded-md transition-all duration-200 ease-in-out hover:bg-blue-50 hover:text-blue-700 hover:scale-[1.03]"
-            onClick={closeDropdown}
+            onClick={(e) => {
+              e.stopPropagation(); // Prevent event bubbling
+              closeDropdown();
+              onClose?.(); // Ensure sidebar closes
+            }}
           >
             <span>
               {item.icon || "📘"} {item.label}

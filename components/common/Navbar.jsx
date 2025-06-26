@@ -17,6 +17,7 @@ import TopBar from "./TopBar";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { useRouter, usePathname } from "next/navigation";
+import { FaGlobe } from "react-icons/fa6";
 function getTodaySchedule() {
   const days = [
     "Sunday",
@@ -171,20 +172,44 @@ const Navbar = () => {
               >
                 ABOUT US
               </Link>
-              <Dropdown
-                title="ALL COUNTRIES"
-                items={countryItems}
-                open={openDropdown === "countries"}
-                onClick={() =>
-                  setOpenDropdown(
-                    openDropdown === "countries" ? null : "countries"
-                  )
-                }
-                dropdownKey="countries"
-                onClose={closeAll}
-                mobile={isMobileMenuOpen}
-                className="hover:text-primary py-2 border-b"
-              />
+              <ul className="hover:text-primary py-2 border-b transition-all duration-200 ease-in-out">
+                <li
+                  onClick={() =>
+                    setOpenDropdown(
+                      openDropdown === "country" ? null : "country"
+                    )
+                  }
+                  className="relative cursor-pointer select-none"
+                >
+                  <div className="flex items-center justify-between">
+                    <span>COUNTRY</span> ›
+                  </div>
+                  {openDropdown === "country" && (
+                    <div
+                      className={`absolute left-0 mt-2 bg-white shadow-lg rounded-lg w-72 p-2 z-50 dropdown-anim${
+                        openDropdown === "country" ? " dropdown-open" : ""
+                      }`}
+                    >
+                      {countryItems.map((item, idx) => (
+                        <Link
+                          key={idx}
+                          href={item.href}
+                          className="dropdown-item flex items-center justify-between px-3 py-2 text-sm text-gray-700 rounded-md transition-all duration-200 ease-in-out hover:bg-blue-50 hover:text-blue-700 hover:scale-[1.03] hover:translate-x-2"
+                          onClick={() => {
+                            setOpenDropdown(null);
+                            closeAll();
+                          }}
+                        >
+                          <span className="flex items-center gap-2">
+                            📘
+                            {item.label}
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </li>
+              </ul>
               <Link
                 href={GALLERY_ROUTE}
                 className="hover:text-primary py-2 border-b"

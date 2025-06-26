@@ -1,5 +1,14 @@
-import React from "react";
-import { ABOUT_ROUTE, CONTACT_ROUTE, UNIVERSITIES_ROUTE } from "@/utils/routes";
+import {
+  ABOUT_ROUTE,
+  CONTACT_ROUTE,
+  GALLERY_ROUTE,
+  KAZAKHSTAN_ROUTE,
+  KYRGYZSTAN_ROUTE,
+  RUSSIA_ROUTE,
+  UNIVERSITIES_ROUTE,
+  UZBEKISTAN_ROUTE,
+  VIETNAM_ROUTE,
+} from "@/utils/routes";
 import { Footerbg, Footershape1, Footershape2 } from "../../assets/assets";
 import {
   FaPhoneAlt,
@@ -12,6 +21,7 @@ import {
 } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+import { socialmediaLinks } from "@/const/Data";
 
 const ContactInfo = [
   {
@@ -30,7 +40,7 @@ const ContactInfo = [
     icon: <FaMapMarkerAlt className="text-white text-xl" />,
     title: "Our Office Location:",
     value: "Madurai, Tamil Nadu",
-    link: "https://www.google.com/maps/place/Madurai,+Tamil+Nadu/@9.9178343,78.0816238,13z/data=!3m1!4b1!4m6!3m5!1s0x3b00c582b1189633:0xdc955b7264f63933!8m2!3d9.9252007!4d78.1197754!16zL20vMDE5ZmJw?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D",
+    link: "https://www.google.com/maps/place/Medpath+overseas+-+Abroad+MBBS+Consultant/@9.9640774,78.1400157,858m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3b00c7e9200f0c29:0xdcb56583f5f70025!8m2!3d9.9640774!4d78.1400157!16s%2Fg%2F11xcrqjx7q?entry=tts&g_ep=EgoyMDI1MDYyMy4yIPu8ASoASAFQAw%3D%3D&skid=a0bd048d-d3e9-4ab0-b5f5-184d358b281a",
   },
 ];
 
@@ -104,25 +114,37 @@ const Footer = () => {
           </p>
           <p className="text-background font-bold mb-4">FOLLOW US ON:</p>
           <div className="flex space-x-4">
-            <a href="#" className="relative w-8 h-8 group">
+            <a
+              href={socialmediaLinks.instagram}
+              className="relative w-8 h-8 group"
+            >
               <div className="absolute inset-0 bg-[#0d6efd]/20 rounded-full hover:bg-[#0d6efd] transition-colors" />
               <div className="relative w-full h-full rounded-full bg-[#0d6efd]/10 backdrop-blur-sm flex items-center justify-center">
                 <FaInstagram className="text-white text-lg" />
               </div>
             </a>
-            <a href="#" className="relative w-8 h-8 group">
+            <a
+              href={socialmediaLinks.facebook}
+              className="relative w-8 h-8 group"
+            >
               <div className="absolute inset-0 bg-[#0d6efd]/20 rounded-full hover:bg-[#0d6efd] transition-colors" />
               <div className="relative w-full h-full rounded-full bg-[#0d6efd]/10 backdrop-blur-sm flex items-center justify-center">
                 <FaFacebookF className="text-white text-lg" />
               </div>
             </a>
-            <a href="#" className="relative w-8 h-8 group">
+            <a
+              href={socialmediaLinks.linkedin}
+              className="relative w-8 h-8 group"
+            >
               <div className="absolute inset-0 bg-[#0d6efd]/20 rounded-full hover:bg-[#0d6efd] transition-colors" />
               <div className="relative w-full h-full rounded-full bg-[#0d6efd]/10 backdrop-blur-sm flex items-center justify-center">
                 <FaLinkedinIn className="text-white text-lg" />
               </div>
             </a>
-            <a href="#" className="relative w-8 h-8 group">
+            <a
+              href={socialmediaLinks.youtube}
+              className="relative w-8 h-8 group"
+            >
               <div className="absolute inset-0 bg-[#0d6efd]/20 rounded-full hover:bg-[#0d6efd] transition-colors" />
               <div className="relative w-full h-full rounded-full bg-[#0d6efd]/10 backdrop-blur-sm flex items-center justify-center">
                 <FaYoutube className="text-white text-lg" />
@@ -152,18 +174,50 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href={UNIVERSITIES_ROUTE}
-                className="hover:text-[#0d6efd] transition-colors"
-              >
-                All Countries
-              </Link>
-            </li>
-            <li>
-              <Link
                 href={CONTACT_ROUTE}
                 className="hover:text-[#0d6efd] transition-colors"
               >
                 Contact us
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={KYRGYZSTAN_ROUTE}
+                className="hover:text-[#0d6efd] transition-colors"
+              >
+                MBBS in Kyrgyzstan
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={KAZAKHSTAN_ROUTE}
+                className="hover:text-[#0d6efd] transition-colors"
+              >
+                MBBS in Kazakhstan
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={RUSSIA_ROUTE}
+                className="hover:text-[#0d6efd] transition-colors"
+              >
+                MBBS in Russia
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={UZBEKISTAN_ROUTE}
+                className="hover:text-[#0d6efd] transition-colors"
+              >
+                MBBS in Uzbekistan
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={VIETNAM_ROUTE}
+                className="hover:text-[#0d6efd] transition-colors"
+              >
+                MBBS in Vietnam
               </Link>
             </li>
           </ul>
@@ -181,42 +235,14 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[#0d6efd] transition-colors">
+              <Link
+                href={GALLERY_ROUTE}
+                className="hover:text-[#0d6efd] transition-colors"
+              >
                 Gallery
               </Link>
             </li>
           </ul>
-
-          <div>
-            <h3 className="text-xl font-bold text-white mb-6 relative">
-              Get in touch!
-              <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-[#0d6efd]"></span>
-            </h3>
-            <p className="text-gray-300 mb-4">
-              Subscribe our newsletter to get our latest Update & news
-            </p>
-            <form className="flex flex-col space-y-4">
-              <div className="relative">
-                <input
-                  type="email"
-                  placeholder="Enter Your Email"
-                  className="w-full px-4 py-3 bg-white/5 border border-gray-600 rounded text-white placeholder-gray-400 focus:outline-none focus:border-[#0d6efd]"
-                />
-                <button
-                  type="submit"
-                  className="absolute right-2 top-1/2 -translate-y-1/2 text-[#0d6efd]"
-                >
-                  <FaEnvelope className="text-xl" />
-                </button>
-              </div>
-              <button
-                type="submit"
-                className="bg-[#0d6efd] text-white px-6 py-3 rounded font-semibold hover:bg-[#0b5ed7] transition-colors"
-              >
-                SUBSCRIBE
-              </button>
-            </form>
-          </div>
         </div>
       </div>
 
