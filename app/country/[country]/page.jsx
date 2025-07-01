@@ -1,15 +1,15 @@
 import { countries } from "@/const/Data";
-import UniversityLayout from "../universityTemplate/layout";
+import CountryLayout from "../countryTemplate/layout";
 
 export async function generateStaticParams() {
-  return Object.keys(countries).map((slug) => ({
-    slug,
+  return Object.keys(countries).map((country) => ({
+    country,
   }));
 }
 
-export default async function UniversityPage({ params }) {
+export default async function CountryPage({ params }) {
   const resolvedParams = await params;
-  const country = countries[resolvedParams.slug];
+  const country = countries[resolvedParams.country];
 
   if (!country) {
     return (
@@ -22,5 +22,5 @@ export default async function UniversityPage({ params }) {
     );
   }
 
-  return <UniversityLayout country={country} />;
+  return <CountryLayout country={country} />;
 }

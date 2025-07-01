@@ -7,7 +7,7 @@ const Button = ({
   color = "#00A7A3",
   className = "",
   href,
-  type = "button", // optional type
+  type = "button", 
 }) => {
   const commonClasses = `
     click-btn 

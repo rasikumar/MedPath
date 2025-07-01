@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // ✅ Required for static export in new Next.js
-  trailingSlash: true, // ✅ Required for static export in new Next.js
+  output: "export",
+  trailingSlash: true,
   images: {
     unoptimized: true,
     remotePatterns: [

@@ -57,7 +57,7 @@ const AboutSection = () => {
                   k+
                 </span>
                 <p className="text-white text-center text-sm font-semibold px-4 uppercase">
-                  Students enrolled in Med Path
+                  Students enrolled in Medpath
                 </p>
               </div>
             </MotionSection>

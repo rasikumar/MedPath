@@ -17,6 +17,8 @@ import {
   KazakLogo,
   kazakstanFlag,
   kazan,
+  ksmukurskrussiaheader,
+  ksmukurskrussiamain,
   KuruskLogo,
   Kyrgyzstan,
   kyrgyzstanFlag,
@@ -428,7 +430,7 @@ export const Home_Data = {
   consult_section: {
     title: "Consult With Our Expert",
     description:
-      "Personalized guidance for your medical journey. Choose Med Path now",
+      "Personalized guidance for your medical journey. Choose Medpath now",
     youtube_id: "yInv4pUy_Hs",
     button: {
       label: "GET STARTED",
@@ -475,9 +477,9 @@ export const Home_Data = {
   why_us: {
     span: "WHY CHOOSE US",
     title:
-      "Unlock Your Medical Dreams Abroad: Med Path, Your Trusted Companion.",
+      "Unlock Your Medical Dreams Abroad: Medpath, Your Trusted Companion.",
     description:
-      "Discover your path to a medical career with Med Path. Benefit from expert guidance, a global network of top-tier universities, and comprehensive services tailored to your needs. Let us simplify your journey to studying MBBS abroad, ensuring a seamless transition and a rewarding educational experience.",
+      "Discover your path to a medical career with Medpath. Benefit from expert guidance, a global network of top-tier universities, and comprehensive services tailored to your needs. Let us simplify your journey to studying MBBS abroad, ensuring a seamless transition and a rewarding educational experience.",
     button: {
       label: "Learn More",
       link: ABOUT_ROUTE,
@@ -486,13 +488,13 @@ export const Home_Data = {
       {
         title: "NMC Aproved",
         description:
-          "Med Path: NMC Approved Education Consultant for Pursuing MBBS Abroad.",
+          "Medpath: NMC Approved Education Consultant for Pursuing MBBS Abroad.",
         image: "https://example.com/images/nmc.jpg",
       },
       {
         title: "FMGE",
         description:
-          "Unlock Your Global Medical Career: FMGE Preparation with Med Path.",
+          "Unlock Your Global Medical Career: FMGE Preparation with Medpath.",
         image: "https://example.com/images/who.jpg",
       },
       {
@@ -510,13 +512,13 @@ export const Home_Data = {
       {
         title: "UNESCO Aproved",
         description:
-          "Empowering Dreams: Med Path - Your Gateway to International Medical Education.",
+          "Empowering Dreams: Medpath - Your Gateway to International Medical Education.",
         image: "https://example.com/images/ministry.jpg",
       },
       {
         title: "Carrer Counselling",
         description:
-          "Unlock Your Medical Career: Study MBBS Abroad with Med Path!.",
+          "Unlock Your Medical Career: Study MBBS Abroad with Medpath!.",
         image: "https://example.com/images/ministry.jpg",
       },
       {
@@ -728,18 +730,18 @@ export const Home_Data = {
 export const About_Page_data = {
   aboutContents: {
     span: "About Us",
-    title: "Med Path Abroad Education Consultants",
+    title: "Medpath Abroad Education Consultants",
     description_one:
-      "Med Path Abroad was founded with a mission to empower students with the knowledge and resources they need to achieve their academic and career goals. Our team of experienced consultants offers personalized advice and tailor-made solutions to ensure each student finds the right path to success.",
+      "Medpath Abroad was founded with a mission to empower students with the knowledge and resources they need to achieve their academic and career goals. Our team of experienced consultants offers personalized advice and tailor-made solutions to ensure each student finds the right path to success.",
     description_two:
-      "With years of experience and a deep understanding of the global education system, we have built a reputation for excellence and reliability. Whether you are looking for undergraduate programs, postgraduate studies, or specialized courses, Med Path Abroad is here to guide you every step of the way.",
+      "With years of experience and a deep understanding of the global education system, we have built a reputation for excellence and reliability. Whether you are looking for undergraduate programs, postgraduate studies, or specialized courses, Medpath Abroad is here to guide you every step of the way.",
     image: {
       src: abouthero,
-      alt: "Med Path Abroad Education Consultants",
+      alt: "Medpath Abroad Education Consultants",
     },
     image2: {
       src: image7,
-      alt: "Med Path Abroad Education Consultants",
+      alt: "Medpath Abroad Education Consultants",
     },
   },
   aboutTabData: {
@@ -749,7 +751,7 @@ export const About_Page_data = {
         "1.Empower students to dream beyond borders..2.Create a world-class platform for transparent, ethical, and student-first guidance..3.Build a community of globally trained medical professionals who contribute meaningfully to healthcare worldwide..4.Set new standards in overseas education consultancy through integrity, innovation, and care..",
       image: {
         src: missionImage,
-        alt: "Med Path Abroad Education Consultants",
+        alt: "Medpath Abroad Education Consultants",
       },
     },
     vision: {
@@ -758,7 +760,7 @@ export const About_Page_data = {
         "1.Helping students access affordable and accredited medical universities worldwide..2.Delivering clear, honest advice with no hidden information or false promises..3.Offering end-to-end support — from application to accommodation..4.Promoting academic excellence and cultural adaptability in future healthcare leaders..",
       image: {
         src: Our_vission,
-        alt: "Med Path Abroad Education Consultants",
+        alt: "Medpath Abroad Education Consultants",
       },
     },
     goal: {
@@ -767,7 +769,7 @@ export const About_Page_data = {
         "1.Bridge the gap between talented students and top international medical universities..2.Provide honest guidance tailored to each student’s aspirations and academic profile..3.Support every step of the journey — from university selection and admission to visa processing and post-arrival assistance..4.Foster confident, globally competent doctors ready to serve communities around the world..",
       image: {
         src: Our_Goal,
-        alt: "Med Path Abroad Education Consultants",
+        alt: "Medpath Abroad Education Consultants",
       },
     },
   },
@@ -807,6 +809,7 @@ export const galleryImages = [
 export const countries = {
   "study-mbbs-in-russia": {
     name: "Study MBBS in Russia",
+    slug: "study-mbbs-in-russia",
     intro: {
       title: "MBBS In Russia - Introduction",
       points: [
@@ -838,9 +841,47 @@ export const countries = {
       content:
         "While living in Russia as a medical student, food and accommodation are the major factors that students keep in mind. The universities in Russia have very affordable accommodation options; most of them offer hostels for international students. These hostels are facilitated with all the necessary facilities that ensure a comfortable living environment for the students. There are numerous Indian restaurants in Russia for Indian students, serving home-style meals at an affordable price. Many students also prefer cooking their own food; university hostels have kitchen facilities in many instances. The easy availability of affordable food options makes the stay in Russia quite convenient for Indian students. Generally speaking, living in Russia is not too expensive, and with a host of accommodation and food alternatives available to suit the lifestyles of international students, there is ample reason to feel at home while pursuing an MBBS in Russia.",
     },
+    universities: {
+      "kursk-state-medical-university": {
+        name: "Kursk State Medical University",
+        slug: "kursk-state-medical-university",
+        countryName: "Russia",
+        countrySlug: "study-mbbs-in-russia",
+        content: {
+          headerImage: {
+            src: ksmukurskrussiaheader,
+            alt: "Kursk State Medical University",
+          },
+          mainImage: {
+            src: ksmukurskrussiamain,
+            alt: "Kursk State Medical University Main",
+          },
+          htmlcontent: `
+          <p> 
+<strong>Kursk State Medical University (KSMU)</strong> is one of the leading medical universities in Russia, located in the city of Kursk. Established in 1935, KSMU has a rich history and is known for its high-quality medical education and research. The university offers a wide range of programs in medicine, dentistry, pharmacy, and nursing, with a strong emphasis on practical training and clinical experience. KSMU is recognized by the World Health Organization (WHO) and the National Medical Commission (NMC), making its degrees valid worldwide. The university has a diverse student body, with students from over 50 countries, creating a multicultural environment that enhances the learning experience. KSMU is equipped with modern facilities, including state-of-the-art laboratories, libraries, and research centers, providing students with the resources they need to excel in their studies. The university also has strong ties with various healthcare institutions, allowing students to gain valuable hands-on experience during their training.
+          </p>
+          <p>
+Kursk State Medical University (KSMU) is a prestigious institution that offers a comprehensive medical education program. The university provides a six-year MBBS program, which is divided into two phases: the first three years focus on theoretical knowledge, while the last three years emphasize practical training and clinical practice. The curriculum is designed to meet international standards, ensuring that graduates are well-prepared for a successful career in medicine. KSMU also offers programs in English, making it accessible to international students. The university has a strong emphasis on research and innovation, with numerous research projects and collaborations with leading medical institutions worldwide. KSMU's commitment to excellence in medical education and research has earned it a reputation as one of the top medical universities in Russia.
+          </p>
+          <p>
+Kursk State Medical University (KSMU) is a renowned institution for medical education in
+Russia, offering a six-year MBBS program that is recognized globally. The university is known for its high academic standards, experienced faculty, and modern facilities. KSMU provides a comprehensive curriculum that includes both theoretical knowledge and practical training, ensuring that students are well-prepared for their medical careers. The university also offers programs in English, making it accessible to international students. KSMU has a diverse student body, with students from over 50 countries, creating a multicultural environment that enhances the learning experience. The university's strong emphasis on research and innovation further contributes to its reputation as a leading medical institution.
+          </p>
+          <p>
+Kursk State Medical University (KSMU) is a prestigious medical institution located in Kurs
+k, Russia. Established in 1935, KSMU has a long history of providing high-quality medical education and training. The university offers a six-year MBBS program that is recognized by the World Health Organization (WHO) and the National Medical Commission (NMC) in India, making it a popular choice for international students, especially from India. KSMU is known for its experienced faculty, modern facilities, and strong emphasis on research and innovation. The university provides a comprehensive curriculum that combines theoretical knowledge with practical training, ensuring that students are well-prepared for their medical careers. KSMU also has a vibrant student community, with students from over 50 countries, creating a multicultural environment that enhances the learning experience.
+          </p>
+          <p>
+Kursk State Medical University (KSMU) is a leading medical institution in Russia, known for its high-quality education and research. The university offers a six-year MBBS program that is recognized by the World Health Organization (WHO) and the National Medical Commission (NMC) in India. KSMU has a strong emphasis on practical training, with students gaining hands-on experience in various clinical settings. The university also offers programs in English, making it accessible to international students. KSMU's faculty consists of highly qualified professionals who are dedicated to providing students with a comprehensive understanding of medical science. The university's modern facilities and resources further enhance the learning experience, making it an ideal choice for aspiring medical professionals.
+          </p>
+          `,
+        },
+      },
+    },
   },
   "study-mbbs-in-uzbekistan": {
     name: "Study MBBS in Uzbekistan",
+    slug: "study-mbbs-in-uzbekistan",
     intro: {
       title: "MBBS In uzbekistan - Introdution",
       points: [
@@ -876,6 +917,7 @@ export const countries = {
   },
   "study-mbbs-in-kazakhstan": {
     name: "Study MBBS in Kazakhstan",
+    slug: "study-mbbs-in-kazakhstan",
     intro: {
       title: "MBBS IN Kazakhstan - introduction",
       points: [
@@ -913,6 +955,7 @@ export const countries = {
   },
   "study-mbbs-in-kyrgyzstan": {
     name: "Study MBBS in Kyrgyzstan",
+    slug: "study-mbbs-in-kyrgyzstan",
     intro: {
       title: "MBBS In Kyrgyzstan - Introduction",
       points: [
@@ -945,6 +988,7 @@ export const countries = {
   },
   "study-mbbs-in-vietnam": {
     name: "Study MBBS in Vietnam",
+    slug: "study-mbbs-in-vietnam",
     intro: {
       title: "MBBS In Vietnam - Introduction",
       points: [

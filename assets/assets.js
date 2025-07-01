@@ -82,6 +82,12 @@ import Our_vission from "./aboutUsPage/Our vission.webp";
 import scale from "./aboutUsPage/scale.png";
 import aboutbg from "./aboutUsPage/aboutbg.png";
 
+//university page
+import {
+  ksmukurskrussiaheader,
+  ksmukurskrussiamain,
+} from "./university/index.js";
+
 //footer images
 import Footerbg from "./Footer/footer-bg1.webp";
 import Footershape1 from "./Footer/footershape1.webp";
@@ -213,4 +219,8 @@ export {
   Russia,
   uzebekistan,
   vietnam,
+
+  // university page
+  ksmukurskrussiaheader,
+  ksmukurskrussiamain,
 };
