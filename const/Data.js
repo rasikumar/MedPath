@@ -7,6 +7,8 @@ import {
   Banner_1,
   Banner_2,
   bashkirlogo,
+  baskirimageheader,
+  baskirimagemain,
   BukharaLogo,
   CanthoLogo,
   DaiNamLogo,
@@ -17,6 +19,8 @@ import {
   KazakLogo,
   kazakstanFlag,
   kazan,
+  kazanmedicaluniversityheader,
+  kazanmedicaluniversitymain,
   ksmukurskrussiaheader,
   ksmukurskrussiamain,
   KuruskLogo,
@@ -52,8 +56,11 @@ import {
 } from "@/assets/gallery";
 import {
   ABOUT_ROUTE,
+  BASHKIR_ROUTE,
   CONTACT_ROUTE,
   KAZAKHSTAN_ROUTE,
+  KAZAN_ROUTE,
+  KURSK_ROUTE,
   KYRGYZSTAN_ROUTE,
   RUSSIA_ROUTE,
   UZBEKISTAN_ROUTE,
@@ -115,38 +122,38 @@ export const Home_Data = {
         universities: [
           {
             id: 0,
-            title: "BUKHARA STATE MEDICAL INSTITUTE",
-            description: "BUKHARA, Uzbekistan",
+            title: "Bukhara State Medical Institute",
+            description: "Bukhara, Uzbekistan",
             image: {
               src: BukharaLogo,
-              alt: "BUKHARA STATE MEDICAL INSTITUTE",
+              alt: "Bukhara State Medical Institute",
             },
           },
           {
             id: 1,
-            title: "SAMARKAND STATE MEDICAL INSTITUTE",
-            description: "SAMARKAND, Uzbekistan",
+            title: "Samarkand State Medical Institute",
+            description: "Samarkand, Uzbekistan",
             image: {
               src: SamarkandLogo,
-              alt: "SAMARKAND STATE MEDICAL INSTITUTE",
+              alt: "Samarkand State Medical Institute",
             },
           },
           {
             id: 2,
-            title: "Tashkent medical University",
-            description: "TASHKENT, Uzbekistan",
+            title: "Tashkent Medical University",
+            description: "Tashkent, Uzbekistan",
             image: {
               src: TashkentLogo,
-              alt: "Tashkent medical University",
+              alt: "Tashkent Medical University",
             },
           },
           {
             id: 3,
-            title: "ANDIZHAN STATE MEDICAL INSTITUTE",
-            description: "ANDIZHAN, Uzbekistan",
+            title: "Andizhan State Medical Institute",
+            description: "Andizhan, Uzbekistan",
             image: {
               src: Andijan,
-              alt: "ANDIZHAN STATE MEDICAL INSTITUTE",
+              alt: "Andizhan State Medical Institute",
             },
           },
         ],
@@ -161,26 +168,26 @@ export const Home_Data = {
         universities: [
           {
             id: 0,
-            title: "Jalalabad state medical University",
+            title: "Jalalabad State Medical University",
             description: "Jalalabad, Kyrgyzstan",
             image: {
               src: jalalabadlogo,
-              alt: "Jalalabad state medical University",
+              alt: "Jalalabad State Medical University",
             },
           },
           {
             id: 1,
-            title: "Osh state medical University",
+            title: "Osh State Medical University",
             description: "Osh, Kyrgyzstan",
             image: {
               src: oshLogo,
-              alt: "BISHKEK INTERNATIONAL UNIVERSITY",
+              alt: "Osh State Medical University", // Fixed to match title (was "BISHKEK INTERNATIONAL UNIVERSITY")
             },
           },
           {
             id: 2,
             title: "International School of Medicine",
-            description: "International, Kyrgyzstan",
+            description: "Bishkek, Kyrgyzstan", // Fixed city (was "International")
             image: {
               src: InternationalLogo,
               alt: "International School of Medicine",
@@ -217,7 +224,7 @@ export const Home_Data = {
           {
             id: 2,
             title: "Al-Farabi Kazakh National University",
-            description: "Al-Farabi, Kazakhstan",
+            description: "Almaty, Kazakhstan", // Corrected city (Al-Farabi is the university's namesake, not location)
             image: {
               src: AL,
               alt: "Al-Farabi Kazakh National University",
@@ -225,11 +232,11 @@ export const Home_Data = {
           },
           {
             id: 3,
-            title: "SOUTH KAZAKHSTAN MEDICAL ACADEMY",
-            description: "SOUTH KAZAKHSTAN, Kazakhstan",
+            title: "South Kazakhstan Medical Academy", // Fixed all-caps
+            description: "Shymkent, Kazakhstan", // Corrected city (South Kazakhstan region's capital)
             image: {
               src: SouthKazakLogo,
-              alt: "SOUTH KAZAKHSTAN",
+              alt: "South Kazakhstan Medical Academy", // Fixed to match title
             },
           },
         ],
@@ -246,6 +253,7 @@ export const Home_Data = {
             id: 0,
             title: "Bashkir State Medical University",
             description: "Bashkir, Russia",
+            link: BASHKIR_ROUTE,
             image: {
               src: bashkirlogo,
               alt: "Bashkir State Medical University",
@@ -255,6 +263,7 @@ export const Home_Data = {
             id: 1,
             title: "Kazan State Medical University",
             description: "Kazan, Russia",
+            link: KAZAN_ROUTE,
             image: {
               src: kazan,
               alt: "Kazan State Medical University",
@@ -262,11 +271,12 @@ export const Home_Data = {
           },
           {
             id: 2,
-            title: "Kursk state medical University",
+            title: "Kursk State Medical University",
             description: "Kursk, Russia",
+            link: KURSK_ROUTE,
             image: {
               src: KuruskLogo,
-              alt: "Kursk state medical University",
+              alt: "Kursk State Medical University",
             },
           },
           {
@@ -280,20 +290,20 @@ export const Home_Data = {
           },
           {
             id: 4,
-            title: "SMOLENSK STATE MEDICAL UNIVERSITY",
+            title: "Smolensk State Medical University",
             description: "Moscow, Russia",
             image: {
               src: SmolenexLogo,
-              alt: "SMOLENSK STATE MEDICAL UNIVERSITY",
+              alt: "Smolensk State Medical University",
             },
           },
           {
             id: 5,
-            title: "ORENBURG STATE MEDICAL UNIVERSITY",
+            title: "Orenburg State Medical University",
             description: "Yekaterinburg, Russia",
             image: {
               src: OrangeBergLogo,
-              alt: "ORENBURG STATE MEDICAL UNIVERSITY",
+              alt: "Orenburg State Medical University",
             },
           },
         ],
@@ -720,9 +730,9 @@ export const Home_Data = {
   },
   countryItems: [
     { id: 5, label: "MBBS IN Uzbekistan", href: UZBEKISTAN_ROUTE },
-    { id: 2, label: "MBBS in Kyrgyzstan", href: KYRGYZSTAN_ROUTE },
-    { id: 3, label: "MBBS in Kazakhstan", href: KAZAKHSTAN_ROUTE },
-    { id: 1, label: "MBBS in Russia", href: RUSSIA_ROUTE },
+    { id: 2, label: "MBBS IN Kyrgyzstan", href: KYRGYZSTAN_ROUTE },
+    { id: 3, label: "MBBS IN Kazakhstan", href: KAZAKHSTAN_ROUTE },
+    { id: 1, label: "MBBS IN Russia", href: RUSSIA_ROUTE },
     { id: 4, label: "MBBS IN Vietnam", href: VIETNAM_ROUTE },
   ],
 };
@@ -848,6 +858,7 @@ export const countries = {
         countryName: "Russia",
         countrySlug: "study-mbbs-in-russia",
         content: {
+          universitiesname: "Kursk State Medical University",
           headerImage: {
             src: ksmukurskrussiaheader,
             alt: "Kursk State Medical University",
@@ -857,23 +868,88 @@ export const countries = {
             alt: "Kursk State Medical University Main",
           },
           htmlcontent: `
-          <p> 
-<strong>Kursk State Medical University (KSMU)</strong> is one of the leading medical universities in Russia, located in the city of Kursk. Established in 1935, KSMU has a rich history and is known for its high-quality medical education and research. The university offers a wide range of programs in medicine, dentistry, pharmacy, and nursing, with a strong emphasis on practical training and clinical experience. KSMU is recognized by the World Health Organization (WHO) and the National Medical Commission (NMC), making its degrees valid worldwide. The university has a diverse student body, with students from over 50 countries, creating a multicultural environment that enhances the learning experience. KSMU is equipped with modern facilities, including state-of-the-art laboratories, libraries, and research centers, providing students with the resources they need to excel in their studies. The university also has strong ties with various healthcare institutions, allowing students to gain valuable hands-on experience during their training.
-          </p>
-          <p>
-Kursk State Medical University (KSMU) is a prestigious institution that offers a comprehensive medical education program. The university provides a six-year MBBS program, which is divided into two phases: the first three years focus on theoretical knowledge, while the last three years emphasize practical training and clinical practice. The curriculum is designed to meet international standards, ensuring that graduates are well-prepared for a successful career in medicine. KSMU also offers programs in English, making it accessible to international students. The university has a strong emphasis on research and innovation, with numerous research projects and collaborations with leading medical institutions worldwide. KSMU's commitment to excellence in medical education and research has earned it a reputation as one of the top medical universities in Russia.
-          </p>
-          <p>
-Kursk State Medical University (KSMU) is a renowned institution for medical education in
-Russia, offering a six-year MBBS program that is recognized globally. The university is known for its high academic standards, experienced faculty, and modern facilities. KSMU provides a comprehensive curriculum that includes both theoretical knowledge and practical training, ensuring that students are well-prepared for their medical careers. The university also offers programs in English, making it accessible to international students. KSMU has a diverse student body, with students from over 50 countries, creating a multicultural environment that enhances the learning experience. The university's strong emphasis on research and innovation further contributes to its reputation as a leading medical institution.
-          </p>
-          <p>
-Kursk State Medical University (KSMU) is a prestigious medical institution located in Kurs
-k, Russia. Established in 1935, KSMU has a long history of providing high-quality medical education and training. The university offers a six-year MBBS program that is recognized by the World Health Organization (WHO) and the National Medical Commission (NMC) in India, making it a popular choice for international students, especially from India. KSMU is known for its experienced faculty, modern facilities, and strong emphasis on research and innovation. The university provides a comprehensive curriculum that combines theoretical knowledge with practical training, ensuring that students are well-prepared for their medical careers. KSMU also has a vibrant student community, with students from over 50 countries, creating a multicultural environment that enhances the learning experience.
-          </p>
-          <p>
-Kursk State Medical University (KSMU) is a leading medical institution in Russia, known for its high-quality education and research. The university offers a six-year MBBS program that is recognized by the World Health Organization (WHO) and the National Medical Commission (NMC) in India. KSMU has a strong emphasis on practical training, with students gaining hands-on experience in various clinical settings. The university also offers programs in English, making it accessible to international students. KSMU's faculty consists of highly qualified professionals who are dedicated to providing students with a comprehensive understanding of medical science. The university's modern facilities and resources further enhance the learning experience, making it an ideal choice for aspiring medical professionals.
-          </p>
+            <h2><strong>Introduction:</strong></h2>
+            <p>In the pursuit of quality education and promising career prospects, students often seek guidance to navigate through the myriad of options available globally. Amidst this quest, Study Doctor Education Consultant emerges as a beacon of hope, providing expert assistance to students aspiring for excellence in the medical field. The recent partnership with Kursk State Medical University, Russia, marks a significant milestone in facilitating access to world-class education and shaping the future of aspiring medical professionals.</p>
+            <h3>Exploring Kursk State Medical University:</h3>
+            <p>Nestled in the heart of Russia, Kursk State Medical University stands tall as a renowned institution with a rich legacy of academic excellence and innovation. Established in 1935, the university has consistently upheld its commitment to providing exceptional medical education, fostering research, and nurturing future leaders in healthcare. With state-of-the-art infrastructure, cutting-edge laboratories, and a distinguished faculty comprising seasoned academicians and practitioners, Kursk State Medical University offers a conducive environment for holistic learning and skill development.</p>
+            <h3><strong>Programs Offered:</strong></h3>
+            <p>Through our collaboration with Kursk State Medical University, Study Doctor Education Consultant extends a plethora of undergraduate and postgraduate programs tailored to meet the evolving demands of the healthcare industry. Whether it’s the Bachelor of Medicine and Bachelor of Surgery (MBBS) program, specialized courses in dentistry, pharmacy, or nursing, the university ensures comprehensive training encompassing theoretical knowledge, practical exposure, and clinical experience. Moreover, students can leverage opportunities for research collaboration, internships, and exchange programs to broaden their horizons and gain a global perspective.</p>
+            <h3><strong>Advantages of Studying at Kursk State Medical University:</strong></h3>
+            <ol>
+              <li>Accredited Curriculum: The university follows a curriculum aligned with international standards, ensuring graduates are well-equipped to meet global healthcare challenges.</li>
+              <li>Clinical Exposure: Kursk State Medical University boasts affiliations with leading hospitals and healthcare institutions, providing students with hands-on clinical exposure from the early stages of their education.</li>
+              <li>Multicultural Environment: With a diverse student body hailing from different corners of the world, the university fosters cross-cultural interactions, enriching the learning experience and promoting global citizenship.</li>
+              <li>Affordable Education: Recognizing the financial constraints faced by many students, Kursk State Medical University offers affordable tuition fees without compromising on the quality of education.</li>
+            </ol>
+            <h3><strong>Support and Guidance from Study Doctor Education Consultant:</strong></h3>
+            <p>At Study Doctor Education Consultant, we understand that embarking on a journey towards higher education can be daunting. Hence, our team of experienced counselors and advisors is committed to guiding students at every step of the way. From assisting with university applications and visa procedures to providing pre-departure orientation and ongoing support during their academic tenure, we strive to alleviate the stress and ensure a smooth transition for students aspiring to study at Kursk State Medical University.</p>
+          `,
+        },
+      },
+      "bashkir-state-medical-university": {
+        name: "Bashkir State Medical University",
+        slug: "bashkir-state-medical-university",
+        countryName: "Russia",
+        countrySlug: "study-mbbs-in-russia",
+        content: {
+          universitiesname: "Bashkir State Medical University",
+          headerImage: {
+            src: baskirimageheader,
+            alt: "Bashkir State Medical University",
+          },
+          mainImage: {
+            src: baskirimagemain,
+            alt: "Bashkir State Medical University Main",
+          },
+          htmlcontent: `
+          <p>In the pursuit of higher education, particularly in the field of medicine, students often find themselves at a crossroads, navigating through a myriad of choices and considerations. Amidst this complexity, having a trusted guide to illuminate the path forward can make all the difference. This is where Study Doctor Education Consultant emerges as a beacon of support, offering invaluable assistance to aspiring medical professionals worldwide.</p>
+          <p>At Study Doctor Education Consultant, we understand that the journey to becoming a proficient healthcare practitioner requires not only dedication but also access to top-tier educational institutions. It is with great pride and excitement that we announce our latest collaboration with Bashkir State Medical University in Russia, a partnership set to redefine the landscape of medical education.</p>
+          <p>Nestled in the heart of Ufa, the capital city of the Republic of Bashkortostan, Bashkir State Medical University stands as a paragon of academic excellence and innovation. With a rich history spanning over 85 years, the university has consistently upheld its commitment to nurturing the next generation of medical leaders through cutting-edge research, comprehensive curricula, and state-of-the-art facilities.</p>
+          <p>Our collaboration with Bashkir State Medical University signifies a significant milestone in our mission to connect aspiring medical professionals with renowned educational institutions worldwide. Through this partnership, students can embark on a transformative educational journey characterized by unparalleled academic rigor, cultural enrichment, and professional development opportunities.</p>
+          <p>What sets Bashkir State Medical University apart is its unwavering dedication to fostering a conducive learning environment that empowers students to realize their full potential. The university boasts a distinguished faculty comprising eminent scholars, experienced clinicians, and industry experts who are committed to imparting knowledge, cultivating critical thinking skills, and instilling a sense of ethical responsibility in their students.</p>
+          <p>Furthermore, Bashkir State Medical University’s robust infrastructure, which includes state-of-the-art laboratories, simulation centers, and teaching hospitals, ensures that students receive comprehensive hands-on training across various medical disciplines. This immersive learning experience not only equips students with the requisite clinical skills but also nurtures their innate passion for serving humanity through healthcare.</p>
+          <p>As a leading education consultant, Study Doctor takes pride in our role as a trusted facilitator, guiding students through every step of their academic journey. From personalized counseling sessions and academic guidance to visa assistance and accommodation arrangements, we strive to alleviate the logistical challenges associated with studying abroad, allowing students to focus wholeheartedly on their education and personal growth.</p>
+          <p>Through our partnership with Bashkir State Medical University, we aim to empower aspiring medical professionals with the knowledge, skills, and confidence to thrive in an increasingly complex and dynamic healthcare landscape. Together, we envision a future where every student has the opportunity to realize their dreams and make a meaningful impact on global health outcomes.</p>
+          `,
+        },
+      },
+      "kazan-state-medical-university": {
+        name: "Kazan State Medical University",
+        slug: "kazan-state-medical-university",
+        countryName: "Russia",
+        countrySlug: "study-mbbs-in-russia",
+        content: {
+          universitiesname: "Kazan State Medical University",
+          headerImage: {
+            src: kazanmedicaluniversityheader,
+            alt: "Kazan State Medical University",
+          },
+          mainImage: {
+            src: kazanmedicaluniversitymain,
+            alt: "Kazan State Medical University Main",
+          },
+          htmlcontent: `
+          <h3><strong>Introduction:</strong></h3>
+          <p>In the ever-expanding global landscape of education, the quest for quality medical education is paramount. Aspiring doctors often seek opportunities beyond borders, aiming to broaden their horizons and enhance their skills. Amidst this pursuit, Study Doctor Education Consultant emerges as a guiding beacon, offering invaluable assistance to students in navigating the complexities of international education. One such partnership that underscores their commitment to excellence is with Kazan State Medical University, Russia.</p>
+          <h3><strong>Unveiling Kazan State Medical University:</strong></h3>
+          <p>Nestled in the picturesque city of Kazan, Kazan State Medical University stands as a beacon of medical excellence in Russia. With a rich legacy spanning over two centuries, the university has consistently upheld its reputation for academic brilliance and innovation. Accredited by prestigious medical bodies and recognized globally, Kazan State Medical University offers a diverse range of medical programs tailored to meet the evolving demands of the healthcare industry.</p>
+          <h3><strong>Why Choose Kazan State Medical University?</strong></h3>
+          <ol>
+              <li>Academic Excellence: Kazan State Medical University boasts a faculty comprising eminent professors, researchers, and medical practitioners dedicated to imparting knowledge of the highest caliber.</li>
+              <li>State-of-the-Art Facilities: Equipped with modern laboratories, research centers, and clinical facilities, the university provides students with hands-on learning experiences essential for their professional growth.</li>
+              <li>Global Recognition: Graduates of Kazan State Medical University are sought after worldwide, with alumni making significant contributions to the medical field globally.</li>
+              <li>Cultural Enrichment: Studying at Kazan State Medical University offers students the unique opportunity to immerse themselves in the rich cultural tapestry of Russia, fostering personal growth and cross-cultural understanding.</li>
+            </ol>
+          <h3><strong>The Partnership with Study Doctor Education Consultant:</strong></h3>
+          <p>Study Doctor Education Consultant’s collaboration with Kazan State Medical University amplifies the opportunities available to aspiring medical professionals. Through this partnership, students gain access to personalized guidance and support at every stage of their academic journey. From application assistance to visa processing and beyond, Study Doctor Education Consultant ensures a seamless transition for students aspiring to study at Kazan State Medical University.</p>
+          <h3><strong>Benefits for Students:</strong></h3>
+          <ol>
+              <li>Expert Guidance: Study Doctor Education Consultant’s team of experienced counselors provides students with comprehensive guidance, helping them make informed decisions regarding their academic and professional pursuits.</li>
+              <li>Streamlined Process: Navigating the intricacies of international education can be daunting. Study Doctor Education Consultant simplifies the process, offering step-by-step assistance to students, ensuring a hassle-free experience.</li>
+              <li>Tailored Solutions: Recognizing that every student is unique, Study Doctor Education Consultant offers personalized solutions tailored to individual needs, maximizing the chances of success.</li>
+              <li>Ongoing Support: The partnership extends beyond enrollment, with Study Doctor Education Consultant offering ongoing support to students throughout their academic journey, ensuring they thrive academically and personally.</li>
+            </ol>
+
           `,
         },
       },

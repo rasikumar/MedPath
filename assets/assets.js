@@ -86,6 +86,16 @@ import aboutbg from "./aboutUsPage/aboutbg.png";
 import {
   ksmukurskrussiaheader,
   ksmukurskrussiamain,
+  baskirimageheader,
+  baskirimagemain,
+  kazanmedicaluniversityheader,
+  kazanmedicaluniversitymain,
+  orenburgstatemedicaluniversityheader,
+  orenburgstatemedicaluniversitymain,
+  siberianstatemedicaluniversityheader,
+  siberianstatemedicaluniversitymain,
+  smolenskstatemedicaluniversityheader,
+  smolenskstatemedicaluniversitymain,
 } from "./university/index.js";
 
 //footer images
@@ -223,4 +233,14 @@ export {
   // university page
   ksmukurskrussiaheader,
   ksmukurskrussiamain,
+  baskirimageheader,
+  baskirimagemain,
+  kazanmedicaluniversityheader,
+  kazanmedicaluniversitymain,
+  orenburgstatemedicaluniversityheader,
+  orenburgstatemedicaluniversitymain,
+  siberianstatemedicaluniversityheader,
+  siberianstatemedicaluniversitymain,
+  smolenskstatemedicaluniversityheader,
+  smolenskstatemedicaluniversitymain,
 };

@@ -13,11 +13,9 @@ import HamburgerToggle from "./HamburgerMenu";
 import Button from "../ui/Button";
 import { daySchedules, Home_Data, socialmediaLinks } from "@/const/Data";
 import { FaRegClock, FaTimes } from "react-icons/fa";
-import TopBar from "./TopBar";
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { useRouter, usePathname } from "next/navigation";
-import { FaGlobe } from "react-icons/fa6";
 function getTodaySchedule() {
   const days = [
     "Sunday",

@@ -2,27 +2,13 @@
 import { useState } from "react";
 import { Home_Data } from "@/const/Data";
 import UniversityCard from "../ui/UniversityCard";
-import UniversitSumbitForm from "@/components/forms/UniversitSumbitForm";
 import Image from "next/image";
 
 const OurUniversity = () => {
-  const [selectedUniversity, setSelectedUniversity] = useState(null);
-  const [images, setImages] = useState([]);
-  const [showForm, setShowForm] = useState(false);
   const [activeTab, setActiveTab] = useState(1);
 
   const title = Home_Data.our_universities.title;
   const university_slide = Home_Data.our_universities.country_university;
-
-  const handleApplyClick = (universityName) => {
-    setSelectedUniversity(universityName);
-    setShowForm(true);
-  };
-
-  const closeForm = () => {
-    setShowForm(false);
-    setSelectedUniversity(null);
-  };
 
   return (
     <section className="px-4 xs:px-6 sm:px-8 py-8 sm:py-12 md:py-16">
@@ -77,7 +63,7 @@ const OurUniversity = () => {
                       title={university.title}
                       image={university.image}
                       description={university.description}
-                      onApplyClick={() => handleApplyClick(university)}
+                      link={university.link}
                     />
                   ))}
                 </div>
@@ -85,13 +71,6 @@ const OurUniversity = () => {
             ))}
           </div>
         </div>
-        {showForm && (
-          <UniversitSumbitForm
-            university={selectedUniversity}
-            image={images.find((image) => image.name === selectedUniversity)}
-            onClose={closeForm}
-          />
-        )}
       </div>
     </section>
   );

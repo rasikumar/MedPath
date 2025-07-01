@@ -27,13 +27,13 @@ const MilestoneSection = () => {
         <div className="flex md:flex-row flex-col gap-8 justify-center w-full">
           <div className="center-column md:border-r max-md:border-b max-md:pb-12 border-white md:pr-12 gap-2">
             <span className="text-4xl text-background font-bold">
-              <CountUp end={3.9} duration={5} />k +
+              <CountUp end={150} duration={5} /> +
             </span>
             <h4 className="text-sm text-background">Successfully Graduated</h4>
           </div>
           <div className="center-column md:border-r max-md:border-b max-md:pb-12 border-white md:pr-12 gap-2">
             <span className="text-4xl text-background font-bold">
-              <CountUp end={15.8} duration={5} />
+              <CountUp end={1500} duration={5} />
               k+
             </span>
             <h4 className="text-sm text-background">Applications Completed</h4>
@@ -46,7 +46,7 @@ const MilestoneSection = () => {
           </div>
           <div className="center-column md:border-r max-md:border-b max-md:pb-12 border-white md:pr-12 gap-2">
             <span className="text-4xl text-background font-bold">
-              <CountUp end={100.2} duration={5} />
+              <CountUp end={5} duration={5} />
               k+
             </span>
             <h4 className="text-sm text-background">Students Community</h4>

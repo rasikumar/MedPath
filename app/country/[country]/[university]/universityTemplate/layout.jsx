@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { countryBg } from "@/assets/countryImage";
-import { breadcumb_shape_1_3 } from "@/assets/assets";
+import { breadcumb_shape_1_3, h2_about_shape01 } from "@/assets/assets";
 import Link from "next/link";
 import Data from "./Data";
 
@@ -46,6 +46,12 @@ export default function UniversityLayout({ university }) {
               className="md:w-12"
             />
           </div>
+          <div className="absolute top-6 right-10 slide-animated-element">
+            <Image
+              src={h2_about_shape01}
+              alt="arrow-image"
+            />
+          </div>
           <div className="flex flex-col items-center w-full max-w-5xl">
             <h1 className="md:text-5xl text-2xl text-background font-bold">
               {university.name}
@@ -69,7 +75,7 @@ export default function UniversityLayout({ university }) {
         </header>
       </div>
       <main className="container mx-auto px-4 py-8 space-y-16">
-        <Data data={university.content}/>
+        <Data data={university.content} />
         {/* <IntroSection data={country.intro} />
         <WhyStudy data={country.why_study} />
         <FoodAccomdation data={country.accomadation} /> */}

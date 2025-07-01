@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { countryBg } from "@/assets/countryImage";
 import IntroSection from "./IntroSection";
-import { breadcumb_shape_1_3 } from "@/assets/assets";
+import { breadcumb_shape_1_3, h2_about_shape01 } from "@/assets/assets";
 import WhyStudy from "./WhyStudy";
 import FoodAccomdation from "./FoodAccomdation";
 // import AdmissionsSection from "./AdmissionsSection";
@@ -46,6 +46,13 @@ export default function CountryLayout({ country }) {
           <div className="absolute top-36 left-10 smooth-animated-element">
             <Image
               src={breadcumb_shape_1_3}
+              alt="arrow-image"
+              className="md:w-12"
+            />
+          </div>
+          <div className="absolute top-36 left-10 smooth-animated-element">
+            <Image
+              src={h2_about_shape01}
               alt="arrow-image"
               className="md:w-12"
             />
