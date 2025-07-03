@@ -50,11 +50,11 @@ export default function CountryLayout({ country }) {
               className="md:w-12"
             />
           </div>
-          <div className="absolute top-36 left-10 smooth-animated-element">
+          <div className="absolute top-36 right-10 smooth-animated-element">
             <Image
               src={h2_about_shape01}
               alt="arrow-image"
-              className="md:w-12"
+              className="md:w-24"
             />
           </div>
           <div className="flex flex-col items-center w-full max-w-2xl">
