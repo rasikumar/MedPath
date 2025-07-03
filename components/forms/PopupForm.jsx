@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import gsap from "gsap";
 import { hasPopupShownRecently, markPopupAsShown } from "@/utils/utils";
 import PhoneInput from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 import Button from "../ui/Button";
 import { validateInquiryForm } from "@/utils/validations";
 import { Home_Data } from "@/const/Data";

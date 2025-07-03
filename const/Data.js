@@ -10,11 +10,17 @@ import {
   baskirimageheader,
   baskirimagemain,
   BukharaLogo,
+  BukharaStateMedicalInstituteheader,
+  BukharaStateMedicalInstitutemain,
   CanthoLogo,
   DaiNamLogo,
   InternationalLogo,
+  internationalschoolheader,
+  internationalschoolmain,
   italyFlag,
+  jalalabadheader,
   jalalabadlogo,
+  jalalabadmain,
   kazakhstan,
   KazakLogo,
   kazakstanFlag,
@@ -31,16 +37,22 @@ import {
   missionImage,
   OrangeBergLogo,
   oshLogo,
+  oshstateheader,
+  oshstatemain,
   Our_Goal,
   Our_vission,
   PhanChauLogo,
   Russia,
   russiaFlag,
+  samarkandheader,
   SamarkandLogo,
+  samarkandmain,
   SiberianLogo,
   SmolenexLogo,
   SouthKazakLogo,
+  tashkantheader,
   TashkentLogo,
+  tashkentmain,
   uzbekistanFlag,
   uzebekistan,
   vietnam,
@@ -57,12 +69,18 @@ import {
 import {
   ABOUT_ROUTE,
   BASHKIR_ROUTE,
+  BHUKARA_ROUTE,
   CONTACT_ROUTE,
+  INTERNATION_SCHOOL_ROUTE,
+  JALALABAD_ROUTE,
   KAZAKHSTAN_ROUTE,
   KAZAN_ROUTE,
   KURSK_ROUTE,
   KYRGYZSTAN_ROUTE,
+  OSH_ROUTE,
   RUSSIA_ROUTE,
+  SAMARKAND_ROUTE,
+  TASHKENT_ROUTE,
   UZBEKISTAN_ROUTE,
   VIETNAM_ROUTE,
 } from "@/utils/routes";
@@ -124,6 +142,7 @@ export const Home_Data = {
             id: 0,
             title: "Bukhara State Medical Institute",
             description: "Bukhara, Uzbekistan",
+            link: BHUKARA_ROUTE,
             image: {
               src: BukharaLogo,
               alt: "Bukhara State Medical Institute",
@@ -133,6 +152,7 @@ export const Home_Data = {
             id: 1,
             title: "Samarkand State Medical Institute",
             description: "Samarkand, Uzbekistan",
+            link: SAMARKAND_ROUTE,
             image: {
               src: SamarkandLogo,
               alt: "Samarkand State Medical Institute",
@@ -142,6 +162,7 @@ export const Home_Data = {
             id: 2,
             title: "Tashkent Medical University",
             description: "Tashkent, Uzbekistan",
+            link: TASHKENT_ROUTE,
             image: {
               src: TashkentLogo,
               alt: "Tashkent Medical University",
@@ -170,6 +191,7 @@ export const Home_Data = {
             id: 0,
             title: "Jalalabad State Medical University",
             description: "Jalalabad, Kyrgyzstan",
+            link: JALALABAD_ROUTE,
             image: {
               src: jalalabadlogo,
               alt: "Jalalabad State Medical University",
@@ -178,6 +200,7 @@ export const Home_Data = {
           {
             id: 1,
             title: "Osh State Medical University",
+            link: OSH_ROUTE,
             description: "Osh, Kyrgyzstan",
             image: {
               src: oshLogo,
@@ -187,6 +210,7 @@ export const Home_Data = {
           {
             id: 2,
             title: "International School of Medicine",
+            link: INTERNATION_SCHOOL_ROUTE,
             description: "Bishkek, Kyrgyzstan", // Fixed city (was "International")
             image: {
               src: InternationalLogo,
@@ -990,6 +1014,128 @@ export const countries = {
       content:
         "While living in Uzbekistan as a medical student, food and accommodation are the major factors that students keep in mind. The universities in Uzbekistan have very affordable accommodation options; most of them offer hostels for international students. These hostels are facilitated with all the necessary facilities that ensure a comfortable living environment for the students. There are numerous Indian restaurants in Uzbekistan for Indian students, serving home-style meals at an affordable price. Many students also prefer cooking their own food; university hostels have kitchen facilities in many instances. The easy availability of affordable food options makes the stay in Uzbekistan quite convenient for Indian students. Generally speaking, living in Uzbekistan is not too expensive, and with a host of accommodation and food alternatives available to suit the lifestyles of international students, there is ample reason to feel at home while pursuing an MBBS in Uzbekistan.",
     },
+    universities: {
+      "bhu-kara-state-medical-university": {
+        name: "Bukhara state medical University",
+        slug: "bhu-kara-state-medical-university",
+        countryName: "Uzbekistan",
+        countrySlug: "study-mbbs-in-uzbekistan",
+        content: {
+          universitiesname: "Bukhara state medical University",
+          headerImage: {
+            src: BukharaStateMedicalInstituteheader,
+            alt: "Bukhara state medical University",
+          },
+          mainImage: {
+            src: BukharaStateMedicalInstitutemain,
+            alt: "Bukhara state medical University Main",
+          },
+          htmlcontent: `
+          <p>In the ever-evolving landscape of education and global opportunities, partnerships between educational institutions and consulting firms play a crucial role in facilitating students’ journeys towards their academic aspirations. At Study Doctor Education Consultant Company, we pride ourselves on fostering such collaborations that open doors to exceptional educational experiences worldwide. Today, we are thrilled to announce our partnership with BHU Kara State Medical University, Uzbekistan, marking a significant milestone in our commitment to providing quality education consultancy services.</p>
+          <p>Uzbekistan, with its rich cultural heritage and burgeoning academic sector, has been increasingly recognized as a hub for international students seeking top-notch medical education. Among the distinguished institutions in this region, BHU Kara State Medical University stands out for its excellence in medical education, research, and innovation. Established with a vision to nurture future healthcare leaders, BHU Kara State Medical University offers a conducive learning environment equipped with state-of-the-art facilities and a faculty renowned for their expertise and dedication.</p>
+          <p>Through our collaboration with BHU Kara State Medical University, Study Doctor Education Consultant Company aims to streamline the pathway for aspiring medical students from across the globe to pursue their academic dreams. Our partnership entails comprehensive support and guidance throughout the application process, ensuring that students receive personalized assistance at every step of their journey. From navigating admission requirements to facilitating visa procedures and accommodation arrangements, our team of experienced consultants is committed to alleviating the complexities associated with studying abroad.</p>
+          <p>One of the distinguishing features of BHU Kara State Medical University is its emphasis on practical learning experiences that complement theoretical knowledge. The university’s modern laboratories, simulation centers, and clinical facilities provide students with hands-on training opportunities under the supervision of seasoned professionals. Furthermore, BHU Kara State Medical University’s collaborative research initiatives and international exchange programs offer students a global perspective and exposure to diverse healthcare practices.</p>
+          <p>At Study Doctor, we understand that pursuing education abroad can be a transformative yet daunting experience for many students and their families. Therefore, our collaboration with BHU Kara State Medical University extends beyond mere academic assistance. We are committed to providing ongoing support and guidance to ensure that students seamlessly integrate into the university community and thrive in their academic pursuits. From cultural orientation sessions to peer mentoring programs, we strive to create a nurturing and inclusive environment where students feel empowered to excel academically and personally.</p>
+          <p>As we embark on this exciting journey with BHU Kara State Medical University, we invite aspiring medical students to explore the boundless opportunities that await them in Uzbekistan. Whether you aspire to become a compassionate physician, a groundbreaking researcher, or a healthcare innovator, our partnership with BHU Kara State Medical University is poised to catalyze your journey towards a fulfilling and impactful career in medicine.</p>
+          `,
+        },
+      },
+      "samarkand-state-medical-university": {
+        name: "Samarkand state medical University",
+        slug: "samarkand-state-medical-university",
+        countryName: "Uzbekistan",
+        countrySlug: "study-mbbs-in-uzbekistan",
+        content: {
+          universitiesname: "Samarkand state medical University",
+          headerImage: {
+            src: samarkandheader,
+            alt: "Samarkand state medical University",
+          },
+          mainImage: {
+            src: samarkandmain,
+            alt: "Samarkand state medical University Main",
+          },
+          htmlcontent: `
+          <strong>Introduction:</strong>
+          <p>Embarking on a journey towards a medical education is a significant step for any aspiring doctor. Choosing the right institution plays a crucial role in shaping one’s career path. As the global landscape of medical education evolves, partnerships between educational consultants and esteemed universities become increasingly vital. In this blog post, we delve into the exciting collaboration between Study Doctor Education Consultants and Samarkand State Medical University in Uzbekistan, highlighting the benefits it brings to prospective medical students.</p>
+          <strong>About Study Doctor Education Consultants:</strong>
+          <p>Study Doctor Education Consultants is a renowned consultancy firm dedicated to guiding students through the complex process of pursuing higher education in the medical field. With a wealth of experience and expertise, they assist students in finding the best educational opportunities that align with their goals and aspirations. From application procedures to visa assistance, Study Doctor provides comprehensive support to ensure a smooth transition into academia.</p>
+          <strong>Introducing Samarkand State Medical University:</strong>
+          <p>Situated in the heart of Uzbekistan, Samarkand State Medical University stands as a beacon of excellence in medical education. Established in 1930, the university has a rich history of producing skilled healthcare professionals who contribute significantly to the global medical community. With state-of-the-art facilities, experienced faculty members, and a diverse student body, Samarkand State Medical University offers a conducive environment for learning and personal growth.</p>
+          <strong>The Partnership:</strong>
+          <p>The collaboration between Study Doctor Education Consultants and Samarkand State Medical University opens up exciting opportunities for aspiring doctors worldwide. Through this partnership, students gain access to personalized guidance and support throughout their academic journey. From selecting the right program to navigating the intricacies of the admissions process, Study Doctor ensures that students are well-equipped to pursue their dreams of becoming healthcare professionals.</p>
+          <strong>Benefits for Students:</strong>
+          <ol>
+            <li><strong>Expert Guidance: </strong>Study Doctor Education Consultants provide students with expert advice and assistance at every stage of the application process, ensuring that they present a strong candidacy to Samarkand State Medical University.</li>
+            <li><strong>Streamlined Process: </strong>By partnering with Study Doctor, students can navigate the often complex application and enrollment procedures with ease, saving time and reducing stress.
+</li>
+            <li><strong>Cultural Immersion: </strong>Studying at Samarkand State Medical University offers students a unique opportunity to immerse themselves in Uzbek culture while receiving a world-class education in medicine.
+</li>
+            <li><strong>Global Recognition: </strong>Graduates of Samarkand State Medical University are highly regarded worldwide, opening doors to career opportunities in various countries and healthcare settings.
+</li>
+            <li><strong>Affordable Education: </strong>Uzbekistan offers affordable tuition fees and living costs compared to many Western countries, making it an attractive destination for international students seeking quality education without breaking the bank.
+
+</li>
+          </ol>
+          `,
+        },
+      },
+      "tashkent-paediatric-medical-university": {
+        name: "Tashkent paediatric medical University",
+        slug: "tashkent-paediatric-medical-university",
+        countryName: "Uzbekistan",
+        countrySlug: "study-mbbs-in-uzbekistan",
+        content: {
+          universitiesname: "Tashkent paediatric medical University",
+          headerImage: {
+            src: tashkantheader,
+            alt: "Tashkent paediatric medical University",
+          },
+          mainImage: {
+            src: tashkentmain,
+            alt: "Tashkent paediatric medical University Main",
+          },
+          htmlcontent: `<p>
+          In the dynamic landscape of international education, forging strategic partnerships is pivotal for both educational institutions and consultancy firms alike. The latest groundbreaking collaboration in this realm comes in the form of Study Doctor Education Consultant Company’s tie-up with Tashkent Paediatric Medical University in Uzbekistan. This alliance marks a significant milestone not only for the institutions involved but also for aspiring medical professionals seeking quality education beyond borders.</p>
+          <h2>Strengthening Educational Outreach</h2>
+          <p>Study Doctor Education Consultant Company, renowned for its commitment to facilitating global educational opportunities, has once again demonstrated its dedication to expanding horizons. By joining forces with Tashkent Paediatric Medical University, they are opening doors for students worldwide to access top-tier medical education in Central Asia.</p>
+          <h2>About Tashkent Paediatric Medical University</h2>
+          <p>Tashkent Paediatric Medical University stands as a beacon of excellence in medical education, particularly in the field of pediatrics. Established with a mission to nurture competent healthcare professionals, the university boasts state-of-the-art facilities, a distinguished faculty, and a comprehensive curriculum designed to meet the evolving demands of the medical landscape.</p>
+          <h2>Advantages of the Partnership</h2>
+          <ol>
+            <li><strong>Diversification of Academic Offerings: </strong>Through this partnership, Study Doctor Education Consultant Company expands its portfolio to include specialized medical programs offered by Tashkent Paediatric Medical University, catering to a broader spectrum of student interests.
+</li>
+            <li><strong>Access to Expertise: </strong>Collaborating with a reputable institution like Tashkent Paediatric Medical University provides students with access to world-class faculty, cutting-edge research facilities, and hands-on training opportunities, enhancing their overall learning experience.
+</li>
+            <li><strong>Cultural Exchange: </strong>This partnership fosters cultural exchange and promotes international understanding as students from diverse backgrounds converge at Tashkent Paediatric Medical University, enriching the educational environment and fostering a global perspective among future healthcare professionals.
+</li>
+            <li><strong>Career Opportunities: </strong>Graduates from Tashkent Paediatric Medical University, with the assistance of Study Doctor Education Consultant Company, gain access to a wide array of career opportunities globally, ensuring a smooth transition from academia to professional practice.
+</li>
+          </ol>
+          <h2>Future Prospects</h2>
+          <p>The collaboration between Study Doctor Education Consultant Company and Tashkent Paediatric Medical University holds immense promise for the future. As the partnership matures, both institutions aim to explore avenues for joint research initiatives, faculty exchanges, and student scholarships, further enhancing the educational landscape and contributing to advancements in healthcare on a global scale.</p>
+          `,
+        },
+      },
+      "andizhan-paediatric-medical-university": {
+        name: "Tashkent paediatric medical University",
+        slug: "andizhan-paediatric-medical-university",
+        countryName: "Uzbekistan",
+        countrySlug: "study-mbbs-in-uzbekistan",
+        content: {
+          universitiesname: "Tashkent paediatric medical University",
+          headerImage: {
+            src: tashkantheader,
+            alt: "Tashkent paediatric medical University",
+          },
+          mainImage: {
+            src: tashkentmain,
+            alt: "Tashkent paediatric medical University Main",
+          },
+          htmlcontent: ``,
+        },
+      },
+    },
   },
   "study-mbbs-in-kazakhstan": {
     name: "Study MBBS in Kazakhstan",
@@ -1027,6 +1173,140 @@ export const countries = {
       title: "Indian Food and Facility For Indian Students",
       content:
         "While living in Kazakhstan as a medical student, food and accommodation are the major factors that students keep in mind. The universities in Kazakhstan have very affordable accommodation options; most of them offer hostels for international students. These hostels are facilitated with all the necessary facilities that ensure a comfortable living environment for the students. There are numerous Indian restaurants in Kazakhstan for Indian students, serving home-style meals at an affordable price. Many students also prefer cooking their own food; university hostels have kitchen facilities in many instances. The easy availability of affordable food options makes the stay in Kazakhstan quite convenient for Indian students. Generally speaking, living in Kazakhstan is not too expensive, and with a host of accommodation and food alternatives available to suit the lifestyles of international students, there is ample reason to feel at home while pursuing an MBBS in Kazakhstan.",
+    },
+    universities: {
+      "jalalabad-state-medical-university": {
+        name: "Jalalabad state medical University",
+        slug: "jalalabad-state-medical-university",
+        countryName: "Uzbekistan",
+        countrySlug: "study-mbbs-in-kazakhstan",
+        content: {
+          universitiesname: "Jalalabad state medical University",
+          headerImage: {
+            src: jalalabadheader,
+            alt: "Jalalabad state medical University",
+          },
+          mainImage: {
+            src: jalalabadmain,
+            alt: "Jalalabad state medical University Main",
+          },
+          htmlcontent: `
+          <strong>Introduction:</strong>
+          <p>In the pursuit of higher education, aspiring medical professionals often find themselves navigating a labyrinth of options, seeking the perfect balance between quality education and affordability. This quest becomes even more challenging when considering studying abroad. Fortunately, Study Doctor Education Consultant is dedicated to simplifying this journey for students, and one significant stride in this endeavor is the partnership with Jalalabad State Medical University in Kyrgyzstan. Let’s delve into the intricacies of this collaboration and what it means for aspiring doctors.</p>
+          <strong>Establishing the Partnership:</strong>
+          <p>Study Doctor Education Consultant prides itself on fostering alliances with esteemed educational institutions worldwide. The partnership with Jalalabad State Medical University exemplifies this commitment. Founded in 1993, Jalalabad State Medical University has emerged as a beacon of excellence in medical education, offering a comprehensive curriculum and state-of-the-art facilities.</p>
+          <strong>Benefits for Aspiring Medical Professionals:</strong>
+          <p>For students aspiring to pursue a medical degree abroad, the tie-up between Study Doctor Education Consultant and Jalalabad State Medical University presents a plethora of benefits:</p>
+          <ol>
+            <li><strong>Academic Excellence: </strong>Jalalabad State Medical University boasts a faculty comprising experienced professionals and researchers dedicated to nurturing the next generation of medical practitioners. The curriculum is meticulously crafted to meet international standards, ensuring students receive a comprehensive education.
+</li>
+            <li><strong>Affordability: </strong>Studying abroad often comes with financial considerations. However, Jalalabad State Medical University offers competitive tuition fees and living expenses, making quality medical education accessible to a broader demographic of students.
+</li>
+            <li><strong>International Exposure: </strong>The partnership facilitates a culturally enriching experience for students, exposing them to diverse perspectives and fostering global competence—a crucial attribute in today’s interconnected world.
+</li>
+            <li><strong>Clinical Training Opportunities: </strong>Students benefit from hands-on clinical training in renowned hospitals affiliated with Jalalabad State Medical University. This practical experience equips them with the skills and confidence required to excel in their medical careers.
+</li>
+            <li><strong>Supportive Guidance: </strong>Study Doctor Education Consultant acts as a bridge between aspiring students and the university, providing comprehensive guidance throughout the application process, visa assistance, and ongoing support during their academic journey.
+</li>
+          </ol>
+          <strong>Impact on Future Medical Careers:</strong>
+          <p>The collaboration between Study Doctor Education Consultant and Jalalabad State Medical University lays a robust foundation for the future medical careers of students. Graduates emerge as competent medical professionals equipped with a globally recognized degree, poised to make meaningful contributions to the healthcare landscape.</p>
+          `,
+        },
+      },
+      "osh-state-medical-university": {
+        name: "Osh state medical University",
+        slug: "osh-state-medical-university",
+        countryName: "Uzbekistan",
+        countrySlug: "study-mbbs-in-kazakhstan",
+        content: {
+          universitiesname: "Osh state medical University",
+          headerImage: {
+            src: oshstateheader,
+            alt: "Osh state medical University",
+          },
+          mainImage: {
+            src: oshstatemain,
+            alt: "Osh state medical University Main",
+          },
+          htmlcontent: `
+          <strong>Introduction:</strong>
+          <p>In the ever-expanding landscape of global education, finding the right institution for medical studies can be a daunting task. However, with the right guidance and partnerships, aspiring doctors can unlock a world of opportunities. Today, we’re thrilled to announce an exciting collaboration between Study Doctor Education Consultant Company and Osh State Medical University in Kyrgyzstan.</p>
+          <p>At Study Doctor, our mission has always been to empower students in their pursuit of quality education, particularly in the field of medicine. Our partnership with Osh State Medical University is a testament to this commitment, as we aim to provide aspiring medical professionals with access to world-class education and unparalleled opportunities for growth.</p>
+          <strong>Why Osh State Medical University?</strong>
+          <p>Osh State Medical University stands as a beacon of excellence in medical education, not only in Kyrgyzstan but also on the global stage. Here are some compelling reasons why Osh State Medical University is the perfect destination for aspiring doctors:</p>
+          <ol>
+            <li><strong>Academic Excellence: </strong>Osh State Medical University boasts a stellar reputation for its rigorous academic programs, state-of-the-art facilities, and distinguished faculty members who are experts in their respective fields.
+</li>
+            <li><strong>International Recognition: </strong>The university is recognized by prestigious medical councils and organizations worldwide, making its degrees widely accepted and respected across borders.</li>
+            <li><strong>Multicultural Environment: </strong>Osh State Medical University welcomes students from diverse cultural backgrounds, fostering an enriching and inclusive learning environment that prepares future doctors for the global healthcare landscape.
+</li>
+            <li><strong>Clinical Experience: </strong>Students at Osh State Medical University gain invaluable clinical experience through hands-on training in modern medical facilities, ensuring they are well-prepared to excel in their careers upon graduation.</li>
+          </ol>
+          <strong>Our Commitment to Students:</strong>
+          <p>At Study Doctor, we understand that the journey to becoming a doctor is not just about acquiring knowledge but also about finding the right support system every step of the way. That’s why our partnership with Osh State Medical University goes beyond mere enrollment assistance. Here’s what students can expect from us:</p>
+          <ol>
+            <li><strong>Personalized Guidance: </strong>We provide personalized guidance and support to help students navigate the admission process smoothly, from application submission to visa assistance.
+</li>
+            <li><strong>Ongoing Support: </strong>Our support doesn’t end once students enroll at Osh State Medical University. We remain committed to assisting them throughout their academic journey, addressing any concerns or challenges they may encounter along the way.
+</li>
+            <li><strong>Career Counseling: </strong>We offer career counseling services to help students identify their strengths, explore various specializations, and make informed decisions about their future careers in medicine.
+</li>
+            <li><strong>Community Building: </strong>We facilitate networking opportunities and community-building activities to help students forge meaningful connections with peers, faculty, and industry professionals, both within the university and beyond.
+
+</li>
+          </ol>
+          `,
+        },
+      },
+      "international-school-of-medicine": {
+        name: "International school of medicine",
+        slug: "international-school-of-medicine",
+        countryName: "Uzbekistan",
+        countrySlug: "study-mbbs-in-kazakhstan",
+        content: {
+          universitiesname: "International school of medicine",
+          headerImage: {
+            src: internationalschoolheader,
+            alt: "International school of medicine",
+          },
+          mainImage: {
+            src: internationalschoolmain,
+            alt: "International school of medicine Main",
+          },
+          htmlcontent: `
+          <p>In the dynamic landscape of higher education, the pursuit of quality medical education transcends borders. As aspiring medical professionals seek pathways beyond their home countries, Study Doctor Education Consultant Company emerges as a beacon of guidance and support. In its latest stride towards fostering global opportunities, Study Doctor proudly announces its partnership with the esteemed International School of Medicine in Kyrgyzstan.</p>
+          <h2>A Confluence of Excellence</h2>
+          <p>Nestled in the heart of Central Asia, the International School of Medicine (ISM) stands as a testament to academic excellence and cultural diversity. With a commitment to nurturing proficient medical practitioners equipped with global perspectives, ISM has carved a niche for itself in the realm of medical education.</p>
+          <p>Study Doctor’s collaboration with ISM heralds a new era of opportunities for students aspiring to pursue their medical careers. This partnership serves as a bridge connecting eager minds with the enriching academic resources and cultural immersion offered by ISM.</p>
+          <h2>Unraveling the Advantages</h2>
+          <p>The tie-up between Study Doctor and ISM opens doors to a myriad of advantages for prospective medical students:</p>
+          <ol>
+            <li><strong>High-Quality Education: </strong>ISM boasts a faculty comprising seasoned professionals and scholars dedicated to imparting comprehensive medical education. Through this collaboration, students gain access to a curriculum aligned with international standards, ensuring a robust foundation for their medical careers.
+</li>
+            <li><strong>Clinical Exposure: </strong>Practical training is indispensable in medical education, and ISM excels in providing ample clinical exposure to its students. Study Doctor facilitates seamless access to clinical rotations and internships, allowing students to hone their skills in diverse medical settings.
+</li>
+            <li><strong>Affordability: </strong>Pursuing medical education abroad often comes with financial considerations. ISM, renowned for its affordability without compromising on quality, presents a compelling option for students seeking value for their investment. Study Doctor further assists students in navigating financial aspects, ensuring a smooth transition into their academic journey.
+</li>
+            <li><strong>Cultural Immersion: </strong>Beyond academics, studying abroad offers a holistic learning experience enriched by cultural immersion. Kyrgyzstan’s rich heritage and welcoming atmosphere provide an ideal backdrop for students to broaden their horizons and forge lifelong connections.
+</li>
+          </ol>
+          <h2>Guiding Every Step of the Way</h2>
+          <p>At Study Doctor, our commitment extends beyond mere facilitation. We understand that navigating the complexities of studying abroad can be daunting. Hence, our team of seasoned consultants stands ready to guide students at every step of their journey:</p>
+          <ul>
+            <li><strong>Personalized Counseling: </strong>From choosing the right program to assisting with visa procedures, our consultants offer personalized guidance tailored to each student’s aspirations and circumstances.
+</li>
+            <li><strong>Pre-Departure Assistance: </strong>We leave no stone unturned in ensuring a smooth transition for students, providing comprehensive support with travel arrangements, accommodation, and other logistical concerns.
+</li>
+            <li><strong>Ongoing Support: </strong>Our relationship with students doesn’t end at enrollment. We remain steadfast in our support throughout their academic tenure, addressing any challenges they may encounter along the way.</li>
+          </ul>
+          <h2>Embracing Boundless Opportunities</h2>
+          <p>In an increasingly interconnected world, the pursuit of education transcends geographical boundaries. Through its collaboration with the International School of Medicine, Kyrgyzstan, Study Doctor reaffirms its commitment to empowering students with global opportunities.</p>
+          <p>As aspiring medical professionals embark on this transformative journey, Study Doctor stands as a steadfast companion, guiding them towards a future brimming with promise and potential. Together, let us embrace the boundless opportunities that await on the horizon of global education.</p>
+          
+          `,
+        },
+      },
     },
   },
   "study-mbbs-in-kyrgyzstan": {
