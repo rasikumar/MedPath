@@ -1,9 +1,13 @@
 import {
   abouthero,
   AL,
+  alfarabikazakhnationaluniversityheader,
+  alfarabikazakhnationaluniversitymain,
   ALLogo,
   Andijan,
   astanaLogo,
+  astanamedicaluniversityheader,
+  astanamedicaluniversitymain,
   Banner_1,
   Banner_2,
   bashkirlogo,
@@ -23,6 +27,8 @@ import {
   jalalabadmain,
   kazakhstan,
   KazakLogo,
+  kazaknationalmedicaluniversityheader,
+  kazaknationalmedicaluniversitymain,
   kazakstanFlag,
   kazan,
   kazanmedicaluniversityheader,
@@ -49,6 +55,8 @@ import {
   samarkandmain,
   SiberianLogo,
   SmolenexLogo,
+  southkazakhstanmedicalacademyheader,
+  southkazakhstanmedicalacademymain,
   SouthKazakLogo,
   tashkantheader,
   TashkentLogo,
@@ -68,11 +76,14 @@ import {
 } from "@/assets/gallery";
 import {
   ABOUT_ROUTE,
+  AL_FARABI_ROUTE,
+  ASTANA_MEDICAL_ROUTE,
   BASHKIR_ROUTE,
   BHUKARA_ROUTE,
   CONTACT_ROUTE,
   INTERNATION_SCHOOL_ROUTE,
   JALALABAD_ROUTE,
+  KAZAK_NATIONAL_ROUTE,
   KAZAKHSTAN_ROUTE,
   KAZAN_ROUTE,
   KURSK_ROUTE,
@@ -80,6 +91,7 @@ import {
   OSH_ROUTE,
   RUSSIA_ROUTE,
   SAMARKAND_ROUTE,
+  SOUTH_KAZAKHASTAN_ROUTE,
   TASHKENT_ROUTE,
   UZBEKISTAN_ROUTE,
   VIETNAM_ROUTE,
@@ -103,7 +115,7 @@ export const Home_Data = {
       ],
       button: {
         label: "GET STARTED",
-        link: "/get-started",
+        link: ABOUT_ROUTE,
       },
     },
     {
@@ -122,7 +134,7 @@ export const Home_Data = {
       ],
       button: {
         label: "GET STARTED",
-        link: "/get-started",
+        link: ABOUT_ROUTE,
       },
     },
   ],
@@ -231,6 +243,7 @@ export const Home_Data = {
             id: 0,
             title: "Kazakh National Medical University",
             description: "Almaty, Kazakhstan",
+            link: KAZAK_NATIONAL_ROUTE,
             image: {
               src: KazakLogo,
               alt: "Kazakh National Medical University",
@@ -239,6 +252,7 @@ export const Home_Data = {
           {
             id: 1,
             title: "Astana Medical University",
+            link: ASTANA_MEDICAL_ROUTE,
             description: "Astana, Kazakhstan",
             image: {
               src: astanaLogo,
@@ -248,7 +262,8 @@ export const Home_Data = {
           {
             id: 2,
             title: "Al-Farabi Kazakh National University",
-            description: "Almaty, Kazakhstan", // Corrected city (Al-Farabi is the university's namesake, not location)
+            link: AL_FARABI_ROUTE,
+            description: "Almaty, Kazakhstan",
             image: {
               src: AL,
               alt: "Al-Farabi Kazakh National University",
@@ -256,11 +271,12 @@ export const Home_Data = {
           },
           {
             id: 3,
-            title: "South Kazakhstan Medical Academy", // Fixed all-caps
-            description: "Shymkent, Kazakhstan", // Corrected city (South Kazakhstan region's capital)
+            title: "South Kazakhstan Medical Academy",
+            description: "Shymkent, Kazakhstan",
+            link: SOUTH_KAZAKHASTAN_ROUTE,
             image: {
               src: SouthKazakLogo,
-              alt: "South Kazakhstan Medical Academy", // Fixed to match title
+              alt: "South Kazakhstan Medical Academy",
             },
           },
         ],
@@ -1175,11 +1191,201 @@ export const countries = {
         "While living in Kazakhstan as a medical student, food and accommodation are the major factors that students keep in mind. The universities in Kazakhstan have very affordable accommodation options; most of them offer hostels for international students. These hostels are facilitated with all the necessary facilities that ensure a comfortable living environment for the students. There are numerous Indian restaurants in Kazakhstan for Indian students, serving home-style meals at an affordable price. Many students also prefer cooking their own food; university hostels have kitchen facilities in many instances. The easy availability of affordable food options makes the stay in Kazakhstan quite convenient for Indian students. Generally speaking, living in Kazakhstan is not too expensive, and with a host of accommodation and food alternatives available to suit the lifestyles of international students, there is ample reason to feel at home while pursuing an MBBS in Kazakhstan.",
     },
     universities: {
+      "kazak-national-medical-university": {
+        name: "Kazak national medical University",
+        slug: "kazak-national-medical-university",
+        countryName: "Kazakhstan",
+        countrySlug: "study-mbbs-in-kazakhstan",
+        content: {
+          universitiesname: "Kazak national medical University",
+          headerImage: {
+            src: kazaknationalmedicaluniversityheader,
+            alt: "Kazak national medical University",
+          },
+          mainImage: {
+            src: kazaknationalmedicaluniversitymain,
+            alt: "Kazak national medical University Main",
+          },
+          htmlcontent: `<p>Kazakh National Medical University stands as a beacon of excellence in medical education, renowned for its innovative curriculum, world-class facilities, and distinguished faculty. Located in Almaty, the largest city in Kazakhstan, the university offers a vibrant multicultural environment conducive to learning and personal growth.</p>
+          <strong>A Gateway to Excellence</strong>
+          <p>In the realm of education, partnerships between institutions and consulting agencies often pave the way for students to explore exciting opportunities beyond their borders. At Study Doctor Education Consultants, our mission has always been to empower aspiring medical professionals to fulfill their dreams of studying abroad. Today, we’re thrilled to announce our latest collaboration with Kazakh National Medical University in Kazakhstan, opening doors to exceptional educational prospects for students worldwide.</p>
+          <strong>Why Choose Kazakh National Medical University?</strong>
+          <ol><li><strong>Quality Education</strong>: The university boasts accreditation from prestigious medical bodies and follows a comprehensive curriculum designed to foster holistic development and critical thinking among students.</li>
+
+<li><strong>State-of-the-Art Facilities</strong>: From modern laboratories to advanced research centers, Kazakh National Medical University provides students with access to cutting-edge resources essential for hands-on learning and skill enhancement.</li>
+
+<li><strong>International Exposure</strong>: With a diverse student body hailing from various countries, studying at Kazakh National Medical University offers invaluable cross-cultural experiences, preparing students for a globalized healthcare landscape.</li>
+
+<li><strong>Affordability</strong>: Compared to many Western universities, Kazakh National Medical University offers tuition fees that are significantly more affordable, making quality medical education accessible to a broader spectrum of students.</li></ol>
+<strong>Our Commitment to Students</strong>
+<p>At Study Doctor Education Consultants, we understand that navigating the complexities of studying abroad can be daunting. That’s why our team of experienced consultants is dedicated to providing comprehensive support to students every step of the way. From assisting with the application process to offering guidance on visa procedures and accommodation, we strive to ensure a seamless transition for aspiring medical professionals embarking on their educational journey to Kazakh National Medical University.</p>
+<strong>How We Can Help You</strong>
+<ol class="wp-block-list"><li><strong>Personalized Guidance</strong>: Our consultants work closely with students to understand their aspirations and preferences, offering tailored advice to help them make informed decisions about their academic and professional futures.</li>
+
+<li><strong>Application Assistance</strong>: We provide invaluable assistance with the university application process, ensuring that students submit well-crafted applications that highlight their strengths and align with the university’s requirements.</li>
+
+<li><strong>Visa Support</strong>: Navigating visa procedures can be complex, but with our expertise, students can navigate the process with ease, minimizing stress and maximizing their chances of securing the necessary documentation to study in Kazakhstan.</li>
+
+<li><strong>Pre-Departure Orientation</strong>: We offer pre-departure orientation sessions to equip students with essential information about life in Kazakhstan, helping them feel confident and prepared as they embark on their educational journey.</li></ol>
+<strong>Embark on Your Journey with Study Doctor Education Consultants</strong>
+<p>The partnership between Study Doctor Education Consultants and Kazakh National Medical University represents a significant milestone in our commitment to providing students with unparalleled opportunities for academic and personal growth. Whether you’re a prospective medical student eager to explore new horizons or a parent seeking guidance for your child’s educational aspirations, we invite you to embark on this transformative journey with us.</p>
+<p>Contact Study Doctor Education Consultants today to learn more about how we can help you realize your dreams of studying medicine at Kazakh National Medical University. Your future starts here.</p>
+          `,
+        },
+      },
+      "astana-medical-university": {
+        name: "Astana medical University",
+        slug: "astana-medical-university",
+        countryName: "Kazakhstan",
+        countrySlug: "study-mbbs-in-kazakhstan",
+        content: {
+          universitiesname: "Astana medical University",
+          headerImage: {
+            src: astanamedicaluniversityheader,
+            alt: "Astana medical University",
+          },
+          mainImage: {
+            src: astanamedicaluniversitymain,
+            alt: "Astana medical University Main",
+          },
+          htmlcontent: `
+          <p>In the ever-evolving landscape of global education, partnerships between educational institutions and consultancy firms play a pivotal role in shaping the academic journey of aspiring students. These collaborations not only open doors to diverse opportunities but also pave the way for excellence in education. Today, we are thrilled to announce a significant tie-up between Study Doctor Education Consultant and Astana Medical University in Kazakhstan, marking a new chapter in the pursuit of quality medical education.</p>
+          <strong>A Confluence of Excellence</strong>
+          <p>Astana Medical University stands as a beacon of excellence in medical education, renowned for its cutting-edge curriculum, world-class faculty, and state-of-the-art facilities. Situated in the heart of Kazakhstan’s vibrant capital, Astana (now Nur-Sultan), the university offers a conducive environment for learning and research, fostering the growth of aspiring medical professionals.</p>
+          <p>On the other hand, Study Doctor Education Consultant has carved a niche for itself in the realm of educational consultancy, guiding students towards their academic goals with unwavering dedication and expertise. With a deep understanding of the intricacies of the education sector, Study Doctor has been instrumental in facilitating seamless transitions for students seeking educational opportunities abroad.</p>
+          <strong>Empowering Dreams, Enriching Futures</strong>
+          <p>This collaboration between Study Doctor and Astana Medical University heralds a golden opportunity for students aspiring to pursue a career in medicine. Through this partnership, students gain access to a plethora of benefits, including:</p>
+          <ol class="wp-block-list"><li><strong>Comprehensive Guidance:</strong> Study Doctor Education Consultant will provide comprehensive guidance to students throughout the application process, ensuring a smooth and hassle-free experience.</li>
+
+<li><strong>Expert Advice:</strong> With a team of seasoned professionals, Study Doctor offers expert advice and insights into the academic requirements and cultural nuances of studying in Kazakhstan.</li>
+
+<li><strong>Scholarship Opportunities:</strong> Astana Medical University offers various scholarships to meritorious students, and Study Doctor will assist eligible candidates in availing these opportunities.</li>
+
+<li><strong>Cultural Immersion:</strong> Kazakhstan boasts a rich cultural heritage and diverse community, providing students with a unique opportunity for cultural immersion and global exposure.</li>
+
+<li><strong>Career Advancement:</strong> A degree from Astana Medical University opens doors to a world of opportunities, equipping students with the skills and knowledge needed to excel in their medical careers globally.</li></ol>
+<strong>Building Bridges, Transforming Lives</strong>
+<p>At Study Doctor Education Consultant, we believe in the transformative power of education to shape lives and build a brighter future. Our partnership with Astana Medical University is a testament to our commitment to empowering students and facilitating their journey towards academic excellence.</p>
+<p>Whether you aspire to become a proficient clinician, a groundbreaking researcher, or a compassionate healthcare professional, Astana Medical University offers the perfect platform to realize your dreams. With Study Doctor by your side, navigating the path to success has never been easier.</p>
+<strong>Embark on Your Journey Today!</strong>
+<p>Are you ready to embark on a transformative journey towards a rewarding career in medicine? Join hands with Study Doctor Education Consultant and Astana Medical University to unlock a world of opportunities and embark on a path to success.</p>
+<p>Contact us today to learn more about our partnership and kickstart your journey towards a brighter future in medicine!</p>
+<em>Together, let’s make your dreams a reality!</em>
+          `,
+        },
+      },
+      "alfred-kazak-national-medical-university": {
+        name: "Alfred kazak national medical University",
+        slug: "alfred-kazak-national-medical-university",
+        countryName: "Kazakhstan",
+        countrySlug: "study-mbbs-in-kazakhstan",
+        content: {
+          universitiesname: "Alfred kazak national medical University",
+          headerImage: {
+            src: alfarabikazakhnationaluniversityheader,
+            alt: "Alfred kazak national medical University",
+          },
+          mainImage: {
+            src: alfarabikazakhnationaluniversitymain,
+            alt: "Alfred kazak national medical University Main",
+          },
+          htmlcontent: `
+          <p>In the pursuit of higher education, aspiring medical professionals often find themselves navigating a labyrinth of choices, seeking institutions that not only provide quality education but also offer an enriching academic experience. Amidst this quest for excellence, Study Doctor Education Consultant Company proudly announces its latest partnership with Alfred Kazakh National Medical University in Kazakhstan, a collaboration poised to redefine the landscape of medical education.</p>
+          <p>For years, Study Doctor has been committed to guiding students towards their academic goals, offering comprehensive consultancy services tailored to individual aspirations. From university selection to visa assistance, the company has been a trusted ally for countless students embarking on their educational journey. Now, with the addition of Alfred Kazakh National Medical University to its roster of partner institutions, Study Doctor reinforces its dedication to excellence in medical education.</p>
+          <p>Alfred Kazakh National Medical University stands as a beacon of medical innovation in Central Asia, renowned for its distinguished faculty, state-of-the-art facilities, and commitment to research and clinical practice. As one of the leading medical universities in the region, it offers a diverse range of programs designed to nurture the next generation of healthcare professionals.</p>
+          <p>Through this partnership, Study Doctor empowers students with unparalleled access to the educational resources and opportunities offered by Alfred Kazakh National Medical University. From undergraduate to postgraduate programs, students can explore a variety of disciplines, including medicine, dentistry, pharmacy, and nursing, under the guidance of experienced faculty members who are experts in their respective fields.</p>
+          <p>Moreover, studying at Alfred Kazakh National Medical University offers students a unique cultural and academic experience. Situated in the heart of Kazakhstan, the university provides a multicultural environment that fosters global perspectives and cross-cultural understanding. Students have the opportunity to engage with peers from diverse backgrounds, enriching their learning experience and preparing them for the challenges of a globalized world.</p>
+          <p>At Study Doctor, we understand that the decision to pursue higher education abroad is a significant milestone in every student’s life. That’s why our team of experienced consultants is committed to providing personalized guidance and support at every step of the application process. From assisting with documentation to offering insights into academic programs and campus life, we strive to make the journey towards studying at Alfred Kazakh National Medical University as smooth and seamless as possible.</p>
+          <p>In addition to academic support, Study Doctor also offers assistance with accommodation, language proficiency exams, and cultural orientation, ensuring that students feel at home from the moment they arrive in Kazakhstan. Our goal is not only to help students achieve their academic aspirations but also to empower them to thrive in a new environment and make the most of their educational experience.</p>
+          <p>As the world becomes increasingly interconnected, the demand for skilled healthcare professionals continues to grow. By partnering with Alfred Kazakh National Medical University, Study Doctor opens doors to a world of opportunities for aspiring medical professionals, equipping them with the knowledge, skills, and cultural competence needed to excel in their chosen field.</p>
+          `,
+        },
+      },
+      "south-kazakhstan-medical-university": {
+        name: "South Kazakhstan medical University",
+        slug: "south-kazakhstan-medical-university",
+        countryName: "Kazakhstan",
+        countrySlug: "study-mbbs-in-kazakhstan",
+        content: {
+          universitiesname: "South Kazakhstan medical University",
+          headerImage: {
+            src: southkazakhstanmedicalacademyheader,
+            alt: "South Kazakhstan medical University",
+          },
+          mainImage: {
+            src: southkazakhstanmedicalacademymain,
+            alt: "South Kazakhstan medical University Main",
+          },
+          htmlcontent: `
+          <strong>Unlocking Opportunities: Study Doctor’s Collaboration with South Kazakhstan Medical University</strong>
+          <p>In the realm of education, partnerships between institutions often serve as gateways to unlocking boundless opportunities for students. These collaborations bridge geographical distances, bringing together expertise and resources to enrich the academic journey. Among such strategic alliances, Study Doctor Education Consultant Company’s recent tie-up with South Kazakhstan Medical University stands out as a beacon of promise, particularly for aspiring medical professionals.</p>
+          <strong>The Power of Partnership</strong>
+<p>In the dynamic landscape of global education, partnerships between educational consultancies and universities play a pivotal role in facilitating access to quality education. Study Doctor’s collaboration with South Kazakhstan Medical University exemplifies this synergy, aiming to streamline the process for students seeking medical education abroad.</p>
+<strong>South Kazakhstan Medical University: A Hub of Excellence</strong>
+<p>Nestled in the heart of Central Asia, South Kazakhstan Medical University stands tall as a beacon of excellence in medical education. With a rich legacy spanning decades, the university boasts state-of-the-art infrastructure, distinguished faculty, and a comprehensive curriculum designed to nurture the next generation of healthcare leaders.</p>
+<strong>Why South Kazakhstan Medical University?</strong>
+<ol class="wp-block-list"><li><strong>Academic Excellence</strong>: The university upholds rigorous academic standards, ensuring that students receive world-class medical training that aligns with international benchmarks.</li>
+
+<li><strong>Clinical Exposure</strong>: Through partnerships with top-tier hospitals and healthcare institutions, students gain invaluable clinical exposure, honing their skills in real-world settings.</li>
+
+<li><strong>Research Opportunities</strong>: South Kazakhstan Medical University fosters a culture of innovation, encouraging students to engage in groundbreaking research across various medical disciplines.</li>
+
+<li><strong>Global Recognition</strong>: Graduates of South Kazakhstan Medical University enjoy global recognition, with qualifications that are respected by medical regulatory bodies worldwide.</li></ol>
+<strong>Study Doctor: Your Trusted Guide</strong>
+<p>At Study Doctor, we understand that navigating the complexities of international education can be daunting. That’s why our collaboration with South Kazakhstan Medical University is more than just a partnership; it’s a commitment to guiding students through every step of their academic journey.</p>
+<strong>Our Services Include:</strong>
+<ol class="wp-block-list"><li><strong>Personalized Guidance</strong>: Our team of experienced consultants provides personalized guidance, helping students choose the right course and university that aligns with their aspirations.</li>
+
+<li><strong>Application Assistance</strong>: From filling out application forms to preparing for interviews, we offer comprehensive support to streamline the application process.</li>
+
+<li><strong>Visa Support</strong>: Navigating visa procedures can be overwhelming. Study Doctor simplifies this process, ensuring that students meet all requirements and deadlines.</li>
+
+<li><strong>Pre-Departure Support</strong>: Transitioning to a new country can be challenging. We provide pre-departure support, equipping students with essential information and resources to ease their transition.</li></ol>
+<strong>Embark on Your Journey with Study Doctor</strong>
+<p>Embarking on a medical education journey abroad is a transformative experience—one that opens doors to endless possibilities. With Study Doctor and South Kazakhstan Medical University by your side, you can embark on this journey with confidence, knowing that you have a trusted partner every step of the way.</p>
+          `,
+        },
+      },
+    },
+  },
+  "study-mbbs-in-kyrgyzstan": {
+    name: "Study MBBS in Kyrgyzstan",
+    slug: "study-mbbs-in-kyrgyzstan",
+    intro: {
+      title: "MBBS In Kyrgyzstan - Introduction",
+      points: [
+        "Studying MBBS in Kyrgyzstan in is an excellent choice for foreign students, especially Indians. Every year, thousands of aspirants choose Kyrgyzstan due to its affordable tuition fees, high-quality education, and globally recognized medical degrees. The MBBS program in Kyrgyzstan has been designed to be at par with international standards so that students can receive excellent medical training at very reasonable costs. One of the major attractions to study medicine in Kyrgyzstan is the low tuition fees. Compared with private medical colleges in India and many other countries, the MBBS in Kyrgyzstan fees remains very affordable. The cost of MBBS in Kyrgyzstan for international students ranges between ₹19 to ₹30 lakhs for the entire course, which also covers tuition fees, accommodation, and other expenses. This is quite affordable and comes within the reach of the students aiming to pursue medical degrees abroad.",
+        "Besides, the curriculum structure in Kyrgyzstan medical colleges is well-oriented and maintained at international standards, which give a smooth pathway for graduates to attempt competitive exams like NMC FMGE and USMLE. Teaching is conducted in English; studying is made comfortable for students from India and other nations. MBBS admission in Kyrgyzstan is quite easy to obtain. International students are required to submit academic transcripts, a valid passport, and the NEET exam passed for Indian students. The universities make an online application process easy, after which the students usually receive their admission letters within a few weeks. With a six-year program commencing with clinical training from the third year, much emphasis is given to practical exposure in the medical schools in Kyrgyzstan. The degree is recognized by global authorities like WHO, NMC, and others, hence giving a chance for graduates to practice medicine in several countries, including India.",
+      ],
+      image: {
+        src: Kyrgyzstan,
+        alt: "Study MBBS in Kyrgyzstan",
+      },
+      about: {
+        title: "About Kyrgyzstan",
+        points: [
+          "Kyrgyzstan, officially known as the Kyrgyz Republic, is an incredibly beautiful country in Central Asia, having the most beautiful mountain ranges. This inland country borders Kazakhstan to the north, Uzbekistan to the west, Tajikistan to the southwest, and China to the southeast. The capital and the largest city of Kyrgyzstan is Bishkek, which covers an area of 49 square miles and has a population of over 1.25 million people. Simultaneously, Kyrgyzstan is a very rich country from the historical and cultural points of view because the long-standing traditions are nourishing it. Being a part of the Soviet Union, this country received its independence in 1991-a new mission, a new chapter in Kyrgyz history. Nowadays, Kyrgyzstan is famous for its wonderful landscapes of nature; for this reason, this country attracts many travelers and students from all over the world to its area. It provides a very good academic atmosphere for students who want to study MBBS in Kyrgyzstan. Medical colleges in Kyrgyzstan are approved by major organizations like WHO, WDOMS, and FAIMER to maintain global acceptance of the graduates after getting their degrees. Thereafter, they provide a balanced curriculum for students between theoretical knowledge and practical experiences. Medical colleges in Kyrgyzstan are fully equipped with advanced infrastructure, qualified faculties, and modern technical facilities, hence are one of the ideal choices for students pursuing their MBBS in Kyrgyzstan. The MBBS program in Kyrgyzstan runs for six years, which includes one year of compulsory internship. The rich cultural heritage of the country merged with a strong medical education system makes study medicine in Kyrgyzstan a great opportunity for international students.",
+        ],
+      },
+    },
+    why_study: {
+      title: "Why Study MBBS in Kyrgyzstan",
+      points: [
+        "Study MBBS in Kyrgyzstan offers higher studies over other nations, specifically for scholars who wish to study MBBS at a very nominal cost. It possesses several top-class medical colleges which are approved by global bodies like the WHO and National Medical Commission. Thus, the degree provided after studying from such institutes is valid in many nations, starting from India.",
+        "The MBBS programs in Kyrgyzstan come with an internationally recognized curriculum, with courses being provided in the English language, hence, easy for students from non-native speaking countries to pursue medical studies. It offers state-of-the-art infrastructure, along with well-equipped research centers and highly qualified faculty members. Moreover, the students benefit from theoretical knowledge and practical exposure, which is rather important in medical fields. Apart from these, the cost of MBBS in Kyrgyzstan provides many more facilities and cheaply compared with many countries like India, the USA, or Europe. Students who avail of such an excellent study environment, therefore, have not had to pay heavy tuition fees or a hefty amount in donations for admissions. Additionally, this brings friendliness in the residents and modern conditions in living in Kyrgyzstan as a medical student further enhances overall studies and develops an excellent stay. It results from here that such a privileged option is usually considered during international student exchange programs.",
+      ],
+    },
+    accomadation: {
+      title: "Indian Food and Facility For Indian Students",
+      content:
+        "While living in Kyrgyzstan as a medical student, food and accommodation are the major factors that students keep in mind. The universities in Kyrgyzstan have very affordable accommodation options; most of them offer hostels for international students. These hostels are facilitated with all the necessary facilities that ensure a comfortable living environment for the students. There are numerous Indian restaurants in Kyrgyzstan for Indian students, serving home-style meals at an affordable price. Many students also prefer cooking their own food; university hostels have kitchen facilities in many instances. The easy availability of affordable food options makes the stay in Kyrgyzstan quite convenient for Indian students. Generally speaking, living in Kyrgyzstan is not too expensive, and with a host of accommodation and food alternatives available to suit the lifestyles of international students, there is ample reason to feel at home while pursuing an MBBS in Kyrgyzstan.",
+    },
+    universities: {
       "jalalabad-state-medical-university": {
         name: "Jalalabad state medical University",
         slug: "jalalabad-state-medical-university",
-        countryName: "Uzbekistan",
-        countrySlug: "study-mbbs-in-kazakhstan",
+        countryName: "Kyrgyzstan",
+        countrySlug: "study-mbbs-in-kyrgyzstan",
         content: {
           universitiesname: "Jalalabad state medical University",
           headerImage: {
@@ -1217,8 +1423,8 @@ export const countries = {
       "osh-state-medical-university": {
         name: "Osh state medical University",
         slug: "osh-state-medical-university",
-        countryName: "Uzbekistan",
-        countrySlug: "study-mbbs-in-kazakhstan",
+        countryName: "Kyrgyzstan",
+        countrySlug: "study-mbbs-in-kyrgyzstan",
         content: {
           universitiesname: "Osh state medical University",
           headerImage: {
@@ -1262,8 +1468,8 @@ export const countries = {
       "international-school-of-medicine": {
         name: "International school of medicine",
         slug: "international-school-of-medicine",
-        countryName: "Uzbekistan",
-        countrySlug: "study-mbbs-in-kazakhstan",
+        countryName: "Kyrgyzstan",
+        countrySlug: "study-mbbs-in-kyrgyzstan",
         content: {
           universitiesname: "International school of medicine",
           headerImage: {
@@ -1309,39 +1515,6 @@ export const countries = {
       },
     },
   },
-  "study-mbbs-in-kyrgyzstan": {
-    name: "Study MBBS in Kyrgyzstan",
-    slug: "study-mbbs-in-kyrgyzstan",
-    intro: {
-      title: "MBBS In Kyrgyzstan - Introduction",
-      points: [
-        "Studying MBBS in Kyrgyzstan in is an excellent choice for foreign students, especially Indians. Every year, thousands of aspirants choose Kyrgyzstan due to its affordable tuition fees, high-quality education, and globally recognized medical degrees. The MBBS program in Kyrgyzstan has been designed to be at par with international standards so that students can receive excellent medical training at very reasonable costs. One of the major attractions to study medicine in Kyrgyzstan is the low tuition fees. Compared with private medical colleges in India and many other countries, the MBBS in Kyrgyzstan fees remains very affordable. The cost of MBBS in Kyrgyzstan for international students ranges between ₹19 to ₹30 lakhs for the entire course, which also covers tuition fees, accommodation, and other expenses. This is quite affordable and comes within the reach of the students aiming to pursue medical degrees abroad.",
-        "Besides, the curriculum structure in Kyrgyzstan medical colleges is well-oriented and maintained at international standards, which give a smooth pathway for graduates to attempt competitive exams like NMC FMGE and USMLE. Teaching is conducted in English; studying is made comfortable for students from India and other nations. MBBS admission in Kyrgyzstan is quite easy to obtain. International students are required to submit academic transcripts, a valid passport, and the NEET exam passed for Indian students. The universities make an online application process easy, after which the students usually receive their admission letters within a few weeks. With a six-year program commencing with clinical training from the third year, much emphasis is given to practical exposure in the medical schools in Kyrgyzstan. The degree is recognized by global authorities like WHO, NMC, and others, hence giving a chance for graduates to practice medicine in several countries, including India.",
-      ],
-      image: {
-        src: Kyrgyzstan,
-        alt: "Study MBBS in Kyrgyzstan",
-      },
-      about: {
-        title: "About Kyrgyzstan",
-        points: [
-          "Kyrgyzstan, officially known as the Kyrgyz Republic, is an incredibly beautiful country in Central Asia, having the most beautiful mountain ranges. This inland country borders Kazakhstan to the north, Uzbekistan to the west, Tajikistan to the southwest, and China to the southeast. The capital and the largest city of Kyrgyzstan is Bishkek, which covers an area of 49 square miles and has a population of over 1.25 million people. Simultaneously, Kyrgyzstan is a very rich country from the historical and cultural points of view because the long-standing traditions are nourishing it. Being a part of the Soviet Union, this country received its independence in 1991-a new mission, a new chapter in Kyrgyz history. Nowadays, Kyrgyzstan is famous for its wonderful landscapes of nature; for this reason, this country attracts many travelers and students from all over the world to its area. It provides a very good academic atmosphere for students who want to study MBBS in Kyrgyzstan. Medical colleges in Kyrgyzstan are approved by major organizations like WHO, WDOMS, and FAIMER to maintain global acceptance of the graduates after getting their degrees. Thereafter, they provide a balanced curriculum for students between theoretical knowledge and practical experiences. Medical colleges in Kyrgyzstan are fully equipped with advanced infrastructure, qualified faculties, and modern technical facilities, hence are one of the ideal choices for students pursuing their MBBS in Kyrgyzstan. The MBBS program in Kyrgyzstan runs for six years, which includes one year of compulsory internship. The rich cultural heritage of the country merged with a strong medical education system makes study medicine in Kyrgyzstan a great opportunity for international students.",
-        ],
-      },
-    },
-    why_study: {
-      title: "Why Study MBBS in Kyrgyzstan",
-      points: [
-        "Study MBBS in Kyrgyzstan offers higher studies over other nations, specifically for scholars who wish to study MBBS at a very nominal cost. It possesses several top-class medical colleges which are approved by global bodies like the WHO and National Medical Commission. Thus, the degree provided after studying from such institutes is valid in many nations, starting from India.",
-        "The MBBS programs in Kyrgyzstan come with an internationally recognized curriculum, with courses being provided in the English language, hence, easy for students from non-native speaking countries to pursue medical studies. It offers state-of-the-art infrastructure, along with well-equipped research centers and highly qualified faculty members. Moreover, the students benefit from theoretical knowledge and practical exposure, which is rather important in medical fields. Apart from these, the cost of MBBS in Kyrgyzstan provides many more facilities and cheaply compared with many countries like India, the USA, or Europe. Students who avail of such an excellent study environment, therefore, have not had to pay heavy tuition fees or a hefty amount in donations for admissions. Additionally, this brings friendliness in the residents and modern conditions in living in Kyrgyzstan as a medical student further enhances overall studies and develops an excellent stay. It results from here that such a privileged option is usually considered during international student exchange programs.",
-      ],
-    },
-    accomadation: {
-      title: "Indian Food and Facility For Indian Students",
-      content:
-        "While living in Kyrgyzstan as a medical student, food and accommodation are the major factors that students keep in mind. The universities in Kyrgyzstan have very affordable accommodation options; most of them offer hostels for international students. These hostels are facilitated with all the necessary facilities that ensure a comfortable living environment for the students. There are numerous Indian restaurants in Kyrgyzstan for Indian students, serving home-style meals at an affordable price. Many students also prefer cooking their own food; university hostels have kitchen facilities in many instances. The easy availability of affordable food options makes the stay in Kyrgyzstan quite convenient for Indian students. Generally speaking, living in Kyrgyzstan is not too expensive, and with a host of accommodation and food alternatives available to suit the lifestyles of international students, there is ample reason to feel at home while pursuing an MBBS in Kyrgyzstan.",
-    },
-  },
   "study-mbbs-in-vietnam": {
     name: "Study MBBS in Vietnam",
     slug: "study-mbbs-in-vietnam",
@@ -1379,6 +1552,26 @@ export const countries = {
       content:
         "While living in Vietnam as a medical student, food and accommodation are the major factors that students keep in mind. The universities in Vietnam have very affordable accommodation options; most of them offer hostels for international students. These hostels are facilitated with all the necessary facilities that ensure a comfortable living environment for the students. There are numerous Indian restaurants in Vietnam for Indian students, serving home-style meals at an affordable price. Many students also prefer cooking their own food; university hostels have kitchen facilities in many instances. The easy availability of affordable food options makes the stay in Vietnam quite convenient for Indian students. Generally speaking, living in Vietnam is not too expensive, and with a host of accommodation and food alternatives available to suit the lifestyles of international students, there is ample reason to feel at home while pursuing an MBBS in Vietnam.",
     },
+    // universities: {
+    //   "jalalabad-state-medical-university": {
+    //     name: "Jalalabad state medical University",
+    //     slug: "jalalabad-state-medical-university",
+    //     countryName: "Kyrgyzstan",
+    //     countrySlug: "study-mbbs-in-kyrgyzstan",
+    //     content: {
+    //       universitiesname: "Jalalabad state medical University",
+    //       headerImage: {
+    //         src: jalalabadheader,
+    //         alt: "Jalalabad state medical University",
+    //       },
+    //       mainImage: {
+    //         src: jalalabadmain,
+    //         alt: "Jalalabad state medical University Main",
+    //       },
+    //       htmlcontent: ``,
+    //     },
+    //   },
+    // },
   },
 };
 

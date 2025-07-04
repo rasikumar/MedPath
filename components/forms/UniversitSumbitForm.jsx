@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Button from "../ui/Button";
-import Image from "next/image";
 import { validateUniversitySubmitForm } from "@/utils/validations";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
-import { Modal } from "../ui/Modal";
 import axios from "axios";
 import { UNIVERSITY_FORM_API } from "@/api/const";
+import { toast } from "react-toastify";
+import "react-toastify/ReactToastify.css";
 export default function UniversitySubmitForm({ university }) {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -70,11 +70,27 @@ export default function UniversitySubmitForm({ university }) {
         ...formData,
         university_name,
       };
-      await axios.post(
-        `${process.env.NEXT_PUBLIC_API_URL}${UNIVERSITY_FORM_API}`,
-        payload,
-        { headers: { "Content-Type": "application/json" } }
-      );
+      try {
+        const res = await axios.post(
+          `${process.env.NEXT_PUBLIC_API_URL}${UNIVERSITY_FORM_API}`,
+          payload,
+          { headers: { "Content-Type": "application/json" } }
+        );
+        if (res.status === 200) {
+          toast.success(res.data.message || "Form Sumbitted Successfully");
+          setFormData({
+            firstName: "",
+            lastName: "",
+            dob: "",
+            mobile: "",
+            email: "",
+            city: "",
+          });
+        }
+      } catch (error) {
+        console.error("❌ Network error:", err);
+        toast.error("❌ Network error");
+      }
     }
   };
 

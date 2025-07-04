@@ -5,6 +5,7 @@ import { countryBg } from "@/assets/countryImage";
 import { breadcumb_shape_1_3, h2_about_shape01 } from "@/assets/assets";
 import Link from "next/link";
 import Data from "./Data";
+import CountryWidget from "@/components/common/CountryWidget";
 
 export default function UniversityLayout({ university }) {
   const [offsetY, setOffsetY] = useState(0);
@@ -47,10 +48,7 @@ export default function UniversityLayout({ university }) {
             />
           </div>
           <div className="absolute top-6 right-10 slide-animated-element">
-            <Image
-              src={h2_about_shape01}
-              alt="arrow-image"
-            />
+            <Image src={h2_about_shape01} alt="arrow-image" />
           </div>
           <div className="flex flex-col items-center w-full max-w-5xl">
             <h1 className="md:text-5xl text-2xl text-background font-bold">
@@ -74,11 +72,13 @@ export default function UniversityLayout({ university }) {
           </div>
         </header>
       </div>
-      <main className="container mx-auto px-4 py-8 space-y-16">
-        <Data data={university.content} />
-        {/* <IntroSection data={country.intro} />
-        <WhyStudy data={country.why_study} />
-        <FoodAccomdation data={country.accomadation} /> */}
+      <main className="max mx-auto px-10 py-8 space-y-16 ">
+        <div className="flex md:flex-row flex-col gap-20 relative">
+          <Data data={university.content} />
+          <div>
+            <CountryWidget />
+          </div>
+        </div>
       </main>
     </div>
   );

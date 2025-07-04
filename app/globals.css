@@ -54,6 +54,10 @@
   transition: transform 0.2s ease;
 }
 
+.PhoneInputInput {
+  outline: none;
+}
+
 .masonry-grid {
   column-count: 4;
   column-gap: 16px;

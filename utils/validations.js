@@ -68,5 +68,8 @@ export const validateContactForm = (formData, setErrors) => {
   } else if (!emailRegex.test(formData.email)) {
     newErrors.email = "Please enter a valid email";
   }
-  if (!formData.description.trim()) newErrors.description = "Message is required";
+  if (!formData.description.trim())
+    newErrors.description = "Message is required";
+  setErrors(newErrors);
+  return Object.keys(newErrors).length === 0;
 };

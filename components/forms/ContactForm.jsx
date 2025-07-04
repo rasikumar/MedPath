@@ -1,12 +1,13 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import axios from "axios";
 import { CONTACT_FORM_API } from "@/api/const";
 import { validateContactForm } from "@/utils/validations";
 import Button from "../ui/Button";
+import { toast } from "react-toastify";
+import "react-toastify/ReactToastify.css";
 
 export default function ContactForm({ onClose }) {
   const [formData, setFormData] = useState({
@@ -58,12 +59,24 @@ export default function ContactForm({ onClose }) {
       const payload = {
         ...formData,
       };
-      await axios.post(
-        `${process.env.NEXT_PUBLIC_API_URL}${CONTACT_FORM_API}`,
-        payload,
-        { headers: { "Content-Type": "application/json" } }
-      );
-      onClose();
+      try {
+        const res = await axios.post(
+          `${process.env.NEXT_PUBLIC_API_URL}${CONTACT_FORM_API}`,
+          payload,
+          { headers: { "Content-Type": "application/json" } }
+        );
+        if (res.status === 200) {
+          toast.success(res.data.message || "Form Submission Successfully");
+          setFormData({
+            name: "",
+            mobile: "",
+            email: "",
+            description: "",
+          });
+        }
+      } catch (error) {
+        console.log("error", error);
+      }
     }
   };
   return (

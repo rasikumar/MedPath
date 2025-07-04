@@ -23,6 +23,14 @@ export const TASHKENT_ROUTE ="/country/study-mbbs-in-uzbekistan/tashkent-paediat
 export const ANDIZHAN_ROUTE ="/country/study-mbbs-in-uzbekistan/andizhan-paediatric-medical-university";
 
 // kyrgyzstan
-export const JALALABAD_ROUTE ="/country/study-mbbs-in-kazakhstan/jalalabad-state-medical-university";
-export const OSH_ROUTE ="/country/study-mbbs-in-kazakhstan/osh-state-medical-university";
-export const INTERNATION_SCHOOL_ROUTE ="/country/study-mbbs-in-kazakhstan/international-school-of-medicine";
+export const JALALABAD_ROUTE ="/country/study-mbbs-in-kyrgyzstan/jalalabad-state-medical-university";
+export const OSH_ROUTE ="/country/study-mbbs-in-kyrgyzstan/osh-state-medical-university";
+export const INTERNATION_SCHOOL_ROUTE ="/country/study-mbbs-in-kyrgyzstan/international-school-of-medicine";
+
+//Kazakhastan
+export const KAZAK_NATIONAL_ROUTE ="/country/study-mbbs-in-kazakhstan/kazak-national-medical-university";
+export const ASTANA_MEDICAL_ROUTE ="/country/study-mbbs-in-kazakhstan/astana-medical-university";
+export const AL_FARABI_ROUTE ="/country/study-mbbs-in-kazakhstan/alfred-kazak-national-medical-university";
+export const SOUTH_KAZAKHASTAN_ROUTE ="/country/study-mbbs-in-kazakhstan/south-kazakhstan-medical-university";
+
+//Vietnam

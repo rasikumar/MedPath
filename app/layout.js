@@ -6,6 +6,7 @@ import TopBar from "@/components/common/TopBar";
 import PopupForm from "@/components/forms/PopupForm";
 import FixedIcons from "@/components/common/FixedIcons";
 import FloatIcon from "@/components/common/FloatIcon";
+import { ToastContainer } from "react-toastify";
 
 export const metadata = {
   metadataBase: new URL("http://localhost:3000/"),
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <div className="flex-1 flex flex-col">{children}</div>
         <Footer />
+        <ToastContainer />
         {/* </LenisProvider> */}
       </body>
     </html>

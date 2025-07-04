@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Data({ data }) {
   return (
-    <div className="p-8 border border-border shadow flex flex-col gap-8 max-w-5xl">
+    <div className="p-8 border border-border shadow flex flex-col gap-8">
       <h2 className="text-3xl font-bold text-primary">
         {data.universitiesname}
       </h2>

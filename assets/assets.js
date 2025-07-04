@@ -21,6 +21,7 @@ import areyouready from "./areyouready.webp";
 import mbbsAbroadStudents from "./mbbsAbroadStudents.webp";
 import breadcumb_shape_1_3 from "./breadcumb_shape_1_3.webp";
 import quote from "./quote.svg";
+import widget from "./widget-banner-bg.webp";
 
 // Country Image
 import italyFlag from "./country_logo/italyFlag.webp";
@@ -176,6 +177,7 @@ export {
   blobImage,
   star_image,
   breadcumb_shape_1_3,
+  widget,
 
   // Universite Image
   AL,

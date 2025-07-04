@@ -14,6 +14,8 @@ import "react-datepicker/dist/react-datepicker.css";
 import { IoClose } from "react-icons/io5";
 import axios from "axios";
 import { ENQUIRY_API } from "@/api/const";
+import { toast } from "react-toastify";
+import "react-toastify/ReactToastify.css";
 
 const PopupForm = () => {
   const [showForm, setShowForm] = useState(false);
@@ -148,11 +150,14 @@ const PopupForm = () => {
             country: "",
             message: "",
           });
+          toast.success(res.data.message || "Form Submission Successfully");
         } else {
           console.error("❌ Submission failed", res.data);
+          toast.error("❌ Submission failed");
         }
       } catch (err) {
         console.error("❌ Network error:", err);
+        toast.error("❌ Network error");
       }
     }
   };
