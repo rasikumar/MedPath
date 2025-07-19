@@ -5,6 +5,8 @@ import {
   alfarabikazakhnationaluniversitymain,
   ALLogo,
   Andijan,
+  andijanuniversityheader,
+  andijanuniversitymain,
   astanaLogo,
   astanamedicaluniversityheader,
   astanamedicaluniversitymain,
@@ -16,8 +18,12 @@ import {
   BukharaLogo,
   BukharaStateMedicalInstituteheader,
   BukharaStateMedicalInstitutemain,
+  canthoheader,
   CanthoLogo,
+  canthomain,
   DaiNamLogo,
+  dainamuniversityheader,
+  dainamuniversitymain,
   InternationalLogo,
   internationalschoolheader,
   internationalschoolmain,
@@ -42,19 +48,27 @@ import {
   MiniBanner_2,
   missionImage,
   OrangeBergLogo,
+  orenburgstatemedicaluniversityheader,
+  orenburgstatemedicaluniversitymain,
   oshLogo,
   oshstateheader,
   oshstatemain,
   Our_Goal,
   Our_vission,
   PhanChauLogo,
+  phanchautrinhuniversityheader,
+  phanchautrinhuniversitymain,
   Russia,
   russiaFlag,
   samarkandheader,
   SamarkandLogo,
   samarkandmain,
   SiberianLogo,
+  siberianstatemedicaluniversityheader,
+  siberianstatemedicaluniversitymain,
   SmolenexLogo,
+  smolenskstatemedicaluniversityheader,
+  smolenskstatemedicaluniversitymain,
   southkazakhstanmedicalacademyheader,
   southkazakhstanmedicalacademymain,
   SouthKazakLogo,
@@ -77,10 +91,13 @@ import {
 import {
   ABOUT_ROUTE,
   AL_FARABI_ROUTE,
+  ANDIZHAN_ROUTE,
   ASTANA_MEDICAL_ROUTE,
   BASHKIR_ROUTE,
   BHUKARA_ROUTE,
+  CAN_THO_ROUTE,
   CONTACT_ROUTE,
+  DAI_NAM_ROUTE,
   INTERNATION_SCHOOL_ROUTE,
   JALALABAD_ROUTE,
   KAZAK_NATIONAL_ROUTE,
@@ -88,9 +105,13 @@ import {
   KAZAN_ROUTE,
   KURSK_ROUTE,
   KYRGYZSTAN_ROUTE,
+  ORENBURG_ROUTE,
   OSH_ROUTE,
+  PHAN_CHAU_ROUTE,
   RUSSIA_ROUTE,
   SAMARKAND_ROUTE,
+  SIBERIAN_ROUTE,
+  SMOLENSK_ROUTE,
   SOUTH_KAZAKHASTAN_ROUTE,
   TASHKENT_ROUTE,
   UZBEKISTAN_ROUTE,
@@ -184,6 +205,7 @@ export const Home_Data = {
             id: 3,
             title: "Andizhan State Medical Institute",
             description: "Andizhan, Uzbekistan",
+            link: ANDIZHAN_ROUTE,
             image: {
               src: Andijan,
               alt: "Andizhan State Medical Institute",
@@ -323,6 +345,7 @@ export const Home_Data = {
             id: 3,
             title: "Siberian State Medical University",
             description: "Moscow, Russia",
+            link: SIBERIAN_ROUTE,
             image: {
               src: SiberianLogo,
               alt: "Siberian State Medical University",
@@ -331,6 +354,7 @@ export const Home_Data = {
           {
             id: 4,
             title: "Smolensk State Medical University",
+            link: SMOLENSK_ROUTE,
             description: "Moscow, Russia",
             image: {
               src: SmolenexLogo,
@@ -340,6 +364,7 @@ export const Home_Data = {
           {
             id: 5,
             title: "Orenburg State Medical University",
+            link: ORENBURG_ROUTE,
             description: "Yekaterinburg, Russia",
             image: {
               src: OrangeBergLogo,
@@ -359,6 +384,7 @@ export const Home_Data = {
           {
             id: 0,
             title: "Can Tho University of Medicine and Pharmacy",
+            link: CAN_THO_ROUTE,
             description: "Can Tho, Vietnam",
             image: {
               src: CanthoLogo,
@@ -368,6 +394,7 @@ export const Home_Data = {
           {
             id: 1,
             title: "Phan Chau Trinh University",
+            link: PHAN_CHAU_ROUTE,
             description: "Hội An, Vietnam",
             image: {
               src: PhanChauLogo,
@@ -377,6 +404,7 @@ export const Home_Data = {
           {
             id: 2,
             title: "Dai Nam University",
+            link: DAI_NAM_ROUTE,
             description: "Dai, Vietnam",
             image: {
               src: DaiNamLogo,
@@ -627,56 +655,56 @@ export const Home_Data = {
     entries: [
       {
         id: 1,
-        name: "Aarav Sharma",
+        name: "Saravanan",
         feedback:
           "MBBS Consultancy guided me with every step of the admission process. Their support, advice, and prompt responses helped me fulfill my dream of studying abroad. I truly recommend them to any aspiring medical student looking for genuine help.",
         image: "https://example.com/images/testimonial1.jpg",
-        alt: "Aarav Sharma",
+        alt: "Saravanan",
         starRating: 5,
       },
       {
         id: 2,
-        name: "Priya Verma",
+        name: "Priya",
         feedback:
-          "The consultants at MBBS Consultancy were incredibly patient and knowledgeable. They explained everything clearly, assisted with documentation, and offered motivation throughout the journey. I felt supported at every step, and I’m now pursuing my MBBS in Georgia successfully.",
+          "The consultants at MBBS Consultancy were incredibly patient and knowledgeable. They explained everything clearly, assisted with documentation, and offered motivation throughout the journey. I felt supported at every step, and I'm now pursuing my MBBS in Georgia successfully.",
         image: "https://example.com/images/testimonial2.jpg",
-        alt: "Priya Verma",
+        alt: "Priya",
         starRating: 5,
       },
       {
         id: 3,
-        name: "Rahul Mehta",
+        name: "Nandha",
         feedback:
           "I got admitted to a top medical university in Russia with their help. MBBS Consultancy’s transparent process, quick communication, and honest guidance made everything stress-free. I am very thankful to them for making my study-abroad dream happen.",
         image: "https://example.com/images/testimonial3.jpg",
-        alt: "Rahul Mehta",
+        alt: "Nandha",
         starRating: 4,
       },
       {
         id: 4,
-        name: "Sneha Kapoor",
+        name: "Deepika",
         feedback:
           "MBBS Consultancy was always available to answer my questions and offer advice. They ensured I chose the right country and university. The entire process felt simple because of their clarity and professionalism. Truly grateful for their exceptional service and care.",
         image: "https://example.com/images/testimonial4.jpg",
-        alt: "Sneha Kapoor",
+        alt: "Deepika",
         starRating: 4,
       },
       {
         id: 5,
-        name: "Karan Singh",
+        name: "Karthik",
         feedback:
           "I’m really happy I chose MBBS Consultancy. Their team helped me complete all documentation and applications smoothly. I had no idea where to start, but their support helped me secure admission into a great university in Kazakhstan without stress.",
         image: "https://example.com/images/testimonial5.jpg",
-        alt: "Karan Singh",
+        alt: "Karthik",
         starRating: 5,
       },
       {
         id: 6,
-        name: "Meera Iyer",
+        name: "Meena",
         feedback:
           "With MBBS Consultancy, my application process became effortless. They clearly explained procedures, offered helpful tips, and checked on my progress. Their service is reliable and student-focused. I'm now studying MBBS in Uzbekistan with confidence and peace of mind.",
         image: "https://example.com/images/testimonial6.jpg",
-        alt: "Meera Iyer",
+        alt: "Meena",
         starRating: 4,
       },
     ],
@@ -975,6 +1003,196 @@ export const countries = {
           `,
         },
       },
+      "siberian-state-medical-university": {
+        name: "Siberian State Medical University",
+        slug: "siberian-state-medical-university", // Corrected slug (was "kazan-state-medical-university")
+        countryName: "Russia",
+        countrySlug: "study-mbbs-in-russia",
+        content: {
+          universitiesname: "Siberian State Medical University",
+          headerImage: {
+            src: siberianstatemedicaluniversityheader, // Ensure this image is imported
+            alt: "Siberian State Medical University Campus",
+          },
+          mainImage: {
+            src: siberianstatemedicaluniversitymain, // Ensure this image is imported
+            alt: "Siberian State Medical University Faculty",
+          },
+          htmlcontent: `
+    <p>
+      In the realm of global medical education, strategic alliances are key to unlocking opportunities for students. MedPath Education Consultant Company is delighted to partner with Siberian State Medical University (SSMU) in Russia, a prestigious institution renowned for its excellence in medical training and research. This collaboration opens doors for aspiring doctors to pursue world-class education in one of Russia’s leading medical universities.
+    </p>
+
+    <h2>Expanding Horizons in Medical Education</h2>
+    <p>
+      MedPath’s partnership with Siberian State Medical University underscores our commitment to connecting students with top-tier medical institutions. Located in Tomsk, Siberia, SSMU offers a blend of rigorous academics, cutting-edge research, and clinical exposure, making it an ideal destination for MBBS aspirants.
+    </p>
+
+    <h2>About Siberian State Medical University</h2>
+    <p>
+      Established in 1878, Siberian State Medical University is one of Russia’s oldest and most respected medical schools. Recognized by the WHO and NMC, SSMU boasts:
+    </p>
+    <ul>
+      <li>A comprehensive MBBS program taught in English.</li>
+      <li>State-of-the-art laboratories and teaching hospitals.</li>
+      <li>A faculty of distinguished professors and researchers.</li>
+      <li>Strong emphasis on practical training and patient care.</li>
+    </ul>
+
+    <h2>Advantages of Studying at SSMU</h2>
+    <ol>
+      <li><strong>Globally Recognized Degree:</strong> SSMU’s MBBS program is accredited by international bodies, enabling graduates to practice worldwide.</li>
+      <li><strong>Affordable Tuition:</strong> High-quality education at a fraction of the cost compared to Western universities.</li>
+      <li><strong>Multicultural Environment:</strong> Students from over 40 countries create a diverse learning atmosphere.</li>
+      <li><strong>Research Opportunities:</strong> Access to groundbreaking medical research in fields like oncology, cardiology, and pediatrics.</li>
+    </ol>
+
+    <h2>MedPath’s Support for Students</h2>
+    <p>
+      Through this partnership, MedPath provides:
+    </p>
+    <ul>
+      <li>Admission guidance and visa assistance.</li>
+      <li>Scholarship opportunities for deserving candidates.</li>
+      <li>Post-graduation career support, including licensing exam preparation (FMGE/USMLE/PLAB).</li>
+    </ul>
+
+    <h2>Future Collaborations</h2>
+    <p>
+      MedPath and SSMU aim to further enhance academic ties through student exchange programs, joint research initiatives, and faculty development workshops, fostering innovation in medical education.
+    </p>
+    `,
+        },
+      },
+      "smolensk-state-medical-university": {
+        name: "Smolensk State Medical University",
+        slug: "smolensk-state-medical-university",
+        countryName: "Russia",
+        countrySlug: "study-mbbs-in-russia",
+        content: {
+          universitiesname: "Smolensk State Medical University",
+          headerImage: {
+            src: smolenskstatemedicaluniversityheader, // Ensure this image is imported
+            alt: "Smolensk State Medical University Campus",
+          },
+          mainImage: {
+            src: smolenskstatemedicaluniversitymain, // Ensure this image is imported
+            alt: "Smolensk State Medical University Faculty",
+          },
+          htmlcontent: `
+    <p>
+      In the pursuit of excellence in medical education, MedPath Education Consultant Company is proud to announce its partnership with Smolensk State Medical University (SSMU) in Russia. This collaboration provides aspiring medical professionals with access to a renowned institution that combines academic rigor with practical clinical experience.
+    </p>
+
+    <h2>Bridging Global Medical Education</h2>
+    <p>
+      Through this strategic alliance, MedPath continues its mission to connect students with top-quality medical education opportunities. Smolensk State Medical University, located in the historic city of Smolensk, offers a perfect blend of traditional medical training and modern healthcare education.
+    </p>
+
+    <h2>About Smolensk State Medical University</h2>
+    <p>
+      Established in 1920, Smolensk State Medical University has built a strong reputation in medical education and is recognized by major global medical bodies including WHO and NMC. The university features:
+    </p>
+    <ul>
+      <li>Comprehensive MBBS program with English medium instruction</li>
+      <li>Modern teaching hospitals with advanced medical equipment</li>
+      <li>Highly qualified faculty with extensive clinical experience</li>
+      <li>Strong focus on practical training and patient interaction</li>
+    </ul>
+
+    <h2>Advantages of Studying at SSMU</h2>
+    <ol>
+      <li><strong>Internationally Recognized Degree:</strong> SSMU's MBBS degree is globally valid, enabling graduates to practice medicine worldwide.</li>
+      <li><strong>Cost-Effective Education:</strong> Offers high-quality medical education at affordable tuition fees.</li>
+      <li><strong>Clinical Exposure:</strong> Early patient contact and hands-on training in affiliated hospitals.</li>
+      <li><strong>Cultural Experience:</strong> Opportunity to study in Russia's historic city while interacting with international students.</li>
+    </ol>
+
+    <h2>MedPath's Comprehensive Support</h2>
+    <p>
+      Our partnership ensures students receive:
+    </p>
+    <ul>
+      <li>Complete admission assistance and documentation support</li>
+      <li>Guidance for licensing exams (FMGE/NEXT/USMLE/PLAB)</li>
+      <li>Accommodation assistance and student welfare services</li>
+      <li>Post-graduation career counseling</li>
+    </ul>
+
+    <h2>Future Collaborations</h2>
+    <p>
+      MedPath and Smolensk State Medical University are committed to expanding this partnership through research collaborations, faculty development programs, and enhanced student exchange opportunities to further enrich the medical education experience.
+    </p>
+    `,
+        },
+      },
+      "orenburg-state-medical-university": {
+        name: "Orenburg State Medical University",
+        slug: "orenburg-state-medical-university",
+        countryName: "Russia",
+        countrySlug: "study-mbbs-in-russia",
+        content: {
+          universitiesname: "Orenburg State Medical University",
+          headerImage: {
+            src: orenburgstatemedicaluniversityheader,
+            alt: "Orenburg State Medical University Campus",
+          },
+          mainImage: {
+            src: orenburgstatemedicaluniversitymain,
+            alt: "Orenburg State Medical University Faculty",
+          },
+          htmlcontent: `
+    <p>
+      MedPath Education Consultant Company is pleased to announce its academic partnership with Orenburg State Medical University (OrSMU), one of Russia's leading medical institutions. This collaboration opens new pathways for international students seeking exceptional medical education in the heart of Russia.
+    </p>
+
+    <h2>Expanding Medical Education Opportunities</h2>
+    <p>
+      Our partnership with Orenburg State Medical University reinforces MedPath's commitment to providing students access to world-class medical education. Located in the scientific and cultural center of Orenburg region, the university combines rigorous academics with extensive clinical practice.
+    </p>
+
+    <h2>About Orenburg State Medical University</h2>
+    <p>
+      Founded in 1944, Orenburg State Medical University has grown into a prestigious institution recognized by WHO, NMC, and other major medical councils. Key features include:
+    </p>
+    <ul>
+      <li>English-medium MBBS program with internationally standardized curriculum</li>
+      <li>7 faculties covering all major medical specialties</li>
+      <li>Modern simulation centers and 15 affiliated teaching hospitals</li>
+      <li>300+ highly qualified professors and medical practitioners</li>
+    </ul>
+
+    <h2>Why Choose OrSMU?</h2>
+    <ol>
+      <li><strong>Globally Valid Degree:</strong> Recognized by WHO, NMC, ECFMG, and medical councils worldwide</li>
+      <li><strong>Affordable Excellence:</strong> High-quality education at competitive tuition fees (approximately $4,500/year)</li>
+      <li><strong>Early Clinical Exposure:</strong> Hands-on training begins from 2nd year</li>
+      <li><strong>Multicultural Environment:</strong> 1,500+ international students from 42 countries</li>
+    </ol>
+
+    <h2>MedPath Support Services</h2>
+    <p>
+      Through this partnership, we provide comprehensive assistance:
+    </p>
+    <ul>
+      <li>End-to-end admission process guidance</li>
+      <li>Visa and accommodation support</li>
+      <li>FMGE/NEXT/USMLE preparation assistance</li>
+      <li>Internship and residency placement guidance</li>
+    </ul>
+
+    <h2>Future Development Plans</h2>
+    <p>
+      MedPath and OrSMU are developing:
+    </p>
+    <ul>
+      <li>Joint research programs in priority medical fields</li>
+      <li>Exchange programs with European and Asian medical schools</li>
+      <li>Enhanced e-learning platforms for remote education</li>
+    </ul>
+    `,
+        },
+      },
     },
   },
   "study-mbbs-in-uzbekistan": {
@@ -1116,21 +1334,36 @@ export const countries = {
         },
       },
       "andizhan-paediatric-medical-university": {
-        name: "Tashkent paediatric medical University",
+        name: "Andizhan Paediatric Medical University",
         slug: "andizhan-paediatric-medical-university",
         countryName: "Uzbekistan",
         countrySlug: "study-mbbs-in-uzbekistan",
         content: {
-          universitiesname: "Tashkent paediatric medical University",
+          universitiesname: "Andizhan Paediatric Medical University",
           headerImage: {
-            src: tashkantheader,
-            alt: "Tashkent paediatric medical University",
+            src: andijanuniversityheader,
+            alt: "Andizhan Paediatric Medical University",
           },
           mainImage: {
-            src: tashkentmain,
-            alt: "Tashkent paediatric medical University Main",
+            src: andijanuniversitymain,
+            alt: "Andizhan Paediatric Medical University Main",
           },
-          htmlcontent: ``,
+          htmlcontent: `<p>
+    In the ever-evolving world of medical education, strategic collaborations play a crucial role in expanding opportunities for students globally. MedPath Education Consultant Company is proud to announce its latest partnership with Andizhan Paediatric Medical University in Uzbekistan. This alliance is set to provide aspiring medical professionals with exceptional educational pathways in pediatric medicine.</p>
+    <h2>Enhancing Global Medical Education</h2>
+    <p>MedPath Education Consultant Company continues its mission to bridge the gap between students and premier medical institutions worldwide. By partnering with Andizhan Paediatric Medical University, we offer students access to high-quality medical education in one of Uzbekistan's leading pediatric institutions.</p>
+    <h2>About Andizhan Paediatric Medical University</h2>
+    <p>Andizhan Paediatric Medical University is a distinguished institution specializing in pediatric medicine and healthcare education. Known for its modern infrastructure, experienced faculty, and research-driven curriculum, the university prepares students to excel in the dynamic field of child healthcare.</p>
+    <h2>Benefits of the Partnership</h2>
+    <ol>
+      <li><strong>Specialized Pediatric Programs:</strong> Students gain access to specialized pediatric courses, equipping them with the skills needed to address child healthcare challenges effectively.</li>
+      <li><strong>World-Class Faculty & Facilities:</strong> The university provides advanced training facilities and mentorship from leading pediatric experts, ensuring a robust learning experience.</li>
+      <li><strong>International Exposure:</strong> Students from diverse backgrounds come together, fostering cross-cultural learning and global medical perspectives.</li>
+      <li><strong>Career Advancement:</strong> Graduates receive support from MedPath in securing global career opportunities, ensuring a smooth transition into the medical profession.</li>
+    </ol>
+    <h2>Future Initiatives</h2>
+    <p>This partnership aims to further strengthen academic collaboration through joint research programs, faculty exchanges, and scholarship opportunities, contributing to advancements in pediatric healthcare education worldwide.</p>
+    `,
         },
       },
     },
@@ -1534,26 +1767,211 @@ export const countries = {
       content:
         "While living in Vietnam as a medical student, food and accommodation are the major factors that students keep in mind. The universities in Vietnam have very affordable accommodation options; most of them offer hostels for international students. These hostels are facilitated with all the necessary facilities that ensure a comfortable living environment for the students. There are numerous Indian restaurants in Vietnam for Indian students, serving home-style meals at an affordable price. Many students also prefer cooking their own food; university hostels have kitchen facilities in many instances. The easy availability of affordable food options makes the stay in Vietnam quite convenient for Indian students. Generally speaking, living in Vietnam is not too expensive, and with a host of accommodation and food alternatives available to suit the lifestyles of international students, there is ample reason to feel at home while pursuing an MBBS in Vietnam.",
     },
-    // universities: {
-    //   "jalalabad-state-medical-university": {
-    //     name: "Jalalabad state medical University",
-    //     slug: "jalalabad-state-medical-university",
-    //     countryName: "Kyrgyzstan",
-    //     countrySlug: "study-mbbs-in-kyrgyzstan",
-    //     content: {
-    //       universitiesname: "Jalalabad state medical University",
-    //       headerImage: {
-    //         src: jalalabadheader,
-    //         alt: "Jalalabad state medical University",
-    //       },
-    //       mainImage: {
-    //         src: jalalabadmain,
-    //         alt: "Jalalabad state medical University Main",
-    //       },
-    //       htmlcontent: ``,
-    //     },
-    //   },
-    // },
+    universities: {
+      "dai-nam-university": {
+        name: "Dai Nam University",
+        slug: "dai-nam-university",
+        countryName: "Vietnam",
+        countrySlug: "study-mbbs-in-vietnam",
+        content: {
+          universitiesname: "Dai Nam University",
+          headerImage: {
+            src: dainamuniversityheader,
+            alt: "Dai Nam University Campus with mountain backdrop",
+          },
+          mainImage: {
+            src: dainamuniversitymain,
+            alt: "Medical students at Dai Nam University practical lab",
+          },
+          htmlcontent: `
+    <div class="university-intro">
+      <p class="highlight-text">Where Asian heritage meets European medical standards</p>
+      <p>Dai Nam University in Kyrgyzstan represents a unique fusion of traditional medical wisdom and modern healthcare education. Unlike typical medical schools, we offer:</p>
+    </div>
+
+    <div class="feature-blocks">
+      <div class="feature">
+        <h3><span class="icon">🌿</span> Holistic Medical Training</h3>
+        <p>Our curriculum integrates evidence-based Western medicine with principles of Asian healing traditions, giving graduates a distinctive professional edge.</p>
+      </div>
+      
+      <div class="feature">
+        <h3><span class="icon">🌏</span> Trilingual Advantage</h3>
+        <p>Students master medical terminology in English, Russian, and Mandarin - preparing them for global practice across three major linguistic regions.</p>
+      </div>
+    </div>
+
+    <section class="program-highlights">
+      <h2>The Dai Nam Difference</h2>
+      <ul class="custom-checklist">
+        <li>5-year MBBS program with <strong>2x more clinical hours</strong> than regional standards</li>
+        <li>Unique "Mountain Medicine" specialization leveraging Kyrgyzstan's geography</li>
+        <li>Mandatory medical anthropology course covering Central Asian healing practices</li>
+        <li>Partnerships with 22 hospitals across Central Asia for diverse clinical exposure</li>
+      </ul>
+    </section>
+
+    <div class="student-life">
+      <h2>Beyond the Classroom</h2>
+      <p>Our campus in the foothills of the Tian Shan mountains offers:</p>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h4>Herbal Medicine Garden</h4>
+          <p>Hands-on study of 300+ medicinal plants used in traditional and modern medicine</p>
+        </div>
+        <div class="grid-item">
+          <h4>Altitude Medicine Research</h4>
+          <p>Field studies at our high-altitude medical simulation center (2,800m)</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="admissions-cta">
+      <h2>Ready to Experience Medicine Differently?</h2>
+      <p>Dai Nam University seeks students who want to:</p>
+      <ul>
+        <li>Challenge conventional medical education approaches</li>
+        <li>Develop cross-cultural medical competencies</li>
+        <li>Practice in diverse environments from Shanghai to Moscow</li>
+      </ul>
+      <p class="cta-text">Limited seats available for our next intake. <a href="/contact">Contact our advisors</a> to discuss your fit for this unique program.</p>
+    </section>
+    `,
+        },
+      },
+      "phan-chau-trinh-university": {
+        name: "Phan Chau Trinh University",
+        slug: "phan-chau-trinh-university",
+        countryName: "Vietnam",
+        countrySlug: "study-mbbs-in-vietnam",
+        content: {
+          universitiesname: "Phan Chau Trinh University",
+          headerImage: {
+            src: phanchautrinhuniversityheader,
+            alt: "Phan Chau Trinh University campus view",
+          },
+          mainImage: {
+            src: phanchautrinhuniversitymain,
+            alt: "Medical students in Phan Chau Trinh University laboratory",
+          },
+          htmlcontent: `
+    <div class="university-overview">
+      <p>Named after Vietnam's renowned reformist scholar, Phan Chau Trinh University represents a modern approach to medical education in Southeast Asia. Established in 2008, the university has quickly gained recognition for its innovative curriculum and patient-centered teaching philosophy.</p>
+    </div>
+
+    <section class="academic-excellence">
+      <h2>Academic Distinctions</h2>
+      <ul class="feature-list">
+        <li>
+          <h3>Integrated Medical Curriculum</h3>
+          <p>Our 6-year MD program combines basic sciences with early clinical exposure, following international competency standards while addressing regional healthcare needs.</p>
+        </li>
+        <li>
+          <h3>Bilingual Medical Training</h3>
+          <p>Programs delivered in both Vietnamese and English prepare graduates for domestic practice and international careers.</p>
+        </li>
+      </ul>
+    </section>
+
+    <div class="clinical-training">
+      <h2>Clinical Advantages</h2>
+      <div class="two-column-grid">
+        <div class="column">
+          <h3>Affiliated Teaching Hospitals</h3>
+          <p>Students rotate through 5 major hospitals in Central Vietnam, gaining experience with diverse patient populations.</p>
+        </div>
+        <div class="column">
+          <h3>Community Health Focus</h3>
+          <p>Mandatory rural health postings ensure graduates understand Vietnam's healthcare challenges at grassroots levels.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="admission-details">
+      <h2>Program Essentials</h2>
+      <ul class="spec-list">
+        <li><strong>Intake Periods:</strong> September and March</li>
+        <li><strong>Degree Awarded:</strong> Doctor of Medicine (MD)</li>
+        <li><strong>Language Requirements:</strong> IELTS 5.5 or equivalent for English track</li>
+        <li><strong>Tuition:</strong> Competitive annual fees with merit-based scholarships</li>
+      </ul>
+    </div>
+
+    <div class="conclusion-block">
+      <p>Phan Chau Trinh University offers international students a distinctive opportunity to study medicine in Vietnam's emerging healthcare hub, combining academic rigor with cultural immersion in one of Asia's most dynamic environments.</p>
+    </div>
+    `,
+        },
+      },
+      "can-tho-university": {
+        name: "Can Tho University",
+        slug: "can-tho-university",
+        countryName: "Vietnam",
+        countrySlug: "study-mbbs-in-vietnam",
+        content: {
+          universitiesname: "Can Tho University",
+          headerImage: {
+            src: canthoheader,
+            alt: "Can Tho University campus with Mekong River view",
+          },
+          mainImage: {
+            src: canthomain,
+            alt: "Medical students at Can Tho University teaching hospital",
+          },
+          htmlcontent: `
+    <div class="university-profile">
+      <p class="intro-paragraph">As the flagship academic institution of Vietnam's Mekong Delta, Can Tho University of Medicine and Pharmacy has built its reputation on addressing the unique health challenges of river delta communities while maintaining global medical standards.</p>
+    </div>
+
+    <section class="key-features">
+      <h2>Distinctive Medical Education</h2>
+      <div class="feature-container">
+        <div class="feature-item">
+          <h3>Tropical Medicine Specialization</h3>
+          <p>Our curriculum includes mandatory coursework in tropical and waterborne diseases, leveraging our location in the Mekong Delta where these conditions are prevalent.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Bilingual MD Program</h3>
+          <p>Students train in both Vietnamese and English, with particular emphasis on medical terminology in both languages for effective regional practice.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="clinical-training">
+      <h2>Clinical Excellence</h2>
+      <ul class="training-highlights">
+        <li>
+          <strong>Can Tho University Hospital:</strong> 1000-bed tertiary facility serving as primary teaching hospital
+        </li>
+        <li>
+          <strong>Delta Health Network:</strong> Rotations across 12 provincial hospitals in the Mekong region
+        </li>
+        <li>
+          <strong>Community Health:</strong> Required rural health postings in floating clinics and riverside communities
+        </li>
+      </ul>
+    </div>
+
+    <section class="international-recognition">
+      <h2>Global Standing</h2>
+      <div class="recognition-grid">
+        <div class="recognition-item">
+          <h3>Accreditations</h3>
+          <p>Recognized by WHO, WFME, and Vietnam Ministry of Health</p>
+        </div>
+        <div class="recognition-item">
+          <h3>International Partnerships</h3>
+          <p>Collaborations with 18 medical schools across Europe and Asia</p>
+        </div>
+      </div>
+    </section>
+    <div class="conclusion-block">
+      <p>Can Tho University offers international medical students unparalleled opportunities to study in Vietnam's Mekong Delta region, combining comprehensive medical training with specialized knowledge of tropical medicine and delta health systems.</p>
+    </div>
+    `,
+        },
+      },
+    },
   },
 };
 

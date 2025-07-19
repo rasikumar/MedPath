@@ -62,7 +62,7 @@ const WhyChooseSection = () => {
           </MotionSection>
         </div>
       </div>
-      <div className="max-w-5xl m-auto grid xl:grid-cols-4 md:grid-cols-2 max-md:px-4 gap-8">
+      <div className="max-w-5xl m-auto grid xl:grid-cols-4 md:grid-cols-3 grid-cols-1 max-md:px-4 gap-8">
         {choose_Content.approved_by.map((item) => (
           <WhyChooseCard {...item} key={item.title} />
         ))}

@@ -81,7 +81,7 @@ export default function UniversityLayout({ university }) {
           <div className="w-full md:w-2/3">
             <Data data={university.content} />
           </div>
-          <div className="w-full md:w-1/3 max-w-xs mx-auto md:mx-0">
+          <div>
             <CountryWidget />
           </div>
         </div>

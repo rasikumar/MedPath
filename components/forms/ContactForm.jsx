@@ -101,7 +101,7 @@ export default function ContactForm({ onClose }) {
             id="name"
             name="name"
             type="text"
-            placeholder="John"
+            placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
             className={`w-full border ${
@@ -170,7 +170,7 @@ export default function ContactForm({ onClose }) {
           id="description"
           name="description"
           type="text"
-          placeholder="New York"
+          placeholder="Type Here..."
           value={formData.description}
           onChange={handleChange}
           rows={5}

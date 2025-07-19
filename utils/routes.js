@@ -15,6 +15,9 @@ export const KURSK_ROUTE =
 export const BASHKIR_ROUTE =
   "/country/study-mbbs-in-russia/bashkir-state-medical-university";
 export const KAZAN_ROUTE ="/country/study-mbbs-in-russia/kazan-state-medical-university";
+export const SIBERIAN_ROUTE ="/country/study-mbbs-in-russia/siberian-state-medical-university";
+export const SMOLENSK_ROUTE ="/country/study-mbbs-in-russia/smolensk-state-medical-university";
+export const ORENBURG_ROUTE ="/country/study-mbbs-in-russia/orenburg-state-medical-university";
 
 // uzbekistan
 export const BHUKARA_ROUTE ="/country/study-mbbs-in-uzbekistan/bhu-kara-state-medical-university";
@@ -34,3 +37,6 @@ export const AL_FARABI_ROUTE ="/country/study-mbbs-in-kazakhstan/alfred-kazak-na
 export const SOUTH_KAZAKHASTAN_ROUTE ="/country/study-mbbs-in-kazakhstan/south-kazakhstan-medical-university";
 
 //Vietnam
+export const DAI_NAM_ROUTE ="/country/study-mbbs-in-vietnam/dai-nam-university";
+export const PHAN_CHAU_ROUTE ="/country/study-mbbs-in-vietnam/phan-chau-trinh-university";
+export const CAN_THO_ROUTE ="/country/study-mbbs-in-vietnam/can-tho-university";

@@ -103,7 +103,7 @@ export default function UniversitySubmitForm({ university }) {
     <div className="relative flex md:flex-row flex-col rounded-2xl gap-8 items-center">
       <form
         onSubmit={handleSubmit}
-        className="space-y-4 md:w-[50%] w-full overflow-y-scroll scroll-hidden px-4"
+        className="space-y-4 w-full overflow-y-scroll scroll-hidden px-4"
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
@@ -117,7 +117,7 @@ export default function UniversitySubmitForm({ university }) {
               id="firstName"
               name="firstName"
               type="text"
-              placeholder="John"
+              placeholder="firstName"
               value={formData.firstName}
               onChange={handleChange}
               className={`w-full border ${
@@ -140,7 +140,7 @@ export default function UniversitySubmitForm({ university }) {
               id="lastName"
               name="lastName"
               type="text"
-              placeholder="Doe"
+              placeholder="lastName"
               value={formData.lastName}
               onChange={handleChange}
               className={`w-full border ${
