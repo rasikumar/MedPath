@@ -42,7 +42,7 @@ const Accomplishment = () => {
             {isIntersecting && (
               <div className="center-column text-center gap-2">
                 <div className="md:text-4xl text-xl font-bold text-secondary">
-                  <CountUp end={4} duration={10} /> k+{" "}
+                  <CountUp end={5} duration={10} /> k+{" "}
                 </div>
                 <span className="text-primary ">Student Community</span>{" "}
               </div>

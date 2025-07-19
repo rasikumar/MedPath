@@ -421,58 +421,40 @@ export const Home_Data = {
     title: "Google Testimonials",
     testimonials: [
       {
-        name: "B. Bhuvanes War!",
+        name: "RK Jayabalan",
         date: "2024-09-23",
         review:
-          "I had an excellent experience with Medpath Overseas. They guided me step-by-step through the MBBS admission process, especially for studying abroad. The team is very professional, transparent, and supportive. Highly recommended for students who are serious about a medical career!",
+          "I had an excellent experience with Medpath Overseas. They guided me step-by-step through the MBBS admission process, especially for studying abroad.The team is very professional, transparent, and supportive. Highly recommended for students who are serious about a medical career!",
         rating: 5,
         userimageString:
-          "https://ui-avatars.com/api/?name=BhuvanesWar&size=200&rounded=true",
+          "https://ui-avatars.com/api/?name=Jayabalan&size=200&rounded=true",
       },
       {
-        name: "KAMARDEN Safi",
+        name: "Rj Sridevi",
         date: "2024-09-22",
         review:
           "I’m happy with Medpath Overseas for their transparency and honest advice. They clearly explained about the universities, NMC approval, and living costs.The process was smooth and tension-free. There’s a little scope for improving follow-up, but highly recommended.",
-        rating: 5,
+        rating: 3,
         userimageString:
-          "https://ui-avatars.com/api/?name=KAMARDEN Safi&size=200&rounded=true",
+          "https://ui-avatars.com/api/?name=Sridevi&size=200&rounded=true",
       },
       {
-        name: "G. Vijaya Rajsendhiran",
+        name: "Ke Biruntha",
         date: "2024-09-22",
         review:
           "As a parent, I was initially worried about sending my child abroad. But Medpath Overseas guided us with clarity and confidence.  The documentation and university coordination were smooth. Only a slight delay in the visa process, but they handled everything professionally. We are satisfied and recommend them.",
-        rating: 3,
+        rating: 4,
         userimageString:
-          "https://ui-avatars.com/api/?name=G. Vijaya Rajsendhiran&size=200&rounded=true",
+          "https://ui-avatars.com/api/?name=Biruntha&size=200&rounded=true",
       },
       {
-        name: "B. Bhuvanes War!",
+        name: "Harini Thirunavukkarasu",
         date: "2024-09-23",
         review:
-          "great services. 👍👍 their team is extremely supportive, professional, and well-informed. from shortlisting universities to handling documentation, visa procedures, and even pre-departure orientatin , transparency and honest advice. Highly recommended for anyone looking to study MBBS abroad .",
-        rating: 2,
+          "great services. 👍👍 their team is extremely supportive, professional, and well-informed. from shortlisting universities to handling documentation, visa procedures, and even pre-departure orientatin , transparency and honest advice.Highly recommended for anyone looking to study MBBS abroad .",
+        rating: 5,
         userimageString:
-          "https://ui-avatars.com/api/?name=BhuvanesWar&size=200&rounded=true",
-      },
-      {
-        name: "KAMARDEN Safi",
-        date: "2024-09-22",
-        review:
-          "Genuine consultant for abroad medical education, trustable and official representative for abroad medical education for top universities.",
-        rating: 3,
-        userimageString:
-          "https://ui-avatars.com/api/?name=KAMARDEN Safi&size=200&rounded=true",
-      },
-      {
-        name: "G. Vijaya Rajsendhiran",
-        date: "2024-09-22",
-        review:
-          "Good service. Has all the information regarding universities fees, course, offered etc",
-        rating: 1,
-        userimageString:
-          "https://ui-avatars.com/api/?name=G. Vijaya Rajsendhiran&size=200&rounded=true",
+          "https://ui-avatars.com/api/?name=Harini Thirunavukkarasu&size=200&rounded=true",
       },
     ],
   },
@@ -519,7 +501,7 @@ export const Home_Data = {
         title: "PG Admission",
       },
       {
-        title: "UK Work Placment",
+        title: "food and accommodation",
       },
     ],
   },

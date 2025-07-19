@@ -34,7 +34,7 @@ const MilestoneSection = () => {
           <div className="center-column md:border-r max-md:border-b max-md:pb-12 border-white md:pr-12 gap-2">
             <span className="text-4xl text-background font-bold">
               <CountUp end={1500} duration={5} />
-              k+
+              +
             </span>
             <h4 className="text-sm text-background">Applications Completed</h4>
           </div>
