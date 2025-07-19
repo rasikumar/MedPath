@@ -28,6 +28,7 @@ const PopupForm = () => {
     message: "",
   });
   const [errors, setErrors] = useState({});
+  const [submitting, setSubmitting] = useState(false);
   const popupRef = useRef(null);
   const countries = Home_Data.countryItems;
   const [hasMounted, setHasMounted] = useState(false);
@@ -125,11 +126,11 @@ const PopupForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (submitting) return;
 
     if (validateInquiryForm(formData, setErrors)) {
-      const payload = {
-        ...formData,
-      };
+      setSubmitting(true);
+      const payload = { ...formData };
 
       try {
         const res = await axios.post(
@@ -140,24 +141,24 @@ const PopupForm = () => {
           }
         );
 
-        if (res.status === 200) {
-          handleClose();
-          setFormData({
-            name: "",
-            email: "",
-            mobile: "",
-            dob: "",
-            country: "",
-            message: "",
-          });
-          toast.success(res.data.message || "Form Submission Successfully");
-        } else {
-          console.error("❌ Submission failed", res.data);
-          toast.error("❌ Submission failed");
-        }
+        handleClose();
+        setFormData({
+          name: "",
+          email: "",
+          mobile: "",
+          dob: "",
+          country: "",
+          message: "",
+        });
+        toast.success(res.data.message || "Form Submission Successfully");
       } catch (err) {
-        console.error("❌ Network error:", err);
-        toast.error("❌ Network error");
+        if (err.response && err.response.status === 400) {
+          toast.error(err.response.data.error || "Submission failed");
+        } else {
+          toast.error("Network error");
+        }
+      } finally {
+        setSubmitting(false);
       }
     }
   };
@@ -322,8 +323,8 @@ const PopupForm = () => {
             )}
           </div>
 
-          <Button type="submit" className="md:w-full">
-            Submit Inquiry
+          <Button type="submit" className="md:w-full" disabled={submitting}>
+            {submitting ? "Submitting..." : "Submit Inquiry"}
           </Button>
         </form>
       </div>

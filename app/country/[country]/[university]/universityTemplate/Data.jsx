@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Data({ data }) {
   return (
-    <div className="p-8 border border-border shadow flex flex-col gap-8">
-      <h2 className="text-3xl font-bold text-primary">
+    <div className="md:p-8 p-4 border border-border shadow flex flex-col gap-8">
+      <h2 className="md:text-3xl text-xl font-bold text-primary">
         {data.universitiesname}
       </h2>
       <Image
@@ -23,11 +23,9 @@ export default function Data({ data }) {
         height={400}
       />
 
-      {/* Container with comprehensive HTML element styling */}
       <div className="rich-text-content">
         {parse(data.htmlcontent, {
           replace: (domNode) => {
-            // You can add specific handling for any elements here if needed
             return domNode;
           },
         })}

@@ -61,11 +61,13 @@ export default function UniversitySubmitForm({ university }) {
       }));
     }
   };
-
+  const [submitting, setSubmitting] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (submitting) return;
 
     if (validateUniversitySubmitForm(formData, setErrors)) {
+      setSubmitting(true);
       const payload = {
         ...formData,
         university_name,
@@ -76,20 +78,23 @@ export default function UniversitySubmitForm({ university }) {
           payload,
           { headers: { "Content-Type": "application/json" } }
         );
-        if (res.status === 200) {
-          toast.success(res.data.message || "Form Sumbitted Successfully");
-          setFormData({
-            firstName: "",
-            lastName: "",
-            dob: "",
-            mobile: "",
-            email: "",
-            city: "",
-          });
-        }
+        setFormData({
+          firstName: "",
+          lastName: "",
+          dob: "",
+          mobile: "",
+          email: "",
+          city: "",
+        });
+        toast.success(res.data.message || "Form Sumbitted Successfully");
       } catch (error) {
-        console.error("❌ Network error:", err);
-        toast.error("❌ Network error");
+        if (error.response && error.response.status === 400) {
+          toast.error(error.response.data.error || "Submission failed");
+        } else {
+          toast.error("Network error");
+        }
+      } finally {
+        setSubmitting(false);
       }
     }
   };
@@ -98,7 +103,7 @@ export default function UniversitySubmitForm({ university }) {
     <div className="relative flex md:flex-row flex-col rounded-2xl gap-8 items-center">
       <form
         onSubmit={handleSubmit}
-        className="space-y-4 w-[50%] overflow-y-scroll scroll-hidden"
+        className="space-y-4 md:w-[50%] w-full overflow-y-scroll scroll-hidden px-4"
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
@@ -240,8 +245,8 @@ export default function UniversitySubmitForm({ university }) {
           )}
         </div>
 
-        <Button type="submit" className="py-3">
-          Submit Application
+        <Button type="submit" className="py-3" disabled={submitting}>
+          {submitting ? "Submitting..." : "Submit Application"}
         </Button>
       </form>
     </div>

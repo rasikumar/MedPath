@@ -19,3 +19,13 @@ export const markPopupAsShown = () => {
     sessionStorage.setItem(KEY, Date.now().toString());
   }
 };
+
+export const validateIndianMobile = (value) => {
+  if (!value) return false;
+
+  // Remove all non-digit characters
+  const digitsOnly = value.replace(/\D/g, "");
+
+  // Check if it's exactly 10 digits and starts with 6-9
+  return digitsOnly.length === 10 && /^[6-9]/.test(digitsOnly);
+};

@@ -22,6 +22,7 @@ export default function ContactForm({ onClose }) {
     email: "",
     description: "",
   });
+
   const handleChange = (e) => {
     const { name, value } = e?.target || {};
 
@@ -52,10 +53,13 @@ export default function ContactForm({ onClose }) {
       }));
     }
   };
+  const [submitting, setSubmitting] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (submitting) return;
 
     if (validateContactForm(formData, setErrors)) {
+      setSubmitting(true);
       const payload = {
         ...formData,
       };
@@ -65,17 +69,21 @@ export default function ContactForm({ onClose }) {
           payload,
           { headers: { "Content-Type": "application/json" } }
         );
-        if (res.status === 200) {
-          toast.success(res.data.message || "Form Submission Successfully");
-          setFormData({
-            name: "",
-            mobile: "",
-            email: "",
-            description: "",
-          });
+        setFormData({
+          name: "",
+          mobile: "",
+          email: "",
+          description: "",
+        });
+        toast.success(res.data.message || "Form Submission Successfully");
+      } catch (err) {
+        if (err.response && err.response.status === 400) {
+          toast.error(err.response.data.error || "Submission failed");
+        } else {
+          toast.error("Network error");
         }
-      } catch (error) {
-        console.log("error", error);
+      } finally {
+        setSubmitting(false);
       }
     }
   };
@@ -178,8 +186,9 @@ export default function ContactForm({ onClose }) {
       <Button
         type="submit"
         className="relative border rounded-none z-10 transition-colors duration-300 group-hover:text-background flex items-center gap-2 text-sm font-bold justify-center"
+        disabled={submitting}
       >
-        Submit Application
+        {submitting ? "Submitting..." : " Submit Application"}
       </Button>
     </form>
   );

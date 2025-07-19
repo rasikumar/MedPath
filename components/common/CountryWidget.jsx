@@ -7,7 +7,7 @@ import Link from "next/link";
 
 function CountryWidget() {
   return (
-    <div className="sticky top-[20vh] w-96">
+    <div className="sticky top-[20vh] md:w-96 w-full">
       <div className="relative">
         <div className="relative h-[30rem] w-full rounded-xl overflow-hidden">
           <Image
